@@ -90,7 +90,7 @@ HeaderText no-element-backgrounds
 
 Block:
 ```html
-no-element-backgrounds block
+no-element-backgrounds block no-padding-backgrounds
 ```
 
 ```html
