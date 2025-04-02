@@ -18,7 +18,7 @@ Component:
 
 ```html
 <h3>
-    <span class="Headline">Headline</span>
+    <span class="Sub-Headline">Headline</span>
 </h3>
 ```
 
