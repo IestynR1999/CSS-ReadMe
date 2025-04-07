@@ -5,11 +5,6 @@ Article:
 background-image6 Topic-Hero
 ```
 
-Block:
-```html
-HeaderPadding
-```
-
 Component
 ```html
 HeaderText no-element-backgrounds
@@ -25,5 +20,9 @@ HeaderText no-element-backgrounds
 
     <span class="Hero-text">Title</span> 
 
-</h6> 
+</h6>
+
+<p class="Body-Regular" style="text-align:center;">
+    Subtext
+</p>
 ```
