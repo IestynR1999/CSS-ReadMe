@@ -1,4 +1,4 @@
-<h3>Text – second paragraph onwards</h3>
+<h3>Text – first paragraph</h3>
 
 ```html
 background-colour1
