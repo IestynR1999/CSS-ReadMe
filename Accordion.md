@@ -1,4 +1,4 @@
-<h3>Narrative</h3>
+<h3>Accordion</h3>
 
 ```html
 background-colour1
