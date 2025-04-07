@@ -1,6 +1,14 @@
 <h3>CSS</h3>
 
 ```CSS
+.pagelevelprogress__indicator-inner {
+border-radius: 0px; 
+}
+
+.pagelevelprogress__nav-btn {
+    pointer-events: none;
+}
+
 .page .article-edge-top {
     background-attachment: scroll;
     background-position: center top;
@@ -74,7 +82,8 @@
 
 .Body-Regular{
     font-family: 'FSDillonProRegular' !important;
-    font-size: 1.25rem !important;
+    //font-size: 1.25rem !important;
+    font-size:clamp(1.25rem, 1.25rem + 0vw, 1.25rem) !important;
 }
 
 .Module-Hero .Body-Regular{
@@ -143,7 +152,8 @@
 
 .btn__action,.btn__action:hover,.btn__action:focus{
     font-family: FSDillonProBold !important;
-    font-size: 1rem !important;
+   // font-size: 1rem !important;
+    font-size:clamp(1rem, 1rem + 0vw, 1rem) !important;
     background-color:#DD221A !important;
 }
 
@@ -361,6 +371,7 @@ div.component {
     //line-height: 2.5rem !important;
     //letter-spacing: 0.004rem !important;
     font-size:1.669rem !important;
+    //font-size:clamp(1.669rem, 1.669rem + 0vw, 1.669rem) !important;
     line-height: 2.25rem !important; 
     letter-spacing: 0.002rem !important;
 }
@@ -373,7 +384,8 @@ div.component {
     margin: 0 !important;
     font-style: normal !important;
     font-family: FSDillonProBold !important;
-    font-size:1.669rem !important;
+    //font-size:1.669rem !important;
+    font-size:clamp(1.669rem, 1.669rem + 0vw, 1.669rem) !important;
     line-height: 2.25rem !important; 
     letter-spacing: 0.002rem !important;
 }
@@ -459,7 +471,8 @@ div.component {
 .hotGraphicContainer .component__body-inner p,
 {
     font-family: 'FSDillonProRegular' !important;
-    font-size: 1.25rem;
+    //font-size: 1.25rem;
+    font-size:clamp(1.25rem, 1.25rem + 0vw, 1.25rem);
     font-style: normal;
     font-weight: 400;
     line-height:1.5rem;
@@ -610,7 +623,8 @@ div.component {
 
 .truefalse__item-title_inner{
     font-family: 'FSDillonProRegular' !important;
-    font-size: 1.25rem !important;
+   // font-size: 1.25rem !important;
+    font-size:clamp(1.25rem, 1.25rem + 0vw, 1.25rem) !important;
     line-height: 1.5rem !important;
 }
 
@@ -627,7 +641,8 @@ div.component {
 .truefalse__label{
     margin:0 !important;
     padding:0 !important;
-    font-size: 1.25rem !important;
+    //font-size: 1.25rem !important;
+    font-size:clamp(1.25rem, 1.25rem + 0vw, 1.25rem) !important;
     line-height: 1.5rem !important;
     letter-spacing: 0.004rem !important;
     font-family: 'FSDillonProBold' !important;
@@ -696,7 +711,8 @@ div.component {
 
 .notify__title-inner{
     color: #041C39 !important;
-    font-size: 1.6rem !important;
+    //font-size: 1.6rem !important;
+    font-size:clamp(1.6rem, 1.6rem + 0vw, 1.6rem) !important;
     font-style: normal;
     font-weight: 700;
     line-height: 2rem !important;
@@ -719,7 +735,8 @@ div.component {
 .notify__body-inner p{
     font-family: 'FSDillonProRegular' !important;
     color: #4F6074 !important;
-    font-size:1.25rem !important;
+    //font-size:1.25rem !important;
+    font-size:clamp(1.25rem, 1.25rem + 0vw, 1.25rem) !important;
     line-height:1.5rem !important;
 }
 
@@ -750,7 +767,8 @@ div.component {
     width: 100%;
     color: #041C39 !important;
     font-family: 'FSDillonProRegular' !important;
-    font-size: 1rem !important;
+    //font-size: 1rem !important;
+    font-size:clamp(1rem, 1rem + 0vw, 1rem) !important;
     font-style: normal !important;
     font-weight: 400 !important;
     line-height: 1.25rem !important;
@@ -805,7 +823,8 @@ div.component {
 //color: #041C39 !important;
 font-family: 'FSDillonProBold' !important;
 //font-size: 26.7px;
-font-size: 1.669rem !important;
+//font-size: 1.669rem !important;
+font-size:clamp(1.6688rem, 1.6688rem + 0vw, 1.6688rem) !important;
 font-style: normal !important;
 font-weight: 700 !important;
 //line-height: var(--font-Headline-XS-Line-Height, 36px); /* 134.831% */
@@ -856,7 +875,8 @@ letter-spacing: 0.002rem !important;
     padding-top: 0.75rem;
     color: #4F6074;
     font-family: 'FSDillonProRegular' !important;
-    font-size: 1rem;
+    //font-size: 1rem;
+    font-size:clamp(1rem, 1rem + 0vw, 1rem);
     font-style: normal;
     font-weight: 400;
     line-height: 1.25rem; /* 125% */
@@ -879,7 +899,8 @@ letter-spacing: 0.002rem !important;
 
 .openTextInput .opentextinput__count-characters{
     padding: 1.5rem 0 1rem 0 !important;
-    font-size: 1rem !important;
+    //font-size: 1rem !important;
+    font-size:clamp(1rem, 1rem + 0vw, 1rem) !important;
     line-height: 1.25rem !important;
     letter-spacing: 0.015px !important;
 }
@@ -900,7 +921,8 @@ letter-spacing: 0.002rem !important;
 
 .openTextInput .opentextinput__item-textbox, 
 .openTextInput .opentextinput__item-textbox *{
-    font-size: 1.25rem !important;
+    //font-size: 1.25rem !important;
+    font-size:clamp(1.25rem, 1.25rem + 0vw, 1.25rem) !important;
     line-height: 1.5rem !important;
     font-family: 'FSDillonProRegular' !important;
     color:#4F6074 !important;
@@ -1165,14 +1187,16 @@ background: linear-gradient(-45deg, #214C99, #011E41, #004AA3, #214C99);
 
 .Headline {
     font-family: FSDillonProBold !important;
-    font-size:2.219rem !important;
+    //font-size:2.219rem !important;
+    font-size:clamp(2.219rem, 2.219rem + 0vw, 2.219rem) !important;
     line-height: 2.5rem !important;
     letter-spacing: 0.004rem !important;
 }
 
 .Sub-Headline {
     font-family: FSDillonProBold !important;
-    font-size:1.669rem !important;
+    //font-size:1.669rem !important;
+    font-size:clamp(1.669rem, 1.669rem + 0vw, 1.669rem) !important;
     line-height: 2.25rem !important; 
     letter-spacing: 0.002rem !important;
 }
@@ -1187,7 +1211,8 @@ background: linear-gradient(-45deg, #214C99, #011E41, #004AA3, #214C99);
 .narrative__content-body-inner li
 {
     font-family: 'FSDillonProRegular' !important;
-    font-size: 1.25rem;
+    // font-size: 1.25rem;
+    font-size:clamp(1.25rem, 1.25rem + 0vw, 1.25rem) !important;
     //font-size: clamp(1.125rem, 1.225rem, 1.25rem);
     font-style: normal;
     font-weight: 400;
@@ -1197,8 +1222,8 @@ background: linear-gradient(-45deg, #214C99, #011E41, #004AA3, #214C99);
 
 .Body-Bold,.Question {
     font-family: 'FSDillonProBold' !important;
-    font-size: 1.25rem;
-    //font-size: clamp(1.125rem, 1.225rem, 1.25rem);
+    //font-size: 1.25rem;
+    font-size: clamp(1.25rem, 1.25rem + 0vw, 1.25rem);
     font-style: normal;
     font-weight: 400;
     line-height:1.5rem;
@@ -1550,7 +1575,8 @@ body .block__inner {
 {
     width: 100% !important;
     margin: 8px 0 !important;
-    font-size: 1.125rem !important;
+    //font-size: 1.125rem !important;
+    font-size:clamp(1.125rem, 1.125rem + 0vw, 1.125rem) !important;
 }
 
 
@@ -1558,9 +1584,16 @@ body .block__inner {
 .mcq-item__text,
 {
     display: block;
-    border-radius: var(--spacing-spacing-scale-1, 4px);
-    border: 2px solid var(--border-primary--button-border-input-field, #AEBDE6);
+    //border-radius: var(--spacing-spacing-scale-1, 4px);
+    //border: 2px solid var(--border-primary--button-border-input-field, #AEBDE6);
     width:100%;
+}
+
+//MCQ
+.mcq-item__label
+{
+    border-radius: 4px !important;
+    border: 2px solid #AEBDE6 !important;
 }
 
 //GMCQ
@@ -1688,6 +1721,11 @@ body .block__inner {
 
 //MCQ
 #wrapper .mcq .is-selected .mcq-item__text{
+    border-color:#355699 !important;
+}
+
+//MCQ
+#wrapper .mcq .is-selected .mcq-item__label{
     border-color:#355699 !important;
 }
 
@@ -1962,7 +2000,8 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
 
 .mediaContainer .component__instruction-inner {
     font-family: 'FSDillonProRegular' !important;
-    font-size: 1rem;
+    //font-size: 1rem;
+    font-size:clamp(1rem, 1rem + 0vw, 1rem);
     font-style: normal;
     font-weight: 400;
     line-height: 1.25rem;
@@ -2311,7 +2350,8 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
 
 .slider__label-start-inner,.slider__label-end-inner{
     font-family: 'FSDillonProBold' !important;
-    font-size: 1rem !important;
+    //font-size: 1rem !important;
+    font-size:clamp(1rem, 1rem + 0vw, 1rem) !important;
     letter-spacing: 0.02rem !important;
     line-height:1.25rem !important;
 }
@@ -2375,7 +2415,8 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
     background-color: #515D7A !important;
     color: #ffffff;
     font-family: 'FSDillonProRegular' ;
-    font-size: 1.125rem !important;
+    //font-size: 1.125rem !important;
+    font-size:clamp(1.125rem, 1.125rem + 0vw, 1.125rem) !important;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5rem !important; 
@@ -2386,7 +2427,8 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
 .stackerContainer .component__title *{
     font-style: normal !important;
     font-family: FSDillonProBold !important;
-    font-size:1.669rem !important;
+    //font-size:1.669rem !important;
+    font-size:clamp(1.6688rem, 1.6688rem + 0vw, 1.6688rem) !important;
     line-height: 2.25rem !important; 
     letter-spacing: 0.002rem !important;
     background: transparent !important;
@@ -2447,7 +2489,8 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
 .fillintheblanks__widget p,
 .fillintheblanks__widget div,
 {
-    font-size: 1.25rem !important;
+    //font-size: 1.25rem !important;
+    font-size:clamp(1.25rem, 1.25rem + 0vw, 1.25rem) !important;
     font-family: 'FSDillonProRegular' !important;
     margin:0;
     padding:0;
@@ -2549,7 +2592,8 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
 .filInBlanksContainer .component__title *{
     font-style: normal !important;
     font-family: FSDillonProBold !important;
-    font-size:1.669rem !important;
+    //font-size:1.669rem !important;
+    font-size:clamp(1.669rem, 1.669rem + 0vw, 1.669rem) !important;
     line-height: 2.25rem !important; 
     letter-spacing: 0.002rem !important;
     background: transparent !important;
@@ -2619,7 +2663,8 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
 
 .is-assessment .article__body-inner p {
     font-family: 'FSDillonProRegular' !important;
-    font-size: 1.25rem;
+    //font-size: 1.25rem;
+    font-size:clamp(1.25rem, 1.25rem + 0vw, 1.25rem);
     font-style: normal;
     font-weight: 400;
     line-height:1.5rem;
@@ -2643,7 +2688,8 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
     // font-size: 2.22rem !important;
     // line-height: 2.5rem !important;
     // letter-spacing: .004rem !important;
-    font-size: 1.669rem !important;
+   // font-size: 1.669rem !important;
+    font-size:clamp(1.669rem, 1.669rem + 0vw, 1.669rem) !important;
     line-height: 2.25rem !important;
     letter-spacing: .002rem !important;
     background: transparent !important;
@@ -2701,7 +2747,8 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
     color: #041C39 !important;
     font-weight: 700;
     line-height: 20px;
-    font-size: 1rem;
+    //font-size: 1rem;
+    font-size:clamp(1rem, 1rem + 0vw, 1rem);
     letter-spacing: 0.02;
     text-decoration: none;
     padding: 4px 12px;
@@ -2762,6 +2809,7 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
     color: #041C39;
     border: 2px solid #AEBDE6;
     font-size: 1.25rem;
+    //font-size:clamp(1.25rem, 1.25rem + 0vw, 1.25rem);
     line-height: 1.5rem;
     font-family: 'FSDillonProRegular' !important;
 }
@@ -2796,6 +2844,7 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
     padding-left: 0 !important;
     padding-right: 0 !important;
     font-size: 1.66rem !important;
+    //font-size:clamp(1.66rem, 1.66rem + 0vw, 1.66rem) !important;
 }
 
 .background-colour1 .branching__item-narrative-title,
@@ -2832,6 +2881,7 @@ color: #FFFFFF !important;
 .branching__item-question-title p {
     padding: 0 !important;
     font-size: 1.25rem !important;
+    //font-size:clamp(1.25rem, 1.25rem + 0vw, 1.25rem) !important;
     font-weight: 700 !important;
     font-family: 'FSDillonProBold' !important;
     line-height: 1.5rem !important;
@@ -2859,6 +2909,7 @@ color: #FFFFFF !important;
 .background-colour1 .branching__item-narrative-body li {
     font-family: 'FSDillonProRegular' !important;
     font-size: 1.25rem !important;
+    //font-size:clamp(1.25rem, 1.25rem + 0vw, 1.25rem); !important;
     color: #4F6074 !important;
     line-height:1.5rem !important;
 }
@@ -3692,7 +3743,7 @@ letter-spacing: 0.003rem !important;
     box-shadow: none !important;
     font-family: 'FSDillonProBold' !important;
     
-    padding: 0.25rem 1rem !important;
+    padding: 0rem 0.625rem !important;
     font-size: 1.669rem !important;
     font-weight: 700 !important;
     line-height: 2rem !important;
@@ -3705,7 +3756,7 @@ letter-spacing: 0.003rem !important;
 }
 
 .yesno__timer-inner .separator{
-  top:15%;
+  top:10%;
 }
 
 .component .yesno__inner .yesno__images-container .yesno__image-buttons{
@@ -3823,8 +3874,8 @@ letter-spacing: 0.003rem !important;
     //line-height: 2.25rem !important; 
     //letter-spacing: 0.002rem !important;
     
-    font-size: 1.25rem !important;
-    //font-size: clamp(1.125rem, 1.225rem, 1.25rem);
+    //font-size: 1.25rem !important;
+    font-size: clamp(1.25rem, 1.25rem + 0vw, 1.25rem) !important;
     font-weight: 400 !important;
     font-style: normal !important;
     line-height:1.5rem !important;
@@ -3863,7 +3914,8 @@ letter-spacing: 0.003rem !important;
 
 .narrativeContainer .component__instruction-inner {
     font-family: 'FSDillonProRegular' !important;
-    font-size: 1rem;
+    //font-size: 1rem;
+    font-size:clamp(1rem, 1rem + 0vw, 1rem);
     font-style: normal;
     font-weight: 400;
     line-height: 1.25rem;
@@ -4196,7 +4248,8 @@ font-size:2.331rem !important;
 }
 
 .Module-Hero .Hero-text{
-   font-size:2.331rem !important;
+  //font-size:2.331rem !important;
+  font-size: clamp(0rem, 1256.8163rem + -3723.9vw, 2.3274rem) !important;    
 }
 
 //remove later
@@ -4205,7 +4258,8 @@ font-size:2.331rem !important;
 }
 
 .Topic-Hero .Hero-text{
-   font-size:2.331rem !important;
+   //font-size:2.331rem !important;
+   font-size:clamp(2.331rem, -336.7rem + 1006.4vw, 2.96rem) !important;
 }
 
 
@@ -4334,7 +4388,10 @@ font-size:3.95rem;
 }
 
 .Module-Hero .Hero-text{
-   font-size:3.95rem; 
+//   font-size:3.95rem; 
+     //-size: clamp(2.331rem, -870.31rem + 2590.4vw, 3.95rem);
+     font-size: clamp(2.331rem, -870.31rem + 2590.4vw, 3.95rem);
+
 }
 
 //remove later
@@ -4343,7 +4400,8 @@ font-size:3.95rem;
 }
 
 .Topic-Hero .Hero-text{
-   font-size: 2.96rem;
+   //font-size: 2.96rem;
+   font-size:clamp(2.331rem, -336.7rem + 1006.4vw, 2.96rem);
 }
 
 .subHeadline{
