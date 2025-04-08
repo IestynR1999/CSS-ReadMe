@@ -4188,11 +4188,11 @@ font-size: 1rem !important;
 //@media (max-width: 768px) {
 @media (max-width: 539px) {
     .background-image1 {
-    background-image: url(https://adaptassets.learningpool.com/football_association/assets/67/4e/674ea2c911c78714eaa237d6.jpg);
+    background-image: url(@customImage2);
 }
 
 .background-image6 {
-    background-image: url(https://adaptassets.learningpool.com/football_association/assets/67/76/67767bd9f9d28d06f0ecce30.jpg);
+    background-image: url(@customImage4);
 }
 
 //remove later
@@ -4412,11 +4412,11 @@ font-size:3.95rem;
 //Tablet
 @media (min-width: 540px) and (max-width:1023px){
      .background-image1 {
-    background-image: url(https://adaptassets.learningpool.com/football_association/assets/67/5a/675a06f6bf48a980e7270675.png);
+    background-image: url(@customImage1);
 }
 
 .background-image6 {
-    background-image: url(https://adaptassets.learningpool.com/football_association/assets/67/76/67767bd9392fcdf6419623ed.jpg);
+    background-image: url(@customImage3);
 }
 
 //remove later
