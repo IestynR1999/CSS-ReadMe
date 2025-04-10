@@ -82,8 +82,7 @@ border-radius: 0px;
 
 .Body-Regular{
     font-family: 'FSDillonProRegular' !important;
-    //font-size: 1.25rem !important;
-    font-size:clamp(1.25rem, 1.25rem + 0vw, 1.25rem) !important;
+    font-size: 1.25rem !important;
 }
 
 .Module-Hero .Body-Regular{
@@ -129,6 +128,10 @@ border-radius: 0px;
     border:2px solid #E9EBF1 !important;
 }
 
+.btn__response-container button{
+    padding: 1rem 0 !important;
+}
+
 .btn__feedback,.btn__feedback:hover,.btn__feedback:focus {
     border:2px solid #AEBDE6 !important;
     background-color:transparent !important;
@@ -152,8 +155,7 @@ border-radius: 0px;
 
 .btn__action,.btn__action:hover,.btn__action:focus{
     font-family: FSDillonProBold !important;
-   // font-size: 1rem !important;
-    font-size:clamp(1rem, 1rem + 0vw, 1rem) !important;
+    font-size: 1rem !important;
     background-color:#DD221A !important;
 }
 
@@ -371,7 +373,6 @@ div.component {
     //line-height: 2.5rem !important;
     //letter-spacing: 0.004rem !important;
     font-size:1.669rem !important;
-    //font-size:clamp(1.669rem, 1.669rem + 0vw, 1.669rem) !important;
     line-height: 2.25rem !important; 
     letter-spacing: 0.002rem !important;
 }
@@ -384,8 +385,7 @@ div.component {
     margin: 0 !important;
     font-style: normal !important;
     font-family: FSDillonProBold !important;
-    //font-size:1.669rem !important;
-    font-size:clamp(1.669rem, 1.669rem + 0vw, 1.669rem) !important;
+    font-size:1.669rem !important;
     line-height: 2.25rem !important; 
     letter-spacing: 0.002rem !important;
 }
@@ -410,6 +410,8 @@ div.component {
     gap: 0.75rem;
 }
 
+
+.textinput .component__body,
 .accordion .component__body,
 .imagegallery .component__body,
 .reveal .component__body,
@@ -455,6 +457,12 @@ div.component {
     margin:0 !important;
 }
 
+.textinput .component__body .component__body-inner{
+   padding: 0 0 .75rem 0 !important; 
+}
+
+
+.textinput .component__body-inner p,
 .accordion .component__body-inner p,
 .imagegallery .component__body-inner p,
 .reveal .component__body-inner p,
@@ -471,8 +479,7 @@ div.component {
 .hotGraphicContainer .component__body-inner p,
 {
     font-family: 'FSDillonProRegular' !important;
-    //font-size: 1.25rem;
-    font-size:clamp(1.25rem, 1.25rem + 0vw, 1.25rem);
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 400;
     line-height:1.5rem;
@@ -480,6 +487,7 @@ div.component {
     margin:0 !important;
 }
 
+.background-colour1 .textinput .component__body-inner p,
 .background-colour1 .accordion .component__body-inner p,
 .background-colour1 .imagegallery .component__body-inner p,
 .background-colour1 .referencelist .component__body-inner p,
@@ -497,6 +505,7 @@ div.component {
     color:#4F6074;
 }
 
+.background-colour2 .textinput .component__body-inner p,
 .background-colour2 .accordion .component__body-inner p,
 .background-colour2 .imagegallery .component__body-inner p,
 .background-colour2 .referencelist .component__body-inner p,
@@ -514,6 +523,7 @@ div.component {
     color:#E9EBF1;
 }
 
+.textinput .component__instruction-inner:after,
 .accordion .component__instruction-inner:after,
 .imagegallery .component__instruction-inner:after,
 .referencelist .component__instruction-inner:after,
@@ -540,6 +550,7 @@ div.component {
     width: 100%;
 }
 
+.background-colour1 .textinput .component__instruction-inner:after,
 .background-colour1 .accordion .component__instruction-inner:after,
 .background-colour1 .imagegallery .component__instruction-inner:after,
 .background-colour1 .referencelist .component__instruction-inner:after,
@@ -558,6 +569,7 @@ div.component {
      background:linear-gradient(180deg, #CED1DA 0%, #D7DCEA 100%);
 }
 
+.background-colour2 .textinput .component__instruction-inner:after,
 .background-colour2 .accordion .component__instruction-inner:after,
 .background-colour2 .imagegallery .component__instruction-inner:after,
 .background-colour2 .referencelist .component__instruction-inner:after,
@@ -576,6 +588,7 @@ div.component {
     background:linear-gradient(180deg, #5F5F5F 0%, #403F3F 98.77%);
 }
 
+.textinput .component__instruction,
 .accordion .component__instruction,
 .imagegallery .component__instruction,
 .reveal .component__instruction,
@@ -623,8 +636,7 @@ div.component {
 
 .truefalse__item-title_inner{
     font-family: 'FSDillonProRegular' !important;
-   // font-size: 1.25rem !important;
-    font-size:clamp(1.25rem, 1.25rem + 0vw, 1.25rem) !important;
+    font-size: 1.25rem !important;
     line-height: 1.5rem !important;
 }
 
@@ -641,8 +653,7 @@ div.component {
 .truefalse__label{
     margin:0 !important;
     padding:0 !important;
-    //font-size: 1.25rem !important;
-    font-size:clamp(1.25rem, 1.25rem + 0vw, 1.25rem) !important;
+    font-size: 1.25rem !important;
     line-height: 1.5rem !important;
     letter-spacing: 0.004rem !important;
     font-family: 'FSDillonProBold' !important;
@@ -711,8 +722,7 @@ div.component {
 
 .notify__title-inner{
     color: #041C39 !important;
-    //font-size: 1.6rem !important;
-    font-size:clamp(1.6rem, 1.6rem + 0vw, 1.6rem) !important;
+    font-size: 1.6rem !important;
     font-style: normal;
     font-weight: 700;
     line-height: 2rem !important;
@@ -735,8 +745,7 @@ div.component {
 .notify__body-inner p{
     font-family: 'FSDillonProRegular' !important;
     color: #4F6074 !important;
-    //font-size:1.25rem !important;
-    font-size:clamp(1.25rem, 1.25rem + 0vw, 1.25rem) !important;
+    font-size:1.25rem !important;
     line-height:1.5rem !important;
 }
 
@@ -767,8 +776,7 @@ div.component {
     width: 100%;
     color: #041C39 !important;
     font-family: 'FSDillonProRegular' !important;
-    //font-size: 1rem !important;
-    font-size:clamp(1rem, 1rem + 0vw, 1rem) !important;
+    font-size: 1rem !important;
     font-style: normal !important;
     font-weight: 400 !important;
     line-height: 1.25rem !important;
@@ -805,6 +813,8 @@ div.component {
     font-family:'FSDillonProBold' !important;
 }
 
+.textinput .component__title,
+.textinput .component__title-inner,
 .mcqContainer .component__title,
 .openTextInput .component__title,
 .openTextInput .component__title-inner,
@@ -815,6 +825,8 @@ div.component {
     margin:0;
 }
 
+.textinput .component__title-inner,
+.textinput .component__title-inner *,
 .mcqContainer .component__title-inner,
 .mcqContainer .component__title-inner *,
 .openTextInput .component__title-inner,
@@ -823,8 +835,7 @@ div.component {
 //color: #041C39 !important;
 font-family: 'FSDillonProBold' !important;
 //font-size: 26.7px;
-//font-size: 1.669rem !important;
-font-size:clamp(1.6688rem, 1.6688rem + 0vw, 1.6688rem) !important;
+font-size: 1.669rem !important;
 font-style: normal !important;
 font-weight: 700 !important;
 //line-height: var(--font-Headline-XS-Line-Height, 36px); /* 134.831% */
@@ -849,6 +860,7 @@ letter-spacing: 0.002rem !important;
 .truefalseContainer .component__instruction,
 .flipCardContainer .component__instruction,
 .openTextInput .component__instruction,
+.textinput .component__instruction,
 .graphicalMCQ .component__instruction,
 .hotGraphicContainer .component__instruction
 {
@@ -869,14 +881,14 @@ letter-spacing: 0.002rem !important;
 .truefalseContainer .component__instruction-inner,
 .flipCardContainer .component__instruction-inner,
 .openTextInput .component__instruction-inner,
+.textinput .component__instruction-inner,
 .graphicalMCQ .component__instruction-inner,
 .hotGraphicContainer .component__instruction-inner
 {
     padding-top: 0.75rem;
     color: #4F6074;
     font-family: 'FSDillonProRegular' !important;
-    //font-size: 1rem;
-    font-size:clamp(1rem, 1rem + 0vw, 1rem);
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: 1.25rem; /* 125% */
@@ -899,12 +911,12 @@ letter-spacing: 0.002rem !important;
 
 .openTextInput .opentextinput__count-characters{
     padding: 1.5rem 0 1rem 0 !important;
-    //font-size: 1rem !important;
-    font-size:clamp(1rem, 1rem + 0vw, 1rem) !important;
+    font-size: 1rem !important;
     line-height: 1.25rem !important;
     letter-spacing: 0.015px !important;
 }
 
+.textinput .opentextinput__item-textbox,
 .openTextInput .opentextinput__item-textbox{
     min-height: 17.37rem !important;
     border: 2px solid #AEBDE6 !important;
@@ -912,6 +924,9 @@ letter-spacing: 0.002rem !important;
     border-radius:4px;
 }
 
+.textinput .opentextinput__item-textbox:focus-within,
+.textinput .opentextinput__item-textbox:focus-visible,
+.textinput .opentextinput__item-textbox:focus,
 .openTextInput .opentextinput__item-textbox:focus-within,
 .openTextInput .opentextinput__item-textbox:focus-visible,
 .openTextInput .opentextinput__item-textbox:focus
@@ -921,8 +936,7 @@ letter-spacing: 0.002rem !important;
 
 .openTextInput .opentextinput__item-textbox, 
 .openTextInput .opentextinput__item-textbox *{
-    //font-size: 1.25rem !important;
-    font-size:clamp(1.25rem, 1.25rem + 0vw, 1.25rem) !important;
+    font-size: 1.25rem !important;
     line-height: 1.5rem !important;
     font-family: 'FSDillonProRegular' !important;
     color:#4F6074 !important;
@@ -1034,37 +1048,37 @@ background: linear-gradient(-45deg, #214C99, #011E41, #004AA3, #214C99);
 @font-face {
   font-family: FSDillonProBold;
   font-style: normal;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProBold.woff');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProBold.woff ');
 }
 
 @font-face {
   font-family: FSDillonProBoldIt;
   font-style: italic;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProBoldIt.woff');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProBoldIt.woff ');
 }
 
 @font-face {
   font-family: FSDillonProMedium;
   font-style: normal;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProMedium.woff');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProMedium.woff ');
 }
 
 @font-face {
   font-family: FSDillonProMediumIt;
   font-style: italic;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProMediumIt.woff');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProMediumIt.woff ');
 }
 
 @font-face {
   font-family: FSDillonProRegular;
   font-style: normal;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProRegular.woff');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProRegular.woff ');
 }
 
 @font-face {
   font-family: FSDillonProItalic;
   font-style: italic;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProItalic.woff');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProItalic.woff ');
 }
 
 // ---------------------------------------------------------
@@ -1187,16 +1201,14 @@ background: linear-gradient(-45deg, #214C99, #011E41, #004AA3, #214C99);
 
 .Headline {
     font-family: FSDillonProBold !important;
-    //font-size:2.219rem !important;
-    font-size:clamp(2.219rem, 2.219rem + 0vw, 2.219rem) !important;
+    font-size:2.219rem !important;
     line-height: 2.5rem !important;
     letter-spacing: 0.004rem !important;
 }
 
 .Sub-Headline {
     font-family: FSDillonProBold !important;
-    //font-size:1.669rem !important;
-    font-size:clamp(1.669rem, 1.669rem + 0vw, 1.669rem) !important;
+    font-size:1.669rem !important;
     line-height: 2.25rem !important; 
     letter-spacing: 0.002rem !important;
 }
@@ -1211,8 +1223,7 @@ background: linear-gradient(-45deg, #214C99, #011E41, #004AA3, #214C99);
 .narrative__content-body-inner li
 {
     font-family: 'FSDillonProRegular' !important;
-    // font-size: 1.25rem;
-    font-size:clamp(1.25rem, 1.25rem + 0vw, 1.25rem) !important;
+    font-size: 1.25rem;
     //font-size: clamp(1.125rem, 1.225rem, 1.25rem);
     font-style: normal;
     font-weight: 400;
@@ -1222,8 +1233,8 @@ background: linear-gradient(-45deg, #214C99, #011E41, #004AA3, #214C99);
 
 .Body-Bold,.Question {
     font-family: 'FSDillonProBold' !important;
-    //font-size: 1.25rem;
-    font-size: clamp(1.25rem, 1.25rem + 0vw, 1.25rem);
+    font-size: 1.25rem;
+    //font-size: clamp(1.125rem, 1.225rem, 1.25rem);
     font-style: normal;
     font-weight: 400;
     line-height:1.5rem;
@@ -1493,6 +1504,7 @@ body .block__inner {
 .mcqContainer .block__inner, 
 .mediaContainer .block__inner,
 .openTextInput .block__inner,
+.textinputContainer .block__inner,
 .graphicalMCQ .block__inner
 {
     display:flex;
@@ -1514,10 +1526,12 @@ body .block__inner {
     padding:0;
 }
 
+.textinput .btn__marking,
 .matching .btn__marking,
 .filInBlanksContainer .btn__marking,
 .stackerContainer .btn__marking,
 .slider .btn__marking,
+.confidenceslider .btn__marking,
 .truefalse .btn__marking,
 .mcq .btn__marking,
 .gmcq .btn__marking
@@ -1525,6 +1539,7 @@ body .block__inner {
     display:none;
 }
 
+.background-colour1 .textinputContainer .block__inner,
 .background-colour1 .matchingQuestion .block__inner,
 .background-colour1 .assesmentResults .block__inner,
 .background-colour1 .filInBlanksContainer .block__inner,
@@ -1540,6 +1555,7 @@ body .block__inner {
     border: 1px solid #CED1DA;
 }
 
+.background-colour2 .textinputContainer .block__inner,
 .background-colour2 .matchingQuestion .block__inner,
 .background-colour2 .assesmentResults .block__inner,
 .background-colour2 .filInBlanksContainer .block__inner,
@@ -1555,9 +1571,12 @@ body .block__inner {
    border: 1px solid #5F5F5F;
 }
 
+.textinput .btn__response-container,
 .matching .btn__response-container {
     flex-direction:column;
 }
+
+
 .stackerContainer .btn__response-container,
 .sliderContainer .btn__response-container,
 .truefalseContainer .btn__response-container,
@@ -1566,6 +1585,7 @@ body .block__inner {
     margin-top: 16px;
 }
 
+.textinput .btn__response-container .btn-text,
 .matching .btn__response-container .btn-text,
 .stackerContainer .btn__response-container .btn-text,
 .sliderContainer .btn__response-container .btn-text,
@@ -1575,25 +1595,34 @@ body .block__inner {
 {
     width: 100% !important;
     margin: 8px 0 !important;
-    //font-size: 1.125rem !important;
-    font-size:clamp(1.125rem, 1.125rem + 0vw, 1.125rem) !important;
+    font-size: 1.125rem !important;
 }
 
+//MCQ
+.mcq .mcq__inner .mcq__widget .mcq-item__state.mcq-item__state-correctness{
+    display:none !important;
+}
+
+//GMCQ
+.gmcq .gmcq__inner .gmcq__widget .gmcq-item__state.gmcq-item__state-correctness{
+    display:none !important;
+}
 
 //MCQ
 .mcq-item__text,
 {
     display: block;
-    //border-radius: var(--spacing-spacing-scale-1, 4px);
-    //border: 2px solid var(--border-primary--button-border-input-field, #AEBDE6);
+    border-radius: 4px;
+    border: 2px solid #AEBDE6;
     width:100%;
 }
+
 
 //MCQ
 .mcq-item__label
 {
-    border-radius: 4px !important;
-    border: 2px solid #AEBDE6 !important;
+   // border-radius: 4px !important;
+   //  border: 2px solid #AEBDE6 !important;
 }
 
 //GMCQ
@@ -2000,8 +2029,7 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
 
 .mediaContainer .component__instruction-inner {
     font-family: 'FSDillonProRegular' !important;
-    //font-size: 1rem;
-    font-size:clamp(1rem, 1rem + 0vw, 1rem);
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: 1.25rem;
@@ -2047,7 +2075,8 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
 }
 
 .mediaContainer .inline-transcript-open{
-    padding: 0px 1.5rem 1.5rem !important;
+    //padding: 0px 1.5rem 1.5rem !important;
+    padding: 1.5rem 1.5rem !important;
     color:inherit !important;
 }
 
@@ -2291,7 +2320,7 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
 }
 
 //----------------------------------------------------------
-//---Slider-------------------------------------------------
+//---Slider and Confidence Slider-------------------------------------------------
 //----------------------------------------------------------
 
 
@@ -2301,7 +2330,13 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
 
 .background-colour1 .slider .slider__inner .slider__widget .slider__item-input-track,
 .background-colour2 .slider .slider__inner .slider__widget .slider__item-input-track{
-    background-color: #E9EBF1 !important;
+    //background-color: #E9EBF1 !important;
+}
+
+
+.background-colour1 .confidenceslider .slider__inner .slider__widget .slider__item-input-track,
+.background-colour2 .confidenceslider .slider__inner .slider__widget .slider__item-input-track{
+    //background-color: #E9EBF1 !important;
 }
 
 //.background-colour1 .slider .slider__inner .slider__widget .slider__item-input-fill{
@@ -2313,6 +2348,18 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
     background-color: #AEBDE6 !important;
 }
 
+.background-colour1 .confidenceslider .slider__inner .slider__widget .slider__item-input-fill,
+.background-colour2 .confidenceslider .slider__inner .slider__widget .slider__item-input-fill{
+    background-color: #AEBDE6 !important;
+}
+
+.confidenceslider .slider__inner .slider__widget.is-submitted.is-correct .slider__item-input-fill, 
+.confidenceslider .slider__inner .slider__widget.is-submitted.is-correct .slider__number-selection, 
+.confidenceslider .slider__inner .slider__widget.is-submitted.is-correct .slider__handle
+{
+    background-color: #039855 !important;
+}
+
 .background-colour1 .slider .slider__scale-notch-container,
 .background-colour1 .slider .slider__scale-container,
 .background-colour1 .slider .slider__number
@@ -2321,7 +2368,20 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
     background-color: #FFFFFF !important;
 }
 
+.background-colour1 .confidenceslider .slider__scale-notch-container,
+.background-colour1 .confidenceslider .slider__scale-container,
+.background-colour1 .confidenceslider .slider__number
+{
+    //background-color: #1E438E !important;
+    background-color: #FFFFFF !important;
+}
+
 .background-colour1 .slider .slider__scale-notch{
+    //background-color: #1E438E !important;
+    background-color: #FFFFFF !important;
+}
+
+.background-colour1 .confidenceslider .slider__scale-notch{
     //background-color: #1E438E !important;
     background-color: #FFFFFF !important;
 }
@@ -2339,19 +2399,48 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
     background-color: #E9EBF1 !important;
 }
 
+.background-colour2 .confidenceslider .slider__scale-notch-container,
+.background-colour2 .confidenceslider .slider__scale-container,
+.background-colour2 .confidenceslider .slider__number
+{
+    background-color: #E9EBF1 !important;
+}
+
 .background-colour2 .slider .slider__scale-notch{
     background-color: #E9EBF1 !important;
 }
 
+.background-colour2 .confidenceslider .slider__scale-notch{
+    background-color: #E9EBF1 !important;
+}
+
 .slider .slider__number{
-    font-family: 'FSDillonProRegular' !important;
+    font-family: 'FSDillonProBold' !important;
     font-size:1rem !important;
+    color:#FFF !important;
+}
+
+//.confidenceslider .slider__inner .slider__widget.is-submitted.is-correct .slider__number-selection{
+.confidenceslider .slider__inner .slider__widget .slider__number-selection{
+    font-family: 'FSDillonProBold' !important;
+    font-size:1rem !important;
+    color:#FFF !important;
+    box-shadow:none !important;
+    border-radius: 4px !important;
+    height: 1.5rem !important;
+    padding: 0 4px !important;
+    background-color: #323231 !important;
+}
+
+.confidenceslider .slider__number{
+    font-family: 'FSDillonProBold' !important;
+    font-size:1rem !important;
+    color:#FFF !important;
 }
 
 .slider__label-start-inner,.slider__label-end-inner{
     font-family: 'FSDillonProBold' !important;
-    //font-size: 1rem !important;
-    font-size:clamp(1rem, 1rem + 0vw, 1rem) !important;
+    font-size: 1rem !important;
     letter-spacing: 0.02rem !important;
     line-height:1.25rem !important;
 }
@@ -2383,12 +2472,32 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
    border-radius: 4px;
 }
 
+.confidenceslider .slider__inner .slider__widget{
+   //padding: 1.25rem 1.5rem !important;
+   margin-top: 1.5rem !important;
+   padding-top: 1.25rem !important;
+   padding-bottom: 0 !important;
+   padding-left: 0 !important;
+   padding-right: 0 !important;
+   border-radius: 4px;
+}
+
 .background-colour1 .slider .slider__inner .slider__widget{
   //background-color: #E9EBF1 !important;
   background-color: #515D7A !important;
 }
 
 .background-colour2 .slider .slider__inner .slider__widget{
+  background-color: #1B1B1A !important;
+}
+
+
+.background-colour1 .confidenceslider .slider__inner .slider__widget{
+  //background-color: #E9EBF1 !important;
+  background-color: #515D7A !important;
+}
+
+.background-colour2 .confidenceslider .slider__inner .slider__widget{
   background-color: #1B1B1A !important;
 }
 
@@ -2415,8 +2524,7 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
     background-color: #515D7A !important;
     color: #ffffff;
     font-family: 'FSDillonProRegular' ;
-    //font-size: 1.125rem !important;
-    font-size:clamp(1.125rem, 1.125rem + 0vw, 1.125rem) !important;
+    font-size: 1.125rem !important;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5rem !important; 
@@ -2427,8 +2535,7 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
 .stackerContainer .component__title *{
     font-style: normal !important;
     font-family: FSDillonProBold !important;
-    //font-size:1.669rem !important;
-    font-size:clamp(1.6688rem, 1.6688rem + 0vw, 1.6688rem) !important;
+    font-size:1.669rem !important;
     line-height: 2.25rem !important; 
     letter-spacing: 0.002rem !important;
     background: transparent !important;
@@ -2489,8 +2596,7 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
 .fillintheblanks__widget p,
 .fillintheblanks__widget div,
 {
-    //font-size: 1.25rem !important;
-    font-size:clamp(1.25rem, 1.25rem + 0vw, 1.25rem) !important;
+    font-size: 1.25rem !important;
     font-family: 'FSDillonProRegular' !important;
     margin:0;
     padding:0;
@@ -2592,8 +2698,7 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
 .filInBlanksContainer .component__title *{
     font-style: normal !important;
     font-family: FSDillonProBold !important;
-    //font-size:1.669rem !important;
-    font-size:clamp(1.669rem, 1.669rem + 0vw, 1.669rem) !important;
+    font-size:1.669rem !important;
     line-height: 2.25rem !important; 
     letter-spacing: 0.002rem !important;
     background: transparent !important;
@@ -2663,8 +2768,7 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
 
 .is-assessment .article__body-inner p {
     font-family: 'FSDillonProRegular' !important;
-    //font-size: 1.25rem;
-    font-size:clamp(1.25rem, 1.25rem + 0vw, 1.25rem);
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 400;
     line-height:1.5rem;
@@ -2688,8 +2792,7 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
     // font-size: 2.22rem !important;
     // line-height: 2.5rem !important;
     // letter-spacing: .004rem !important;
-   // font-size: 1.669rem !important;
-    font-size:clamp(1.669rem, 1.669rem + 0vw, 1.669rem) !important;
+    font-size: 1.669rem !important;
     line-height: 2.25rem !important;
     letter-spacing: .002rem !important;
     background: transparent !important;
@@ -2747,8 +2850,7 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
     color: #041C39 !important;
     font-weight: 700;
     line-height: 20px;
-    //font-size: 1rem;
-    font-size:clamp(1rem, 1rem + 0vw, 1rem);
+    font-size: 1rem;
     letter-spacing: 0.02;
     text-decoration: none;
     padding: 4px 12px;
@@ -2809,7 +2911,6 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
     color: #041C39;
     border: 2px solid #AEBDE6;
     font-size: 1.25rem;
-    //font-size:clamp(1.25rem, 1.25rem + 0vw, 1.25rem);
     line-height: 1.5rem;
     font-family: 'FSDillonProRegular' !important;
 }
@@ -2844,7 +2945,6 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
     padding-left: 0 !important;
     padding-right: 0 !important;
     font-size: 1.66rem !important;
-    //font-size:clamp(1.66rem, 1.66rem + 0vw, 1.66rem) !important;
 }
 
 .background-colour1 .branching__item-narrative-title,
@@ -2881,7 +2981,6 @@ color: #FFFFFF !important;
 .branching__item-question-title p {
     padding: 0 !important;
     font-size: 1.25rem !important;
-    //font-size:clamp(1.25rem, 1.25rem + 0vw, 1.25rem) !important;
     font-weight: 700 !important;
     font-family: 'FSDillonProBold' !important;
     line-height: 1.5rem !important;
@@ -2909,7 +3008,6 @@ color: #FFFFFF !important;
 .background-colour1 .branching__item-narrative-body li {
     font-family: 'FSDillonProRegular' !important;
     font-size: 1.25rem !important;
-    //font-size:clamp(1.25rem, 1.25rem + 0vw, 1.25rem); !important;
     color: #4F6074 !important;
     line-height:1.5rem !important;
 }
@@ -3217,6 +3315,64 @@ color: #FFFFFF !important;
 }
 
 //----------------------------------------------------------
+// Text Input-----------------------------------------------
+//----------------------------------------------------------
+
+.textinput .textinput__inner .textinput__widget .textinput-item__textbox{
+    padding: 0.75rem 1rem !important;
+    border-radius: 4px !important;
+    border: 2px solid #AEBDE6 !important;
+    font-family: 'FSDillonProRegular' !important;
+    color: #1B1B1A !important;
+    font-size: 1rem !important;
+    letter-spacing: 0.002rem !important;
+    line-height: 1.25rem !important;
+}
+
+.textinput .textinput__inner .textinput__widget .textinput-item__textbox:-internal-autofill-selected,
+.textinput .textinput__inner .textinput__widget .textinput-item__textbox:focus{
+    border-color: #355699 !important;
+    background-color: #F3F3F3 !important;
+}
+
+.textinput .textinput__inner .textinput__widget .is-incorrect .textinput-item__textbox:-internal-autofill-selected,
+.textinput .textinput__inner .textinput__widget .is-incorrect .textinput-item__textbox{
+    color: #DD221A !important;
+    font-weight: 700;
+    background-color: #FCE9E8 !important;
+    border-color: #EE908C !important;
+}
+
+
+.textinput .textinput__inner .textinput__widget.show-correct-answer .is-incorrect .textinput-item__textbox:-internal-autofill-selected,
+.textinput .textinput__inner .textinput__widget.show-correct-answer .is-incorrect .textinput-item__textbox{
+    color: #039855 !important;
+    font-weight: 700;
+    background-color: #ECFDF3 !important;
+    border-color: #D1FADF !important;
+}
+
+.textinput .textinput__inner .textinput__widget .is-correct .textinput-item__textbox:-internal-autofill-selected,
+.textinput .textinput__inner .textinput__widget .is-correct .textinput-item__textbox{
+    color: #039855 !important;
+    font-weight: 700;
+    background-color: #ECFDF3 !important;
+    border-color: #D1FADF !important;
+}
+
+.textinput .textinput__inner .textinput__widget .textinput-item__placeholder {
+    font-family: 'FSDillonProRegular' !important;
+    color: #1B1B1A !important;
+    font-size: 1rem !important;
+    letter-spacing: 0.002rem !important;
+    line-height: 1.25rem !important;
+}
+
+.textinput .component__widget{
+    margin: 1.25rem 0;
+}
+
+//----------------------------------------------------------
 // Reference List-------------------------------------------
 //----------------------------------------------------------
 
@@ -3403,29 +3559,29 @@ html.no-touch .imagegallery__buttons, html.no-touch .imagegallery__controls{
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-toggle-thumbs {
-    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a580915048803f065b.svg');
+    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a580915048803f065b.svg__;!!KyHJrpw!pWgKgyybw8n6qU10ialZq1syEVlGAjq_ymoMyaDU5jPZVKOSJgKDx8Xb0FUfQKjtE6v4qSwtXLnTpwB855B7r35byNyP$ ');
 }
 
 //.imagegallery__image-container .imagegallery__buttons .imagegallery__button-toggle-thumbs[title="Hide thumbnails"],
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-toggle-thumbs:hover
 {
-    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a43a93e4e66054a1c8.svg');
+    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a43a93e4e66054a1c8.svg__;!!KyHJrpw!pWgKgyybw8n6qU10ialZq1syEVlGAjq_ymoMyaDU5jPZVKOSJgKDx8Xb0FUfQKjtE6v4qSwtXLnTpwB855B7r_aXRTKn$ ');
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-popout {
-    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a549d86edec37fb5e5.svg');
+    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a549d86edec37fb5e5.svg__;!!KyHJrpw!pWgKgyybw8n6qU10ialZq1syEVlGAjq_ymoMyaDU5jPZVKOSJgKDx8Xb0FUfQKjtE6v4qSwtXLnTpwB855B7ry-4WHxk$ ');
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-popout:hover {
-    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/da/67da9a1557e6bd90bab57ce9.svg');
+    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/da/67da9a1557e6bd90bab57ce9.svg__;!!KyHJrpw!pWgKgyybw8n6qU10ialZq1syEVlGAjq_ymoMyaDU5jPZVKOSJgKDx8Xb0FUfQKjtE6v4qSwtXLnTpwB855B7r25l2w4Z$ ');
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-show-thumbs {
-    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/dc/67dc2c8900a2aeec666a149e.svg');
+    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/dc/67dc2c8900a2aeec666a149e.svg__;!!KyHJrpw!pWgKgyybw8n6qU10ialZq1syEVlGAjq_ymoMyaDU5jPZVKOSJgKDx8Xb0FUfQKjtE6v4qSwtXLnTpwB855B7rxJpe1Kc$ ');
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-show-thumbs:hover {
-    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/dc/67dc2c888ddbf39c9cf0f51d.svg');
+    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/dc/67dc2c888ddbf39c9cf0f51d.svg__;!!KyHJrpw!pWgKgyybw8n6qU10ialZq1syEVlGAjq_ymoMyaDU5jPZVKOSJgKDx8Xb0FUfQKjtE6v4qSwtXLnTpwB855B7r5cedeCL$ ');
 }
 
 .imagegallery__thumbs-container .imagegallery__thumbs .imagegallery__thumb{
@@ -3874,8 +4030,8 @@ letter-spacing: 0.003rem !important;
     //line-height: 2.25rem !important; 
     //letter-spacing: 0.002rem !important;
     
-    //font-size: 1.25rem !important;
-    font-size: clamp(1.25rem, 1.25rem + 0vw, 1.25rem) !important;
+    font-size: 1.25rem !important;
+    //font-size: clamp(1.125rem, 1.225rem, 1.25rem);
     font-weight: 400 !important;
     font-style: normal !important;
     line-height:1.5rem !important;
@@ -3914,8 +4070,7 @@ letter-spacing: 0.003rem !important;
 
 .narrativeContainer .component__instruction-inner {
     font-family: 'FSDillonProRegular' !important;
-    //font-size: 1rem;
-    font-size:clamp(1rem, 1rem + 0vw, 1rem);
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: 1.25rem;
@@ -4186,13 +4341,13 @@ font-size: 1rem !important;
 
 //Mobile
 //@media (max-width: 768px) {
-@media (max-width: 539px) {
-    .background-image1 {
-    background-image: url(@customImage2);
+@media (min-width: 540px) and (max-width:1023px){
+     .background-image1 {
+    background-image: url(@customImage1);
 }
 
 .background-image6 {
-    background-image: url(@customImage4);
+    background-image: url(@customImage3);
 }
 
 //remove later
@@ -4248,8 +4403,7 @@ font-size:2.331rem !important;
 }
 
 .Module-Hero .Hero-text{
-  //font-size:2.331rem !important;
-  font-size: clamp(0rem, 1256.8163rem + -3723.9vw, 2.3274rem) !important;    
+   font-size:2.331rem !important;
 }
 
 //remove later
@@ -4258,8 +4412,7 @@ font-size:2.331rem !important;
 }
 
 .Topic-Hero .Hero-text{
-   //font-size:2.331rem !important;
-   font-size:clamp(2.331rem, -336.7rem + 1006.4vw, 2.96rem) !important;
+   font-size:2.331rem !important;
 }
 
 
@@ -4290,6 +4443,7 @@ font-size:2.331rem !important;
 .truefalseContainer .block__inner,
 .flipCardContainer .block__inner,
 .openTextInput .block__inner,
+.textinputContainer .block__inner,
 .mcqContainer .block__inner,
 .graphicalMCQ .block__inner
 {
@@ -4388,10 +4542,7 @@ font-size:3.95rem;
 }
 
 .Module-Hero .Hero-text{
-//   font-size:3.95rem; 
-     //-size: clamp(2.331rem, -870.31rem + 2590.4vw, 3.95rem);
-     font-size: clamp(2.331rem, -870.31rem + 2590.4vw, 3.95rem);
-
+   font-size:3.95rem; 
 }
 
 //remove later
@@ -4400,8 +4551,7 @@ font-size:3.95rem;
 }
 
 .Topic-Hero .Hero-text{
-   //font-size: 2.96rem;
-   font-size:clamp(2.331rem, -336.7rem + 1006.4vw, 2.96rem);
+   font-size: 2.96rem;
 }
 
 .subHeadline{
@@ -4412,11 +4562,11 @@ font-size:3.95rem;
 //Tablet
 @media (min-width: 540px) and (max-width:1023px){
      .background-image1 {
-    background-image: url(@customImage1);
+    background-image: url(https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/5a/675a06f6bf48a980e7270675.png__;!!KyHJrpw!pWgKgyybw8n6qU10ialZq1syEVlGAjq_ymoMyaDU5jPZVKOSJgKDx8Xb0FUfQKjtE6v4qSwtXLnTpwB855B7r28fUj1C$ );
 }
 
 .background-image6 {
-    background-image: url(@customImage3);
+    background-image: url(https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/76/67767bd9392fcdf6419623ed.jpg__;!!KyHJrpw!pWgKgyybw8n6qU10ialZq1syEVlGAjq_ymoMyaDU5jPZVKOSJgKDx8Xb0FUfQKjtE6v4qSwtXLnTpwB855B7r2Z9QFPX$ );
 }
 
 //remove later
@@ -4598,5 +4748,4 @@ font-size:3.95rem;
 .mcqContainer .mcq .mcq__inner .mcq__widget .mcq-item__text {
         padding: 1.25rem 3.75rem 1.25rem;
     }
-
 ```
