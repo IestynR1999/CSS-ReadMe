@@ -4342,12 +4342,12 @@ font-size: 1rem !important;
 //Mobile
 //@media (max-width: 768px) {
 @media (max-width: 539px) {
-    .background-image1 {
-    background-image: url(https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/4e/674ea2c911c78714eaa237d6.jpg__;!!KyHJrpw!slVTMnWppdKvUZM4b8DEOiAr_jZVs-_OLew3ooxNRz_DFsmni7DRldh6_Ok-Fdwd30Zq8d9dmOU5tXhxD-NWhbQ0EnEU$ );
+     .background-image1 {
+    background-image: url(@customImage2);
 }
 
 .background-image6 {
-    background-image: url(https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/76/67767bd9f9d28d06f0ecce30.jpg__;!!KyHJrpw!slVTMnWppdKvUZM4b8DEOiAr_jZVs-_OLew3ooxNRz_DFsmni7DRldh6_Ok-Fdwd30Zq8d9dmOU5tXhxD-NWhYZqBi0V$ );
+    background-image:@customImage4;
 }
 
 //remove later
@@ -4562,11 +4562,11 @@ font-size:3.95rem;
 //Tablet
 @media (min-width: 540px) and (max-width:1023px){
      .background-image1 {
-    background-image: url(https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/5a/675a06f6bf48a980e7270675.png__;!!KyHJrpw!slVTMnWppdKvUZM4b8DEOiAr_jZVs-_OLew3ooxNRz_DFsmni7DRldh6_Ok-Fdwd30Zq8d9dmOU5tXhxD-NWhf2H7K4G$ );
+    background-image: url(@customImage1);
 }
 
 .background-image6 {
-    background-image: url(https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/76/67767bd9392fcdf6419623ed.jpg__;!!KyHJrpw!slVTMnWppdKvUZM4b8DEOiAr_jZVs-_OLew3ooxNRz_DFsmni7DRldh6_Ok-Fdwd30Zq8d9dmOU5tXhxD-NWhct1ven_$ );
+    background-image: url(@customImage3);
 }
 
 //remove later
