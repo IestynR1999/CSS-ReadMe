@@ -282,9 +282,9 @@ div.component {
 
 
 .notify.hotgraphic .notify__popup .notify__content .hotgraphic-popup__toolbar .btn-icon,
-#adapt .notify__popup .notify__popup-inner button,
+#adapt .notify__popup:not(.is-bookmarking) .notify__popup-inner button,
 .notify.hotgraphic .notify__popup .notify__content .hotgraphic-popup__toolbar .btn-icon:hover,
-#adapt .notify__popup .notify__popup-inner button:hover
+#adapt .notify__popup:not(.is-bookmarking) .notify__popup-inner button:hover
 {
     background: transparent !important;
 }
@@ -3559,29 +3559,29 @@ html.no-touch .imagegallery__buttons, html.no-touch .imagegallery__controls{
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-toggle-thumbs {
-    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a580915048803f065b.svg__;!!KyHJrpw!pWgKgyybw8n6qU10ialZq1syEVlGAjq_ymoMyaDU5jPZVKOSJgKDx8Xb0FUfQKjtE6v4qSwtXLnTpwB855B7r35byNyP$ ');
+    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a580915048803f065b.svg__;!!KyHJrpw!slVTMnWppdKvUZM4b8DEOiAr_jZVs-_OLew3ooxNRz_DFsmni7DRldh6_Ok-Fdwd30Zq8d9dmOU5tXhxD-NWhdoDYvl4$ ');
 }
 
 //.imagegallery__image-container .imagegallery__buttons .imagegallery__button-toggle-thumbs[title="Hide thumbnails"],
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-toggle-thumbs:hover
 {
-    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a43a93e4e66054a1c8.svg__;!!KyHJrpw!pWgKgyybw8n6qU10ialZq1syEVlGAjq_ymoMyaDU5jPZVKOSJgKDx8Xb0FUfQKjtE6v4qSwtXLnTpwB855B7r_aXRTKn$ ');
+    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a43a93e4e66054a1c8.svg__;!!KyHJrpw!slVTMnWppdKvUZM4b8DEOiAr_jZVs-_OLew3ooxNRz_DFsmni7DRldh6_Ok-Fdwd30Zq8d9dmOU5tXhxD-NWhSuD0yn3$ ');
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-popout {
-    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a549d86edec37fb5e5.svg__;!!KyHJrpw!pWgKgyybw8n6qU10ialZq1syEVlGAjq_ymoMyaDU5jPZVKOSJgKDx8Xb0FUfQKjtE6v4qSwtXLnTpwB855B7ry-4WHxk$ ');
+    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a549d86edec37fb5e5.svg__;!!KyHJrpw!slVTMnWppdKvUZM4b8DEOiAr_jZVs-_OLew3ooxNRz_DFsmni7DRldh6_Ok-Fdwd30Zq8d9dmOU5tXhxD-NWhc71S0t1$ ');
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-popout:hover {
-    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/da/67da9a1557e6bd90bab57ce9.svg__;!!KyHJrpw!pWgKgyybw8n6qU10ialZq1syEVlGAjq_ymoMyaDU5jPZVKOSJgKDx8Xb0FUfQKjtE6v4qSwtXLnTpwB855B7r25l2w4Z$ ');
+    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/da/67da9a1557e6bd90bab57ce9.svg__;!!KyHJrpw!slVTMnWppdKvUZM4b8DEOiAr_jZVs-_OLew3ooxNRz_DFsmni7DRldh6_Ok-Fdwd30Zq8d9dmOU5tXhxD-NWhSRXt6cn$ ');
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-show-thumbs {
-    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/dc/67dc2c8900a2aeec666a149e.svg__;!!KyHJrpw!pWgKgyybw8n6qU10ialZq1syEVlGAjq_ymoMyaDU5jPZVKOSJgKDx8Xb0FUfQKjtE6v4qSwtXLnTpwB855B7rxJpe1Kc$ ');
+    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/dc/67dc2c8900a2aeec666a149e.svg__;!!KyHJrpw!slVTMnWppdKvUZM4b8DEOiAr_jZVs-_OLew3ooxNRz_DFsmni7DRldh6_Ok-Fdwd30Zq8d9dmOU5tXhxD-NWhT3KkO8X$ ');
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-show-thumbs:hover {
-    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/dc/67dc2c888ddbf39c9cf0f51d.svg__;!!KyHJrpw!pWgKgyybw8n6qU10ialZq1syEVlGAjq_ymoMyaDU5jPZVKOSJgKDx8Xb0FUfQKjtE6v4qSwtXLnTpwB855B7r5cedeCL$ ');
+    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/dc/67dc2c888ddbf39c9cf0f51d.svg__;!!KyHJrpw!slVTMnWppdKvUZM4b8DEOiAr_jZVs-_OLew3ooxNRz_DFsmni7DRldh6_Ok-Fdwd30Zq8d9dmOU5tXhxD-NWhWunAq_w$ ');
 }
 
 .imagegallery__thumbs-container .imagegallery__thumbs .imagegallery__thumb{
@@ -4341,13 +4341,13 @@ font-size: 1rem !important;
 
 //Mobile
 //@media (max-width: 768px) {
-@media (min-width: 540px) and (max-width:1023px){
-     .background-image1 {
-    background-image: url(@customImage1);
+@media (max-width: 539px) {
+    .background-image1 {
+    background-image: url(https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/4e/674ea2c911c78714eaa237d6.jpg__;!!KyHJrpw!slVTMnWppdKvUZM4b8DEOiAr_jZVs-_OLew3ooxNRz_DFsmni7DRldh6_Ok-Fdwd30Zq8d9dmOU5tXhxD-NWhbQ0EnEU$ );
 }
 
 .background-image6 {
-    background-image: url(@customImage3);
+    background-image: url(https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/76/67767bd9f9d28d06f0ecce30.jpg__;!!KyHJrpw!slVTMnWppdKvUZM4b8DEOiAr_jZVs-_OLew3ooxNRz_DFsmni7DRldh6_Ok-Fdwd30Zq8d9dmOU5tXhxD-NWhYZqBi0V$ );
 }
 
 //remove later
@@ -4562,11 +4562,11 @@ font-size:3.95rem;
 //Tablet
 @media (min-width: 540px) and (max-width:1023px){
      .background-image1 {
-    background-image: url(https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/5a/675a06f6bf48a980e7270675.png__;!!KyHJrpw!pWgKgyybw8n6qU10ialZq1syEVlGAjq_ymoMyaDU5jPZVKOSJgKDx8Xb0FUfQKjtE6v4qSwtXLnTpwB855B7r28fUj1C$ );
+    background-image: url(https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/5a/675a06f6bf48a980e7270675.png__;!!KyHJrpw!slVTMnWppdKvUZM4b8DEOiAr_jZVs-_OLew3ooxNRz_DFsmni7DRldh6_Ok-Fdwd30Zq8d9dmOU5tXhxD-NWhf2H7K4G$ );
 }
 
 .background-image6 {
-    background-image: url(https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/76/67767bd9392fcdf6419623ed.jpg__;!!KyHJrpw!pWgKgyybw8n6qU10ialZq1syEVlGAjq_ymoMyaDU5jPZVKOSJgKDx8Xb0FUfQKjtE6v4qSwtXLnTpwB855B7r2Z9QFPX$ );
+    background-image: url(https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/76/67767bd9392fcdf6419623ed.jpg__;!!KyHJrpw!slVTMnWppdKvUZM4b8DEOiAr_jZVs-_OLew3ooxNRz_DFsmni7DRldh6_Ok-Fdwd30Zq8d9dmOU5tXhxD-NWhct1ven_$ );
 }
 
 //remove later
