@@ -4347,7 +4347,7 @@ font-size: 1rem !important;
 }
 
 .background-image6 {
-    background-image:@customImage4;
+    background-image:url(@customImage4);
 }
 
 //remove later
