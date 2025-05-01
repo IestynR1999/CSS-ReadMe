@@ -9,6 +9,11 @@ border-radius: 0px;
     pointer-events: none;
 }
 
+#adapt #app #wrapper .component__inner .assetlink:hover, 
+#adapt #app #wrapper .component__inner .customlink:hover{
+    color: unset !important;
+}
+
 .page .article-edge-top {
     background-attachment: scroll;
     background-position: center top;
@@ -22,6 +27,16 @@ border-radius: 0px;
 
 .component__instruction{
     margin-bottom:12px;
+}
+
+//adding spacing between each block where there are multiple blocks
+.block__container .block + .block {
+    margin-top:2.75rem;
+}
+
+//rempving spacing between each block where there are multiple blocks in Assessments
+.is-assessment .block__container .block + .block {
+    margin-top:0;
 }
 
 .downArrow{
@@ -247,7 +262,8 @@ div.component {
 .notify.hotgraphic .notify__popup .notify__content .hotgraphic-popup__toolbar {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
-    background-color: #323231 !important;
+    //background-color: #323231 !important;
+    background-color: #404040 !important;
 }
 
 .notify.hotgraphic .hotgraphic-popup__count {
@@ -331,6 +347,7 @@ div.component {
    margin:0.25rem 0 !important; 
 }
 
+.hiddenHotspots .component__title,
 .accordion .component__title,
 .imagegallery .component__title,
 .reveal .component__title,
@@ -378,6 +395,7 @@ div.component {
 }
 
 //Box components
+.hiddenHotspots .component__title *,
 .matching .component__title *,
 .sliderContainer .component__title *,
 .flipcard .component__title *{
@@ -390,6 +408,7 @@ div.component {
     letter-spacing: 0.002rem !important;
 }
 
+.hiddenHotspots .component__header-inner,
 .accordion .component__header-inner,
 .imagegallery .component__header-inner,
 .reveal .component__header-inner,
@@ -410,7 +429,7 @@ div.component {
     gap: 0.75rem;
 }
 
-
+.hiddenHotspots .component__body,
 .textinput .component__body,
 .accordion .component__body,
 .imagegallery .component__body,
@@ -435,6 +454,7 @@ div.component {
     background: transparent !important;
 }
 
+.hiddenHotspots .component__body .component__body-inner,
 .accordion .component__body .component__body-inner,
 .imagegallery .component__body .component__body-inner,
 .reveal .component__body .component__body-inner,
@@ -461,7 +481,7 @@ div.component {
    padding: 0 0 .75rem 0 !important; 
 }
 
-
+.hiddenHotspots .component__body-inner p,
 .textinput .component__body-inner p,
 .accordion .component__body-inner p,
 .imagegallery .component__body-inner p,
@@ -487,6 +507,7 @@ div.component {
     margin:0 !important;
 }
 
+.background-colour1 .hiddenHotspots .component__body-inner p,
 .background-colour1 .textinput .component__body-inner p,
 .background-colour1 .accordion .component__body-inner p,
 .background-colour1 .imagegallery .component__body-inner p,
@@ -505,6 +526,7 @@ div.component {
     color:#4F6074;
 }
 
+.background-colour2 .hiddenHotspots .component__body-inner p,
 .background-colour2 .textinput .component__body-inner p,
 .background-colour2 .accordion .component__body-inner p,
 .background-colour2 .imagegallery .component__body-inner p,
@@ -523,6 +545,7 @@ div.component {
     color:#E9EBF1;
 }
 
+.hiddenHotspots .component__instruction-inner:after,
 .textinput .component__instruction-inner:after,
 .accordion .component__instruction-inner:after,
 .imagegallery .component__instruction-inner:after,
@@ -550,6 +573,7 @@ div.component {
     width: 100%;
 }
 
+.background-colour1 .hiddenHotspots .component__instruction-inner:after,
 .background-colour1 .textinput .component__instruction-inner:after,
 .background-colour1 .accordion .component__instruction-inner:after,
 .background-colour1 .imagegallery .component__instruction-inner:after,
@@ -569,6 +593,7 @@ div.component {
      background:linear-gradient(180deg, #CED1DA 0%, #D7DCEA 100%);
 }
 
+.background-colour2 .hiddenHotspots .component__instruction-inner:after,
 .background-colour2 .textinput .component__instruction-inner:after,
 .background-colour2 .accordion .component__instruction-inner:after,
 .background-colour2 .imagegallery .component__instruction-inner:after,
@@ -588,6 +613,7 @@ div.component {
     background:linear-gradient(180deg, #5F5F5F 0%, #403F3F 98.77%);
 }
 
+.hiddenHotspots .component__instruction,
 .textinput .component__instruction,
 .accordion .component__instruction,
 .imagegallery .component__instruction,
@@ -606,6 +632,7 @@ div.component {
     background:transparent !important;
 }
 
+.hiddenHotspots .component__widget,
 .accordion .component__widget,
 .reveal .component__widget,
 .branching .component__widget,
@@ -847,6 +874,7 @@ letter-spacing: 0.002rem !important;
     display:none;
 }
 
+.hiddenHotspots .component__instruction,
 .accordion .component__instruction,
 .imagegallery .component__instruction,
 .referencelist .component__instruction,
@@ -868,6 +896,7 @@ letter-spacing: 0.002rem !important;
     margin: 0;
 }
 
+.hiddenHotspots .component__instruction-inner,
 .accordion .component__instruction-inner,
 .imagegallery .component__instruction-inner,
 .referencelist .component__instruction-inner,
@@ -1048,37 +1077,37 @@ background: linear-gradient(-45deg, #214C99, #011E41, #004AA3, #214C99);
 @font-face {
   font-family: FSDillonProBold;
   font-style: normal;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProBold.woff ');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProBold.woff');
 }
 
 @font-face {
   font-family: FSDillonProBoldIt;
   font-style: italic;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProBoldIt.woff ');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProBoldIt.woff');
 }
 
 @font-face {
   font-family: FSDillonProMedium;
   font-style: normal;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProMedium.woff ');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProMedium.woff');
 }
 
 @font-face {
   font-family: FSDillonProMediumIt;
   font-style: italic;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProMediumIt.woff ');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProMediumIt.woff');
 }
 
 @font-face {
   font-family: FSDillonProRegular;
   font-style: normal;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProRegular.woff ');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProRegular.woff');
 }
 
 @font-face {
   font-family: FSDillonProItalic;
   font-style: italic;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProItalic.woff ');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProItalic.woff');
 }
 
 // ---------------------------------------------------------
@@ -1494,6 +1523,8 @@ body .block__inner {
     border-left:none !important;
 }
 
+
+.hiddenHotspots .block__inner,
 .matchingQuestion .block__inner,
 .assesmentResults .block__inner,
 .filInBlanksContainer .block__inner,
@@ -1526,6 +1557,7 @@ body .block__inner {
     padding:0;
 }
 
+.hiddenHotspots .btn__marking,
 .textinput .btn__marking,
 .matching .btn__marking,
 .filInBlanksContainer .btn__marking,
@@ -1539,6 +1571,7 @@ body .block__inner {
     display:none;
 }
 
+.background-colour1 .hiddenHotspots .block__inner,
 .background-colour1 .textinputContainer .block__inner,
 .background-colour1 .matchingQuestion .block__inner,
 .background-colour1 .assesmentResults .block__inner,
@@ -1555,6 +1588,7 @@ body .block__inner {
     border: 1px solid #CED1DA;
 }
 
+.background-colour2 .hiddenHotspots .block__inner,
 .background-colour2 .textinputContainer .block__inner,
 .background-colour2 .matchingQuestion .block__inner,
 .background-colour2 .assesmentResults .block__inner,
@@ -1567,7 +1601,8 @@ body .block__inner {
 .background-colour2 .openTextInput .block__inner,
 .background-colour2 .graphicalMCQ .block__inner
 {
-   background-color: #323231;
+   //background-color: #323231;
+   background-color: #404040;
    border: 1px solid #5F5F5F;
 }
 
@@ -1576,7 +1611,7 @@ body .block__inner {
     flex-direction:column;
 }
 
-
+.hiddenHotspots .btn__response-container,
 .stackerContainer .btn__response-container,
 .sliderContainer .btn__response-container,
 .truefalseContainer .btn__response-container,
@@ -1585,6 +1620,7 @@ body .block__inner {
     margin-top: 16px;
 }
 
+.hiddenHotspots .btn__response-container .btn-text,
 .textinput .btn__response-container .btn-text,
 .matching .btn__response-container .btn-text,
 .stackerContainer .btn__response-container .btn-text,
@@ -2051,7 +2087,8 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
 }
 
 #wrapper .background-colour2 .mediaContainer .youtube__transcript-container,#wrapper .background-colour2 .mediaContainer .vimeo__transcript-container{
-    background-color: #323231 !important;
+    //background-color: #323231 !important;
+    background-color: #404040 !important;
     color: #ffffff !important;
 }
 
@@ -2429,7 +2466,8 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
     border-radius: 4px !important;
     height: 1.5rem !important;
     padding: 0 4px !important;
-    background-color: #323231 !important;
+    //background-color: #323231 !important;
+    background-color: #404040 !important;
 }
 
 .confidenceslider .slider__number{
@@ -2488,7 +2526,8 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
 }
 
 .background-colour2 .slider .slider__inner .slider__widget{
-  background-color: #1B1B1A !important;
+  //background-color: #1B1B1A !important;
+  background-color: #373737 !important;
 }
 
 
@@ -2498,7 +2537,8 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
 }
 
 .background-colour2 .confidenceslider .slider__inner .slider__widget{
-  background-color: #1B1B1A !important;
+  //background-color: #1B1B1A !important;
+  background-color: #373737 !important;
 }
 
 //-----------------------------------------------------------
@@ -2881,7 +2921,8 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
 }
 
 .background-colour2 .branching__item-inner{
-    background-color: #323231;
+    //background-color: #323231;
+    background-color: #404040;
     border-radius: 4px;
 }
 
@@ -3373,6 +3414,95 @@ color: #FFFFFF !important;
 }
 
 //----------------------------------------------------------
+// Hidden hotspots------------------------------------------
+//----------------------------------------------------------
+
+.hiddenhotspots__pin{
+    background-color:#1E438E !important;
+    border:4px solid #FFFFFF;
+}
+
+
+.hiddenhotspots__pin:not(.is-correct):not(.is-incorrect):hover{
+   background-color: #323231 !important;
+}
+
+.hiddenhotspots__pin .icon,
+.hiddenhotspots__pin .icon::before{
+    color:#FFFFFF !important;
+}
+
+
+.hiddenhotspots__pin.is-correct:hover,
+.hiddenhotspots__pin.is-incorrect:hover{
+    background-color: #1E438E !important;
+}
+
+.hiddenhotspots__pin.is-correct:hover .icon::before,
+.hiddenhotspots__pin.is-incorrect:hover .icon::before{
+   // color:#FFFFFF !important;
+}
+
+.hiddenhotspots__item-counter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 52px;
+    background-color: #515D7A !important;
+    color: #ffffff;
+    font-family: 'FSDillonProRegular';
+    font-size: 1.25rem !important;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem !important;
+    letter-spacing: .003rem !important;
+}
+
+
+.hiddenhotspots__zone{
+    background-color: #1E438E !important;
+    border: 4px solid #FFFFFF;
+    border-radius: 50%;
+    height: 3.125rem !important;
+    width: 3.125rem !important;
+}
+
+
+.hiddenhotspots__mobile-navigation{
+    background-color: #E9EBF1 !important;
+    height:3.5rem;
+}
+
+.hiddenhotspots__mobile-navigation button{
+    display: flex !important;
+    align-items:center;
+    justify-content:center;
+    padding: 0;
+    margin: 0;
+    background-color: #E9EBF1 !important;
+}
+
+.hiddenhotspots__mobile-navigation button:hover,
+.hiddenhotspots__mobile-navigation button:focus
+{
+    background-color: #E9EBF1 !important;
+}
+
+.hiddenhotspots__mobile-navigation button i:before {
+    color: #1E438E !important;
+    font-weight: bold;
+    font-size: 1.625rem !important;
+}
+
+.hiddenhotspots__mobile-navigation button i.icon-arrow-left:before {
+    content: "\e960" !important;
+}
+
+.hiddenhotspots__mobile-navigation button i.icon-arrow-right:before {
+    content: "\e961" !important;
+}
+
+//----------------------------------------------------------
 // Reference List-------------------------------------------
 //----------------------------------------------------------
 
@@ -3559,29 +3689,29 @@ html.no-touch .imagegallery__buttons, html.no-touch .imagegallery__controls{
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-toggle-thumbs {
-    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a580915048803f065b.svg__;!!KyHJrpw!slVTMnWppdKvUZM4b8DEOiAr_jZVs-_OLew3ooxNRz_DFsmni7DRldh6_Ok-Fdwd30Zq8d9dmOU5tXhxD-NWhdoDYvl4$ ');
+    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a580915048803f065b.svg');
 }
 
 //.imagegallery__image-container .imagegallery__buttons .imagegallery__button-toggle-thumbs[title="Hide thumbnails"],
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-toggle-thumbs:hover
 {
-    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a43a93e4e66054a1c8.svg__;!!KyHJrpw!slVTMnWppdKvUZM4b8DEOiAr_jZVs-_OLew3ooxNRz_DFsmni7DRldh6_Ok-Fdwd30Zq8d9dmOU5tXhxD-NWhSuD0yn3$ ');
+    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a43a93e4e66054a1c8.svg');
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-popout {
-    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a549d86edec37fb5e5.svg__;!!KyHJrpw!slVTMnWppdKvUZM4b8DEOiAr_jZVs-_OLew3ooxNRz_DFsmni7DRldh6_Ok-Fdwd30Zq8d9dmOU5tXhxD-NWhc71S0t1$ ');
+    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a549d86edec37fb5e5.svg');
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-popout:hover {
-    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/da/67da9a1557e6bd90bab57ce9.svg__;!!KyHJrpw!slVTMnWppdKvUZM4b8DEOiAr_jZVs-_OLew3ooxNRz_DFsmni7DRldh6_Ok-Fdwd30Zq8d9dmOU5tXhxD-NWhSRXt6cn$ ');
+    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/da/67da9a1557e6bd90bab57ce9.svg');
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-show-thumbs {
-    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/dc/67dc2c8900a2aeec666a149e.svg__;!!KyHJrpw!slVTMnWppdKvUZM4b8DEOiAr_jZVs-_OLew3ooxNRz_DFsmni7DRldh6_Ok-Fdwd30Zq8d9dmOU5tXhxD-NWhT3KkO8X$ ');
+    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/dc/67dc2c8900a2aeec666a149e.svg');
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-show-thumbs:hover {
-    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/dc/67dc2c888ddbf39c9cf0f51d.svg__;!!KyHJrpw!slVTMnWppdKvUZM4b8DEOiAr_jZVs-_OLew3ooxNRz_DFsmni7DRldh6_Ok-Fdwd30Zq8d9dmOU5tXhxD-NWhWunAq_w$ ');
+    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/dc/67dc2c888ddbf39c9cf0f51d.svg');
 }
 
 .imagegallery__thumbs-container .imagegallery__thumbs .imagegallery__thumb{
@@ -3871,13 +4001,24 @@ letter-spacing: 0.003rem !important;
     border: none !important;
     height: 0.5rem !important;
     width: 0.5rem !important;
-    background-color: #1E438E !important;
     margin:0 !important;
 }
 
 
-.yesno__inner .yesno__scroll-indicators button.is-active{
+.background-colour1 .yesno__inner .yesno__scroll-indicators button{
+    background-color: #1E438E !important;
+}
+
+.background-colour1 .yesno__inner .yesno__scroll-indicators button.is-active{
     background-color: #AAB0C0 !important;
+}
+
+.background-colour2 .yesno__inner .yesno__scroll-indicators button{
+    background-color: #FFFFFF !important;
+}
+
+.background-colour2 .yesno__inner .yesno__scroll-indicators button.is-active{
+    background-color: #4F9DFC !important;
 }
 
 .yesno__images-container .yesno__images-container-inner:before,
@@ -3967,22 +4108,31 @@ letter-spacing: 0.003rem !important;
 }
 
 #wrapper .page .background-colour1 .hotGraphicContainer .narrative__progress.is-selected,
-#wrapper .page .background-colour2 .hotGraphicContainer .narrative__progress.is-selected,
-#wrapper .page .background-colour1 .narrativeContainer .narrative__progress.is-selected,
-#wrapper .page .background-colour2 .narrativeContainer .narrative__progress.is-selected
+#wrapper .page .background-colour1 .narrativeContainer .narrative__progress.is-selected
 {
     background-color: #AAB0C0 !important;
     margin:0;
 }
 
+#wrapper .page .background-colour2 .hotGraphicContainer .narrative__progress.is-selected,
+#wrapper .page .background-colour2 .narrativeContainer .narrative__progress.is-selected{
+    background-color: #4F9DFC !important;
+    margin:0;
+}
+
 #wrapper .page .background-colour1 .hotGraphicContainer .narrative__progress,
-#wrapper .page .background-colour2 .hotGraphicContainer .narrative__progress,
-#wrapper .page .background-colour1 .narrativeContainer .narrative__progress,
-#wrapper .page .background-colour2 .narrativeContainer .narrative__progress
+#wrapper .page .background-colour1 .narrativeContainer .narrative__progress
 {
     background-color: #1E438E !important;
     margin:0;
 }
+
+#wrapper .page .background-colour2 .hotGraphicContainer .narrative__progress,
+#wrapper .page .background-colour2 .narrativeContainer .narrative__progress{
+    background-color: #FFFFFF !important;
+    margin:0;
+}
+
 
 .hotGraphicContainer .narrative .narrative__inner .narrative__progress,
 .narrativeContainer .narrative .narrative__inner .narrative__progress{
@@ -4435,6 +4585,7 @@ font-size:2.331rem !important;
     background:transparent !important;
 }
 
+.hiddenHotspots .block__inner,
 .matchingQuestion .block__inner,
 .assesmentResults .block__inner,
 .filInBlanksContainer .block__inner,
@@ -4464,6 +4615,7 @@ font-size:2.331rem !important;
     padding: 3.5rem 0;
 }
 
+.accordionContainer .block__inner,
 .yesnoContainer .block__inner,
 .imageGalleryContainer .block__inner,
 .revealContainer .block__inner,
@@ -4532,6 +4684,20 @@ font-size:2.331rem !important;
     letter-spacing: 0.007rem !important;
 }
 
+.hiddenhotspots__mobile-navigation {
+    display: flex !important;
+    align-items: center;
+    justify-content:center;
+}
+
+}
+
+@media (max-width: 47.5rem) {
+    .hiddenhotspots__mobile-navigation {
+        display: flex !important;
+        align-items: center;
+        justify-content:center;
+    }
 }
 
 //other sreens
