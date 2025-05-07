@@ -97,7 +97,7 @@ border-radius: 0px;
 
 .Body-Regular{
     font-family: 'FSDillonProRegular' !important;
-    font-size: 1.25rem !important;
+    //font-size: 1.25rem !important;
 }
 
 .Module-Hero .Body-Regular{
@@ -333,7 +333,10 @@ div.component {
     color:#041C39 !important;
 }
 
-.flipcard .flipcard__item-back-body p{
+.flipcard .flipcard__item-back-body p,
+.flipcard .flipcard__item-back-body ul,
+.flipcard .flipcard__item-back-body li
+{
     font-size: 1rem !important;
     font-style: normal !important;
     font-weight: 400 !important;
@@ -389,8 +392,10 @@ div.component {
     //font-size: 2.22rem !important;
     //line-height: 2.5rem !important;
     //letter-spacing: 0.004rem !important;
-    font-size:1.669rem !important;
-    line-height: 2.25rem !important; 
+    //font-size:1.669rem !important;
+    font-size:clamp(1.669rem, 1.669rem + 0vw, 1.669rem) !important;
+    //line-height: 2.25rem !important; 
+    line-height:clamp(1.5rem, 1.4049rem + 4.2254vw, 2.25rem) !important;
     letter-spacing: 0.002rem !important;
 }
 
@@ -403,8 +408,10 @@ div.component {
     margin: 0 !important;
     font-style: normal !important;
     font-family: FSDillonProBold !important;
-    font-size:1.669rem !important;
-    line-height: 2.25rem !important; 
+    //font-size:1.669rem !important;
+    font-size:clamp(1.669rem, 1.669rem + 0vw, 1.669rem) !important;
+    //line-height: 2.25rem !important; 
+    line-height:clamp(2.25rem, 2.25rem + 0vw, 2.25rem) !important;
     letter-spacing: 0.002rem !important;
 }
 
@@ -429,6 +436,7 @@ div.component {
     gap: 0.75rem;
 }
 
+.stackerContainer .component__body,
 .hiddenHotspots .component__body,
 .textinput .component__body,
 .accordion .component__body,
@@ -454,6 +462,7 @@ div.component {
     background: transparent !important;
 }
 
+.stackerContainer .component__body .component__body-inner,
 .hiddenHotspots .component__body .component__body-inner,
 .accordion .component__body .component__body-inner,
 .imagegallery .component__body .component__body-inner,
@@ -481,6 +490,7 @@ div.component {
    padding: 0 0 .75rem 0 !important; 
 }
 
+.stackerContainer .component__body-inner p,
 .hiddenHotspots .component__body-inner p,
 .textinput .component__body-inner p,
 .accordion .component__body-inner p,
@@ -499,14 +509,17 @@ div.component {
 .hotGraphicContainer .component__body-inner p,
 {
     font-family: 'FSDillonProRegular' !important;
-    font-size: 1.25rem;
+    //font-size: 1.25rem;
+    font-size:clamp(1.25rem, 1.25rem + 0vw, 1.25rem);
     font-style: normal;
     font-weight: 400;
-    line-height:1.5rem;
+    //line-height:1.5rem;
+    line-height:clamp(1.5rem, 1.5rem + 0vw, 1.5rem) !important;
     letter-spacing: 0.02rem;
     margin:0 !important;
 }
 
+.background-colour1 .stackerContainer .component__body-inner p,
 .background-colour1 .hiddenHotspots .component__body-inner p,
 .background-colour1 .textinput .component__body-inner p,
 .background-colour1 .accordion .component__body-inner p,
@@ -526,6 +539,7 @@ div.component {
     color:#4F6074;
 }
 
+.background-colour2 .stackerContainer .component__body-inner p,
 .background-colour2 .hiddenHotspots .component__body-inner p,
 .background-colour2 .textinput .component__body-inner p,
 .background-colour2 .accordion .component__body-inner p,
@@ -545,6 +559,8 @@ div.component {
     color:#E9EBF1;
 }
 
+.text .component__instruction-inner:after,
+.stackerContainer .component__instruction-inner:after,
 .hiddenHotspots .component__instruction-inner:after,
 .textinput .component__instruction-inner:after,
 .accordion .component__instruction-inner:after,
@@ -573,6 +589,8 @@ div.component {
     width: 100%;
 }
 
+.background-colour1 .text .component__instruction-inner:after,
+.background-colour1 .stackerContainer .component__instruction-inner:after,
 .background-colour1 .hiddenHotspots .component__instruction-inner:after,
 .background-colour1 .textinput .component__instruction-inner:after,
 .background-colour1 .accordion .component__instruction-inner:after,
@@ -593,6 +611,8 @@ div.component {
      background:linear-gradient(180deg, #CED1DA 0%, #D7DCEA 100%);
 }
 
+.background-colour2 .text .component__instruction-inner:after,
+.background-colour2 .stackerContainer .component__instruction-inner:after,
 .background-colour2 .hiddenHotspots .component__instruction-inner:after,
 .background-colour2 .textinput .component__instruction-inner:after,
 .background-colour2 .accordion .component__instruction-inner:after,
@@ -613,6 +633,8 @@ div.component {
     background:linear-gradient(180deg, #5F5F5F 0%, #403F3F 98.77%);
 }
 
+//.text .component__instruction,
+.stackerContainer .component__instruction,
 .hiddenHotspots .component__instruction,
 .textinput .component__instruction,
 .accordion .component__instruction,
@@ -663,8 +685,10 @@ div.component {
 
 .truefalse__item-title_inner{
     font-family: 'FSDillonProRegular' !important;
-    font-size: 1.25rem !important;
-    line-height: 1.5rem !important;
+    // font-size: 1.25rem !important;
+    font-size:clamp(1.25rem, 1.25rem + 0vw, 1.25rem) !important;
+   // line-height: 1.5rem !important;
+   line-height:clamp(1.5rem, 1.5rem + 0vw, 1.5rem) !important;
 }
 
 .truefalse__item-radios{
@@ -680,8 +704,10 @@ div.component {
 .truefalse__label{
     margin:0 !important;
     padding:0 !important;
-    font-size: 1.25rem !important;
-    line-height: 1.5rem !important;
+    //font-size: 1.25rem !important;
+    font-size:clamp(1.25rem, 1.25rem + 0vw, 1.25rem) !important;
+    //line-height: 1.5rem !important;
+    line-height:clamp(1.5rem, 1.5rem + 0vw, 1.5rem) !important;
     letter-spacing: 0.004rem !important;
     font-family: 'FSDillonProBold' !important;
 }
@@ -749,10 +775,12 @@ div.component {
 
 .notify__title-inner{
     color: #041C39 !important;
-    font-size: 1.6rem !important;
+    //font-size: 1.6rem !important;
+    font-size:clamp(1.6rem, 1.6rem + 0vw, 1.6rem) !important;
     font-style: normal;
     font-weight: 700;
-    line-height: 2rem !important;
+    //line-height: 2rem !important;
+    line-height:clamp(2rem, 2rem + 0vw, 2rem) !important;
     letter-spacing: 0.002rem !important;
     font-family: 'FSDillonProBold' !important;
     margin:0 !important;
@@ -772,8 +800,10 @@ div.component {
 .notify__body-inner p{
     font-family: 'FSDillonProRegular' !important;
     color: #4F6074 !important;
-    font-size:1.25rem !important;
-    line-height:1.5rem !important;
+    //font-size:1.25rem !important;
+    font-size:clamp(1.25rem, 1.25rem + 0vw, 1.25rem) !important;
+    //line-height:1.5rem !important;
+    line-height:clamp(1.5rem, 1.5rem + 0vw, 1.5rem) !important;
 }
 
 .notify__body-inner p,
@@ -803,10 +833,12 @@ div.component {
     width: 100%;
     color: #041C39 !important;
     font-family: 'FSDillonProRegular' !important;
-    font-size: 1rem !important;
+    //font-size: 1rem !important;
+    font-size:clamp(1rem, 1rem + 0vw, 1rem) !important;
     font-style: normal !important;
     font-weight: 400 !important;
-    line-height: 1.25rem !important;
+    //line-height: 1.25rem !important;
+    line-height:clamp(1.25rem, 1.25rem + 0vw, 1.25rem) !important;
     letter-spacing: 0.02rem !important;
     text-transform:uppercase;
     padding: 12px 64px;
@@ -862,11 +894,13 @@ div.component {
 //color: #041C39 !important;
 font-family: 'FSDillonProBold' !important;
 //font-size: 26.7px;
-font-size: 1.669rem !important;
+//font-size: 1.669rem !important;
+font-size:clamp(1.6688rem, 1.6688rem + 0vw, 1.6688rem) !important;
 font-style: normal !important;
 font-weight: 700 !important;
 //line-height: var(--font-Headline-XS-Line-Height, 36px); /* 134.831% */
-line-height: 2.25rem !important;
+//line-height: 2.25rem !important;
+line-height:clamp(2.25rem, 2.25rem + 0vw, 2.25rem) !important;
 letter-spacing: 0.002rem !important;
 }
 
@@ -874,6 +908,8 @@ letter-spacing: 0.002rem !important;
     display:none;
 }
 
+//.text .component__instruction,
+.stackerContainer .component__instruction,
 .hiddenHotspots .component__instruction,
 .accordion .component__instruction,
 .imagegallery .component__instruction,
@@ -896,6 +932,8 @@ letter-spacing: 0.002rem !important;
     margin: 0;
 }
 
+.text .component__instruction-inner,
+.stackerContainer .component__instruction-inner,
 .hiddenHotspots .component__instruction-inner,
 .accordion .component__instruction-inner,
 .imagegallery .component__instruction-inner,
@@ -917,10 +955,12 @@ letter-spacing: 0.002rem !important;
     padding-top: 0.75rem;
     color: #4F6074;
     font-family: 'FSDillonProRegular' !important;
-    font-size: 1rem;
+    //font-size: 1rem;
+    font-size:clamp(1rem, 1rem + 0vw, 1rem);
     font-style: normal;
     font-weight: 400;
-    line-height: 1.25rem; /* 125% */
+    //line-height: 1.25rem; /* 125% */
+    line-height:clamp(1.25rem, 1.25rem + 0vw, 1.25rem);
     letter-spacing: 0.02rem;
 }
 
@@ -940,8 +980,10 @@ letter-spacing: 0.002rem !important;
 
 .openTextInput .opentextinput__count-characters{
     padding: 1.5rem 0 1rem 0 !important;
-    font-size: 1rem !important;
-    line-height: 1.25rem !important;
+    //font-size: 1rem !important;
+    font-size:clamp(1rem, 1rem + 0vw, 1rem) !important;
+    //line-height: 1.25rem !important;
+    line-height:clamp(1.25rem, 1.25rem + 0vw, 1.25rem) !important;
     letter-spacing: 0.015px !important;
 }
 
@@ -965,8 +1007,10 @@ letter-spacing: 0.002rem !important;
 
 .openTextInput .opentextinput__item-textbox, 
 .openTextInput .opentextinput__item-textbox *{
-    font-size: 1.25rem !important;
-    line-height: 1.5rem !important;
+    //font-size: 1.25rem !important;
+    font-size:clamp(1.25rem, 1.25rem + 0vw, 1.25rem) !important;
+    //line-height: 1.5rem !important;
+    line-height:clamp(1.5rem, 1.5rem + 0vw, 1.5rem) !important;
     font-family: 'FSDillonProRegular' !important;
     color:#4F6074 !important;
 }
@@ -1077,37 +1121,37 @@ background: linear-gradient(-45deg, #214C99, #011E41, #004AA3, #214C99);
 @font-face {
   font-family: FSDillonProBold;
   font-style: normal;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProBold.woff');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProBold.woff ');
 }
 
 @font-face {
   font-family: FSDillonProBoldIt;
   font-style: italic;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProBoldIt.woff');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProBoldIt.woff ');
 }
 
 @font-face {
   font-family: FSDillonProMedium;
   font-style: normal;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProMedium.woff');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProMedium.woff ');
 }
 
 @font-face {
   font-family: FSDillonProMediumIt;
   font-style: italic;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProMediumIt.woff');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProMediumIt.woff ');
 }
 
 @font-face {
   font-family: FSDillonProRegular;
   font-style: normal;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProRegular.woff');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProRegular.woff ');
 }
 
 @font-face {
   font-family: FSDillonProItalic;
   font-style: italic;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProItalic.woff');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProItalic.woff ');
 }
 
 // ---------------------------------------------------------
@@ -1136,7 +1180,8 @@ background: linear-gradient(-45deg, #214C99, #011E41, #004AA3, #214C99);
     float: center;
     clear: both;
     display: inline-block;
-    line-height:4rem;
+    //line-height:4rem;
+    line-height:clamp(4rem, 4rem + 0vw, 4rem);
 }
 // ---------------------------------------------------------
 // Type styles
@@ -1189,8 +1234,10 @@ background: linear-gradient(-45deg, #214C99, #011E41, #004AA3, #214C99);
     font-family: FSDillonProBold !important;
     font-style: normal !important;
     font-size: 2.221rem !important;
-    font-size: 2.22rem !important;
-    line-height: 2.5rem !important;
+    // font-size: 2.22rem !important;
+    font-size:clamp(2.22rem, 2.22rem + 0vw, 2.22rem) !important;
+    //line-height: 2.5rem !important;
+    line-height:clamp(2.5rem, 2.5rem + 0vw, 2.5rem) !important;
     letter-spacing: 0.004rem !important;
 }
 
@@ -1219,26 +1266,32 @@ background: linear-gradient(-45deg, #214C99, #011E41, #004AA3, #214C99);
     //color: var(--text-general-body-dark-text, #4F6074);
     font-family: 'FSDillonProRegular' !important;
     //font-size: 16px;
-    font-size: 1.25rem;
+    //font-size: 1.25rem;
+    font-size:clamp(1.25rem, 1.25rem + 0vw, 1.25rem);
     font-style: normal;
     font-weight: 400;
     //line-height: var(--spacing-spacing-scale-5, 20px);
-    line-height:1.5rem;
+    //line-height:1.5rem;
+    line-height:clamp(1.5rem, 1.5rem, 1.5rem) !important;
     //letter-spacing: 0.32px;
     letter-spacing: 0.02rem;
 }
 
 .Headline {
     font-family: FSDillonProBold !important;
-    font-size:2.219rem !important;
-    line-height: 2.5rem !important;
+    //font-size:2.219rem !important;
+    font-size:clamp(2.219rem, 2.219rem + 0vw, 2.219rem) !important;
+    //line-height: 2.5rem !important;
+    line-height:clamp(2.5rem, 2.5rem + 0vw, 2.5rem);
     letter-spacing: 0.004rem !important;
 }
 
 .Sub-Headline {
     font-family: FSDillonProBold !important;
-    font-size:1.669rem !important;
-    line-height: 2.25rem !important; 
+   //font-size:1.669rem !important;
+    font-size:clamp(1.669rem, 1.669rem + 0vw, 1.669rem) !important;
+    //line-height: 2.25rem !important; 
+    line-height:clamp(2.25rem, 2.25rem + 0vw, 2.25rem) !important;
     letter-spacing: 0.002rem !important;
 }
 
@@ -1252,17 +1305,20 @@ background: linear-gradient(-45deg, #214C99, #011E41, #004AA3, #214C99);
 .narrative__content-body-inner li
 {
     font-family: 'FSDillonProRegular' !important;
-    font-size: 1.25rem;
+    //font-size: 1.25rem;
     //font-size: clamp(1.125rem, 1.225rem, 1.25rem);
+    font-size: clamp(1.25rem, 1.25rem, 1.25rem) !important;
     font-style: normal;
     font-weight: 400;
-    line-height:1.5rem;
+    //line-height:1.5rem;
+    line-height: clamp(1.5rem, 1.5rem, 1.5rem);
     letter-spacing: 0.02rem;
 }
 
 .Body-Bold,.Question {
     font-family: 'FSDillonProBold' !important;
-    font-size: 1.25rem;
+    //font-size: 1.25rem;
+    font-size: clamp(1.25rem, 1.25rem + 0vw, 1.25rem);
     //font-size: clamp(1.125rem, 1.225rem, 1.25rem);
     font-style: normal;
     font-weight: 400;
@@ -1272,7 +1328,8 @@ background: linear-gradient(-45deg, #214C99, #011E41, #004AA3, #214C99);
 
 .Body-Link{
     font-family: 'FSDillonProRegular' !important;
-    font-size: 1rem;
+    //font-size: 1rem;
+    font-size: clamp(1rem, 1rem + 0vw, 1rem) !important;
     font-style: normal;
     font-weight: 400;
     line-height: 1.25rem;
@@ -1287,7 +1344,8 @@ background: linear-gradient(-45deg, #214C99, #011E41, #004AA3, #214C99);
 
 .Body-Link-Regular{
     font-family: 'FSDillonProRegular' !important;
-    font-size: 1.25rem;
+    //font-size: 1.25rem;
+    font-size: clamp(1.25rem, 1.25rem + 0vw, 1.25rem) !important;
     //font-size: clamp(1.125rem, 1.225rem, 1.25rem);
     font-style: normal;
     font-weight: 400;
@@ -1372,8 +1430,10 @@ background: linear-gradient(-45deg, #214C99, #011E41, #004AA3, #214C99);
     float: left;
     clear: both;
     display: inline-block;
-    line-height: 20px;
-    font-size: 15px;
+    //line-height: 20px;
+    line-height:clamp(1.25rem, 1.25rem + 0vw, 1.25rem);
+    //font-size: 15px;
+    font-size:clamp(0.9375rem, 0.9375rem + 0vw, 0.9375rem);
     letter-spacing: 1.2px;
     border-bottom: 1px solid #DD221A;
     padding-bottom: 1px;
@@ -1631,7 +1691,8 @@ body .block__inner {
 {
     width: 100% !important;
     margin: 8px 0 !important;
-    font-size: 1.125rem !important;
+    //font-size: 1.125rem !important;
+    font-size:clamp(1.125rem, 1.125rem + 0vw, 1.125rem) !important;
 }
 
 //MCQ
@@ -2065,10 +2126,12 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
 
 .mediaContainer .component__instruction-inner {
     font-family: 'FSDillonProRegular' !important;
-    font-size: 1rem;
+    //font-size: 1rem;
+    font-size:clamp(1rem, 1rem + 0vw, 1rem);
     font-style: normal;
     font-weight: 400;
-    line-height: 1.25rem;
+    //line-height: 1.25rem;
+    line-height:clamp(1.25rem, 1.25rem + 0vw, 1.25rem);
     letter-spacing: 0.02rem;
     padding-top: 0.75rem;
 }
@@ -2102,7 +2165,8 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
     justify-content: space-between;
     font-family: 'FSDillonProBold' !important;
     font-size: clamp(1.125rem, 1.1rem + 0.125vw, 1.25rem);
-    line-height: 1.5rem;
+    //line-height: 1.5rem;
+    line-height:clamp(1.5rem, 1.5rem + 0vw, 1.5rem);
     margin-bottom:0 !important;
     padding: 1rem 1.5rem !important;
 }
@@ -2120,7 +2184,8 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
 .mediaContainer .inline-transcript-open *{
     font-family: 'FSDillonProRegular' !important;
     font-size: clamp(1.125rem, 1.1rem + 0.125vw, 1.25rem) !important;
-    line-height: 1.5rem !important;
+    //line-height: 1.5rem !important;
+    line-height:clamp(1.5rem, 1.5rem + 0vw, 1.5rem) !important;
     margin:0 !important;
 }
 
@@ -2334,11 +2399,13 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
 {
   font-family:'FSDillonProBold' !important;
   color: #041C39 !important;
-  font-size:1.25rem !important;
+  //font-size:1.25rem !important;
+  font-size:clamp(1.25rem, 1.25rem + 0vw, 1.25rem) !important;
   //font-size:20px;
   font-style: normal !important;
   font-weight: 700 !important;
-  line-height: 1.5rem !important;
+  //line-height: 1.5rem !important;
+  line-height:clamp(1.5rem, 1.5rem + 0vw, 1.5rem) !important;
   //line-height: 24px;
   align-items: center;
 }
@@ -2478,9 +2545,11 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
 
 .slider__label-start-inner,.slider__label-end-inner{
     font-family: 'FSDillonProBold' !important;
-    font-size: 1rem !important;
+    //font-size: 1rem !important;
+    font-size:clamp(1rem, 1rem + 0vw, 1rem) !important;
     letter-spacing: 0.02rem !important;
-    line-height:1.25rem !important;
+    //line-height:1.25rem !important;
+    line-height:clamp(1.25rem, 1.25rem + 0vw, 1.25rem) !important;
 }
 
 .slider .slider__inner .slider__widget .slider__label-container{
@@ -2564,10 +2633,12 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
     background-color: #515D7A !important;
     color: #ffffff;
     font-family: 'FSDillonProRegular' ;
-    font-size: 1.125rem !important;
+    //font-size: 1.125rem !important;
+    font-size:clamp(1.125rem, 1.125rem + 0vw, 1.125rem) !important;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.5rem !important; 
+    //line-height: 1.5rem !important; 
+    line-height:clamp(1.5rem, 1.5rem + 0vw, 1.5rem) !important;
     letter-spacing: 0.003rem !important;
 }
 
@@ -2575,11 +2646,21 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
 .stackerContainer .component__title *{
     font-style: normal !important;
     font-family: FSDillonProBold !important;
-    font-size:1.669rem !important;
-    line-height: 2.25rem !important; 
+    //font-size:1.669rem !important;
+    font-size:clamp(1.6688rem, 1.6688rem + 0vw, 1.6688rem) !important;
+    //line-height: 2.25rem !important; 
+    line-height:clamp(2.25rem, 2.25rem + 0vw, 2.25rem) !important;
     letter-spacing: 0.002rem !important;
     background: transparent !important;
     padding: 0 !important;
+}
+
+.stackerContainer .component__body-inner p{
+    margin: 8px 0 !important;
+}
+
+.stackerContainer .component__instruction-inner{
+    margin-bottom:1.5rem;
 }
 
 .stacker__item-navigation {
@@ -2636,7 +2717,8 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
 .fillintheblanks__widget p,
 .fillintheblanks__widget div,
 {
-    font-size: 1.25rem !important;
+    //font-size: 1.25rem !important;
+    font-size:clamp(1.25rem, 1.25rem + 0vw, 1.25rem) !important;
     font-family: 'FSDillonProRegular' !important;
     margin:0;
     padding:0;
@@ -3603,6 +3685,85 @@ margin:0!important;
 }
 
 //----------------------------------------------------------
+// ED & I Banner 
+//----------------------------------------------------------
+
+.ediComponent .component__body{
+    padding:0 !important;
+    border-radius:4px;
+    background-color: transparent !important;
+}
+.ediComponent .component__body-inner{
+    display: flex;
+    flex-direction: row;
+    padding:0 !important;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 2px solid #AEBDE6;
+}
+
+.ediComponent .contentSection,
+.ediComponent .imageSection{
+    width:100%;
+}
+
+.ediComponent .contentSection{
+ padding:2rem 3rem;    
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ gap: 0.25rem;
+}
+
+.ediComponent .contentSection p{
+    margin: 0.75rem 0 !important;
+}
+
+.ediComponent .contentSection .body{
+    color:#4F6074 !important;
+}
+
+.ediComponent .contentSection .title{
+    color:#041C39 !important;
+}
+
+.ediComponent .imageSection{
+    background-image:url('https://adaptassets.learningpool.com/football_association/assets/68/13/6813f0d03f99ac4798539138.png');
+    background-size: cover;
+    min-height: 15rem;
+    height: auto;
+}
+
+.surveyLink,
+.surveyLink:hover,
+.surveyLink:focus {
+    width: 100%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem;
+    color: #fff !important;
+    background-color: #E1261C !important;
+    border: 1px solid #E1261C !important;
+    border-radius: 4px;
+    text-decoration: none !important;
+    font-size: 1rem;
+    font-family: 'FSDillonProRegular' !important;
+    font-weight: 400;
+    line-height: 1.25rem;
+    cursor: pointer;
+}
+
+
+#adapt #app #wrapper .ediComponent .component__inner .customlink:hover{
+    background-color: #E1261C !important;
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+
+
+//----------------------------------------------------------
 // Image gallery
 //----------------------------------------------------------
 .imagegallery__image-container .imagegallery__image-inner img{
@@ -3689,29 +3850,29 @@ html.no-touch .imagegallery__buttons, html.no-touch .imagegallery__controls{
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-toggle-thumbs {
-    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a580915048803f065b.svg');
+    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a580915048803f065b.svg__;!!KyHJrpw!uwEnj-23UppW_8eFPY6TCqmJVdW5BrY2OoNykNrH8CGEM8CeSj03I-t1IqzivviaAPpXLhoMD7zZH_pWudIpfyIxMqMM$ ');
 }
 
 //.imagegallery__image-container .imagegallery__buttons .imagegallery__button-toggle-thumbs[title="Hide thumbnails"],
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-toggle-thumbs:hover
 {
-    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a43a93e4e66054a1c8.svg');
+    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a43a93e4e66054a1c8.svg__;!!KyHJrpw!uwEnj-23UppW_8eFPY6TCqmJVdW5BrY2OoNykNrH8CGEM8CeSj03I-t1IqzivviaAPpXLhoMD7zZH_pWudIpfzVYd6FT$ ');
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-popout {
-    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a549d86edec37fb5e5.svg');
+    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a549d86edec37fb5e5.svg__;!!KyHJrpw!uwEnj-23UppW_8eFPY6TCqmJVdW5BrY2OoNykNrH8CGEM8CeSj03I-t1IqzivviaAPpXLhoMD7zZH_pWudIpf6dHs9Zx$ ');
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-popout:hover {
-    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/da/67da9a1557e6bd90bab57ce9.svg');
+    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/da/67da9a1557e6bd90bab57ce9.svg__;!!KyHJrpw!uwEnj-23UppW_8eFPY6TCqmJVdW5BrY2OoNykNrH8CGEM8CeSj03I-t1IqzivviaAPpXLhoMD7zZH_pWudIpf5HgQ_tM$ ');
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-show-thumbs {
-    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/dc/67dc2c8900a2aeec666a149e.svg');
+    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/dc/67dc2c8900a2aeec666a149e.svg__;!!KyHJrpw!uwEnj-23UppW_8eFPY6TCqmJVdW5BrY2OoNykNrH8CGEM8CeSj03I-t1IqzivviaAPpXLhoMD7zZH_pWudIpf5KAtYll$ ');
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-show-thumbs:hover {
-    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/dc/67dc2c888ddbf39c9cf0f51d.svg');
+    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/dc/67dc2c888ddbf39c9cf0f51d.svg__;!!KyHJrpw!uwEnj-23UppW_8eFPY6TCqmJVdW5BrY2OoNykNrH8CGEM8CeSj03I-t1IqzivviaAPpXLhoMD7zZH_pWudIpf4LRceyu$ ');
 }
 
 .imagegallery__thumbs-container .imagegallery__thumbs .imagegallery__thumb{
@@ -4553,7 +4714,8 @@ font-size:2.331rem !important;
 }
 
 .Module-Hero .Hero-text{
-   font-size:2.331rem !important;
+   //font-size:2.331rem !important;
+   font-size: clamp(2.3313rem, 2.3313rem + 0vw, 2.3313rem) !important;
 }
 
 //remove later
@@ -4562,7 +4724,8 @@ font-size:2.331rem !important;
 }
 
 .Topic-Hero .Hero-text{
-   font-size:2.331rem !important;
+   //font-size:2.331rem !important;
+    font-size:clamp(2.331rem, 2.331rem + 0vw, 2.331rem) !important;
 }
 
 
@@ -4584,6 +4747,7 @@ font-size:2.331rem !important;
     padding:0 !important;
     background:transparent !important;
 }
+
 
 .hiddenHotspots .block__inner,
 .matchingQuestion .block__inner,
@@ -4615,6 +4779,7 @@ font-size:2.331rem !important;
     padding: 3.5rem 0;
 }
 
+.ediComponent .block__inner,
 .accordionContainer .block__inner,
 .yesnoContainer .block__inner,
 .imageGalleryContainer .block__inner,
@@ -4690,6 +4855,14 @@ font-size:2.331rem !important;
     justify-content:center;
 }
 
+.ediComponent .component__body-inner{
+    flex-direction:column-reverse !important;
+}
+
+.ediComponent .contentSection{
+    padding: 1.5rem !important;
+}
+
 }
 
 @media (max-width: 47.5rem) {
@@ -4709,6 +4882,7 @@ font-size:3.95rem;
 
 .Module-Hero .Hero-text{
    font-size:3.95rem; 
+   font-size: clamp(3.95rem, 3.95rem + 0vw, 3.95rem);
 }
 
 //remove later
@@ -4717,7 +4891,8 @@ font-size:3.95rem;
 }
 
 .Topic-Hero .Hero-text{
-   font-size: 2.96rem;
+   //font-size: 2.96rem;
+   font-size:clamp(2.96rem, 2.96rem + 0vw, 2.96rem);
 }
 
 .subHeadline{
