@@ -1121,37 +1121,37 @@ background: linear-gradient(-45deg, #214C99, #011E41, #004AA3, #214C99);
 @font-face {
   font-family: FSDillonProBold;
   font-style: normal;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProBold.woff ');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProBold.woff');
 }
 
 @font-face {
   font-family: FSDillonProBoldIt;
   font-style: italic;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProBoldIt.woff ');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProBoldIt.woff');
 }
 
 @font-face {
   font-family: FSDillonProMedium;
   font-style: normal;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProMedium.woff ');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProMedium.woff');
 }
 
 @font-face {
   font-family: FSDillonProMediumIt;
   font-style: italic;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProMediumIt.woff ');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProMediumIt.woff');
 }
 
 @font-face {
   font-family: FSDillonProRegular;
   font-style: normal;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProRegular.woff ');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProRegular.woff');
 }
 
 @font-face {
   font-family: FSDillonProItalic;
   font-style: italic;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProItalic.woff ');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProItalic.woff');
 }
 
 // ---------------------------------------------------------
@@ -1617,6 +1617,8 @@ body .block__inner {
     padding:0;
 }
 
+//.mcq .btn__marking,
+//.gmcq .btn__marking,
 .hiddenHotspots .btn__marking,
 .textinput .btn__marking,
 .matching .btn__marking,
@@ -1624,9 +1626,7 @@ body .block__inner {
 .stackerContainer .btn__marking,
 .slider .btn__marking,
 .confidenceslider .btn__marking,
-.truefalse .btn__marking,
-.mcq .btn__marking,
-.gmcq .btn__marking
+.truefalse .btn__marking
 {
     display:none;
 }
@@ -1697,20 +1697,20 @@ body .block__inner {
 
 //MCQ
 .mcq .mcq__inner .mcq__widget .mcq-item__state.mcq-item__state-correctness{
-    display:none !important;
+    //display:none !important;
 }
 
 //GMCQ
 .gmcq .gmcq__inner .gmcq__widget .gmcq-item__state.gmcq-item__state-correctness{
-    display:none !important;
+    //display:none !important;
 }
 
 //MCQ
 .mcq-item__text,
 {
     display: block;
-    border-radius: 4px;
-    border: 2px solid #AEBDE6;
+    //border-radius: 4px;
+    //border: 2px solid #AEBDE6;
     width:100%;
 }
 
@@ -1718,8 +1718,8 @@ body .block__inner {
 //MCQ
 .mcq-item__label
 {
-   // border-radius: 4px !important;
-   //  border: 2px solid #AEBDE6 !important;
+    border-radius: 4px !important;
+    border: 2px solid #AEBDE6 !important;
 }
 
 //GMCQ
@@ -1827,6 +1827,11 @@ body .block__inner {
 
 //MCQ
 #wrapper .mcq .mcq-item__label:hover .mcq-item__text {
+    //border-color:#1E438E;
+}
+
+//MCQ
+#wrapper .mcq .mcq-item__label:hover {
     border-color:#1E438E;
 }
 
@@ -1852,6 +1857,10 @@ body .block__inner {
 
 //MCQ
 #wrapper .mcq .is-selected .mcq-item__label{
+    //border-color:#355699 !important;
+}
+
+#wrapper .mcq .is-selected{
     border-color:#355699 !important;
 }
 
@@ -1934,7 +1943,11 @@ body .block__inner {
 
 //MCQ
 #wrapper .mcq .mcq__inner .mcq__widget .is-incorrect .is-selected .mcq-item__text{
-    border-color:#EE908C !important;
+   // border-color:#EE908C !important;
+}
+
+#wrapper .mcq .mcq__inner .mcq__widget .is-incorrect .is-selected{
+   border-color:#EE908C !important;
 }
 
 //GMCQ
@@ -1944,6 +1957,10 @@ body .block__inner {
 
 //MCQ
 #wrapper .mcq .mcq__inner .mcq__widget .is-correct .is-selected .mcq-item__text{
+    //border-color:#D1FADF !important;
+}
+
+#wrapper .mcq .mcq__inner .mcq__widget .is-correct .is-selected{
     border-color:#D1FADF !important;
 }
 
@@ -1979,6 +1996,85 @@ body .block__inner {
     top: .8rem;
     background-color: transparent !important;
     box-shadow: none !important;
+}
+
+//MCQ
+#wrapper .mcq .mcq__inner .mcq__widget .mcq-item label .mcq-item__state-correctness .mcq-item__icon.mcq-item__icon .icon {
+    position:relative;
+}
+
+//MCQ
+#wrapper .mcq .mcq__inner .mcq__widget .mcq-item label .mcq-item__state-correctness .mcq-item__icon.mcq-item__correct-icon .icon:before, 
+#wrapper .mcq .mcq__inner .mcq__widget .mcq-item label .mcq-item__state-correctness .mcq-item__icon.mcq-item__incorrect-icon .icon:before{
+    left: -1.5rem;
+    font-size: 1rem;
+    font-weight:bold;
+    width:2.3rem;
+    height:2.3rem;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+//MCQ
+#wrapper .mcq .mcq__inner .mcq__widget .mcq-item label .mcq-item__state-correctness .mcq-item__icon.mcq-item__incorrect-icon .icon:before{
+    color: #DD221A !important;
+    background: #fff !important;
+    border: 3px solid #DD221A !important;
+}
+
+//GMCQ
+#wrapper .page .article .block .gmcq__inner .gmcq__widget .gmcq-item label .gmcq-item__state-correctness .gmcq-item__icon.gmcq-item__incorrect-icon .icon{
+    color: #DD221A !important;
+    background: #fff !important;
+    border: 3px solid #DD221A !important;
+}
+
+//MCQ
+#wrapper .mcq .mcq__inner .mcq__widget .mcq-item label .mcq-item__state-correctness .mcq-item__icon.mcq-item__correct-icon .icon:before{
+    color: #039855 !important;
+    background: #fff !important;
+    border: 3px solid #039855 !important;
+}
+
+//GMCQ
+#wrapper .page .article .block .gmcq__inner .gmcq__widget .gmcq-item label .gmcq-item__state-correctness .gmcq-item__icon.gmcq-item__correct-icon .icon{
+    color: #039855 !important;
+    background: #fff !important;
+    border: 3px solid #039855 !important;
+}
+
+//GMCQ
+#wrapper .gmcq .gmcq__inner .gmcq__widget .gmcq-item label .gmcq-item__state-correctness .gmcq-item__icon.gmcq-item__correct-icon .icon:before, 
+#wrapper .gmcq .gmcq__inner .gmcq__widget .gmcq-item label .gmcq-item__state-correctness .gmcq-item__icon.gmcq-item__incorrect-icon .icon:before
+{
+    font-size: 1rem;
+    font-weight:bold;
+}
+
+.mcq .btn__marking,
+.gmcq .btn__marking{
+    top: 0;
+}
+
+.mcq .btn__marking.is-incorrect .icon,
+.gmcq .btn__marking.is-incorrect .icon
+{
+    background-color:#DD221A;
+}
+
+.mcq .btn__marking.is-correct .icon,
+.gmcq .btn__marking.is-correct .icon
+{
+    background-color:#039855;
+}
+
+.mcq .btn__marking .icon:before,
+.gmcq .btn__marking .icon:before
+{
+    //font-size: 1.25rem;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 //GMCQ
@@ -2034,6 +2130,12 @@ body .block__inner {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
+}
+
+.gmcq__inner .gmcq__widget .gmcq-item__state.gmcq-item__state-correctness{
+    position: absolute !important;
+    left: unset !important;
+    right: 0 !important;
 }
 
 .gmcq__inner .gmcq__widget .gmcq-item__text-inner{
@@ -2622,14 +2724,14 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
     margin-top:1.25rem !important;
 }
 
-.stacker__item-sorter {
+.stacker__widget:not(.stacker__not-sliding) .stacker__item-sorter {
     display: none !important;
 }
 
 .stacker__item-image-text{
     display: flex;
     align-items: center;
-    padding: 16px 52px;
+    padding: 1rem 3.25rem;
     background-color: #515D7A !important;
     color: #ffffff;
     font-family: 'FSDillonProRegular' ;
@@ -2682,6 +2784,164 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
 
 .stackerContainer .js-a11y-completion-description {
     display: none;
+}
+
+
+.stacker__not-sliding .stacker{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.background-colour1 .stacker__not-sliding .stacker .stacker__item-image-text{
+    background-color: #fff !important;
+    border: 2px solid #AEBDE6;
+    border-radius: 4px;
+    color:#041C39;
+}
+
+.background-colour2 .stacker__not-sliding .stacker .stacker__item-image-text{
+    background-color: rgba(255, 255, 255, 0.10) !important;
+    border: 2px solid #AEBDE6;
+    border-radius: 4px;
+    color:#FFF;
+}
+
+.stacker__not-sliding .stacker__item-sorter-index
+{
+    font-size: 1rem;
+    //font-weight: bold;
+    border-radius: 50%;
+    padding: 0 5px !important; 
+    font-family: 'FSDillonProBold' !important;
+}
+
+.stacker__not-sliding .stacker__item-sorter-picker-selector{
+    font-size: 1rem;
+    //padding: 0 5px !important; 
+    font-family: 'FSDillonProRegular' !important;
+}
+
+.background-colour1 .stacker__not-sliding .stacker__item-sorter-picker-selector{
+    color: #323231;
+}
+
+.background-colour2 .stacker__not-sliding .stacker__item-sorter-picker-selector{
+    color: #FFFFFF;
+}
+
+.background-colour1 .stacker__not-sliding .stacker__item-sorter-index
+{
+    color: #323231;
+    border: 2px solid #323231;
+}
+
+.background-colour2 .stacker__not-sliding .stacker__item-sorter-index
+{
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+
+#wrapper .page .background-colour1.article .stacker__not-sliding .element-color-icon-dynamic .icon{
+    color:#024597;
+}
+
+#wrapper .page .background-colour2.article .stacker__not-sliding .element-color-icon-dynamic .icon{
+    color:#FFFFFF;
+}
+
+#wrapper .page .stacker__not-sliding .element-color-icon-dynamic .stacker__item-sorter-index:hover,
+#wrapper .page .stacker__not-sliding .element-color-icon-dynamic .icon:hover
+{
+    color:inherit;
+}
+
+
+.stacker__not-sliding .stacker__item-sorter{
+    display: flex;
+    flex-direction: column;
+    width: 3.4rem !important;
+    height: 3.4rem !important;
+    left: 0.875rem !important;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent !important;
+}
+
+
+.stacker__not-sliding .stacker__item-sorter:hover{
+    background-color: #00539F !important;
+    color:#ffffff !important;
+}
+
+.stacker__not-sliding .stacker__item-sorter:hover .stacker__item-sorter-index{
+    color: #FFFFFF !important;
+    border: 2px solid #FFFFFF !important;
+}
+
+#wrapper .page .background-colour1.article .stacker__not-sliding .element-color-icon-dynamic.stacker__item-sorter:hover .icon,
+#wrapper .page .background-colour2.article .stacker__not-sliding .element-color-icon-dynamic.stacker__item-sorter:hover .icon{
+    color: #FFFFFF !important;
+}
+
+.stacker__not-sliding .stacker__item-image-text{
+    padding: 1rem 3.75rem;
+}
+
+.stacker__inner .stacker__widget.stacker__not-sliding .stacker__item-sorter i{
+   height:auto !important; 
+}
+
+.stacker__inner .stacker__widget.stacker__not-sliding .stacker__item-sorter-picker-selector{
+    height:1.75rem;
+    width:1.75rem;
+    border: 1px solid #AEBDE6 !important;
+    background-color: #FFF !important;
+    color:#323231 !important;
+}
+
+.stacker__inner .stacker__widget.stacker__not-sliding .stacker__item-sorter-picker-selector:first-child{
+   // border-top: 1px solid #AEBDE6;
+}
+
+.stacker__inner .stacker__widget.stacker__not-sliding .stacker__item-sorter-picker-selector:hover{
+    background-color: #00539F !important;
+    color:#ffffff !important;
+}
+
+.stacker__inner .stacker__widget.stacker__not-sliding .stacker__item-sorter-picker{
+    left:2.5rem;
+}
+
+.stacker__inner .stacker__widget.stacker__not-sliding .stacker__item-sorter-picker .stacker__item-sorter-picker-inner{
+   border-radius:0;
+}
+
+.stacker__inner .stacker__widget.stacker__not-sliding .stacker__item-sorter-picker .stacker__item-sorter-picker-pin{
+    display:none;
+}
+
+.stacker__inner .stacker__widget.show-user-answer .stacker__item-marking-is-correct:before,
+.stacker__inner .stacker__widget.show-user-answer .stacker__item-marking-is-incorrect:before{
+    box-shadow:none !important;
+    font-size: 1rem !important;
+    font-weight: bold !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stacker__inner .stacker__widget.show-user-answer .stacker__item-marking-is-incorrect:before{
+    color: #DD221A !important;
+    background: #fff !important;
+    border: 3px solid #DD221A !important;
+}
+
+.stacker__inner .stacker__widget.show-user-answer .stacker__item-marking-is-correct:before{
+    color: #039855 !important;
+    background: #fff !important;
+    border: 3px solid #039855 !important;
 }
 
 //----------------------------------------------------------
@@ -3713,6 +3973,7 @@ margin:0!important;
  flex-direction: column;
  justify-content: center;
  gap: 0.25rem;
+ min-height: 288px;
 }
 
 .ediComponent .contentSection p{
@@ -3743,8 +4004,6 @@ margin:0!important;
     justify-content: center;
     padding: 0.75rem;
     color: #fff !important;
-    background-color: #E1261C !important;
-    border: 1px solid #E1261C !important;
     border-radius: 4px;
     text-decoration: none !important;
     font-size: 1rem;
@@ -3754,9 +4013,21 @@ margin:0!important;
     cursor: pointer;
 }
 
+.surveyLink,
+.surveyLink:focus{
+    background-color: #E1261C !important;
+    border: 1px solid #E1261C !important;
+}
+
+.surveyLink:hover{
+    background-color: #00539f !important;
+    border: 1px solid #00539f !important;
+}
+
+
 
 #adapt #app #wrapper .ediComponent .component__inner .customlink:hover{
-    background-color: #E1261C !important;
+    background-color: #00539f !important;
     color: #fff !important;
     text-decoration: none !important;
 }
@@ -3850,29 +4121,29 @@ html.no-touch .imagegallery__buttons, html.no-touch .imagegallery__controls{
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-toggle-thumbs {
-    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a580915048803f065b.svg__;!!KyHJrpw!uwEnj-23UppW_8eFPY6TCqmJVdW5BrY2OoNykNrH8CGEM8CeSj03I-t1IqzivviaAPpXLhoMD7zZH_pWudIpfyIxMqMM$ ');
+    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a580915048803f065b.svg');
 }
 
 //.imagegallery__image-container .imagegallery__buttons .imagegallery__button-toggle-thumbs[title="Hide thumbnails"],
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-toggle-thumbs:hover
 {
-    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a43a93e4e66054a1c8.svg__;!!KyHJrpw!uwEnj-23UppW_8eFPY6TCqmJVdW5BrY2OoNykNrH8CGEM8CeSj03I-t1IqzivviaAPpXLhoMD7zZH_pWudIpfzVYd6FT$ ');
+    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a43a93e4e66054a1c8.svg');
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-popout {
-    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a549d86edec37fb5e5.svg__;!!KyHJrpw!uwEnj-23UppW_8eFPY6TCqmJVdW5BrY2OoNykNrH8CGEM8CeSj03I-t1IqzivviaAPpXLhoMD7zZH_pWudIpf6dHs9Zx$ ');
+    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a549d86edec37fb5e5.svg');
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-popout:hover {
-    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/da/67da9a1557e6bd90bab57ce9.svg__;!!KyHJrpw!uwEnj-23UppW_8eFPY6TCqmJVdW5BrY2OoNykNrH8CGEM8CeSj03I-t1IqzivviaAPpXLhoMD7zZH_pWudIpf5HgQ_tM$ ');
+    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/da/67da9a1557e6bd90bab57ce9.svg');
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-show-thumbs {
-    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/dc/67dc2c8900a2aeec666a149e.svg__;!!KyHJrpw!uwEnj-23UppW_8eFPY6TCqmJVdW5BrY2OoNykNrH8CGEM8CeSj03I-t1IqzivviaAPpXLhoMD7zZH_pWudIpf5KAtYll$ ');
+    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/dc/67dc2c8900a2aeec666a149e.svg');
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-show-thumbs:hover {
-    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/dc/67dc2c888ddbf39c9cf0f51d.svg__;!!KyHJrpw!uwEnj-23UppW_8eFPY6TCqmJVdW5BrY2OoNykNrH8CGEM8CeSj03I-t1IqzivviaAPpXLhoMD7zZH_pWudIpf4LRceyu$ ');
+    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/dc/67dc2c888ddbf39c9cf0f51d.svg');
 }
 
 .imagegallery__thumbs-container .imagegallery__thumbs .imagegallery__thumb{
@@ -4861,6 +5132,7 @@ font-size:2.331rem !important;
 
 .ediComponent .contentSection{
     padding: 1.5rem !important;
+    min-height: unset;
 }
 
 }
