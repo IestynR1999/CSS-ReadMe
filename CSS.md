@@ -5361,4 +5361,34 @@ font-size:3.95rem;
 .mcqContainer .mcq .mcq__inner .mcq__widget .mcq-item__text {
         padding: 1.25rem 3.75rem 1.25rem;
     }
+
+//Graphic padding    
+.graphic-padding-right-left-60 {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+ 
+.graphic-padding-right-left-80 {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+ 
+.graphic-padding-right-left-100 {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+ 
+.graphic-padding-right-left-120 {
+    padding-left: 120px;
+    padding-right: 120px;
+}
+ 
+.graphic-padding-right-left-140 {
+    padding-left: 140px;
+    padding-right: 140px;
+}
+ 
+.graphic-padding-top-20 {
+    padding-top: 20px;
+}
 ```
