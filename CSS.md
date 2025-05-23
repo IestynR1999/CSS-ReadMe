@@ -9,6 +9,89 @@ border-radius: 0px;
     pointer-events: none;
 }
 
+//Hotgraphic Pins
+
+#wrapper .page .hotgraphic .hotgraphic__inner .hotgraphic__widget.is-pin .hotgraphic__pin-item .hotgraphic__pin, #wrapper .page .hotgraphic .hotgraphic__inner .hotgraphic__widget.is-pin .hotgraphic__pin-item .hotgraphic__pin .icon
+ {
+    border-radius: 50%;
+    background-color: transparent;
+    height: 70px;
+    width: 70px;
+}
+
+@media (max-width:1023px){
+     #wrapper .page .hotgraphic .hotgraphic__inner .hotgraphic__widget.is-pin .hotgraphic__pin-item .hotgraphic__pin, #wrapper .page .hotgraphic .hotgraphic__inner .hotgraphic__widget.is-pin .hotgraphic__pin-item .hotgraphic__pin .icon {
+    border-radius: 50%;
+    background-color: transparent;
+    height: 55px;
+    width: 55px;
+}
+}
+
+//Graphic padding  
+ 
+.graphic-padding-right-left-20 {
+    padding-left: 20px;
+    padding-right: 20px;
+}  
+ 
+.graphic-padding-right-left-40 {
+    padding-left: 40px;
+    padding-right: 40px;
+}  
+ 
+.graphic-padding-right-left-60 {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.graphic-padding-right-left-80 {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.graphic-padding-right-left-100 {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.graphic-padding-right-left-120 {
+    padding-left: 120px;
+    padding-right: 120px;
+}
+.graphic-padding-right-left-140 {
+    padding-left: 140px;
+    padding-right: 140px;
+}
+.graphic-padding-top-20 {
+    padding-top: 20px;
+}
+ 
+.graphic-padding-top-40 {
+    padding-top: 40px;
+}
+ 
+.graphic-padding-top-60 {
+    padding-top: 60px;
+}
+ 
+.graphic-padding-top-80 {
+    padding-top: 80px;
+}
+ 
+.graphic-padding-bottom-20 {
+    padding-bottom: 20px;
+}
+ 
+.graphic-padding-bottom-40 {
+    padding-bottom: 40px;
+}
+ 
+.graphic-padding-bottom-60 {
+    padding-bottom: 60px;
+}
+ 
+.graphic-padding-bottom-80 {
+    padding-bottom: 80px;
+}
+
 #adapt #app #wrapper .component__inner .assetlink:hover, 
 #adapt #app #wrapper .component__inner .customlink:hover{
     color: unset !important;
@@ -316,7 +399,7 @@ div.component {
 
 
 .flipcard .flipcard__item-back {
-    background-color:#AEBDE6 !important;
+    background-color:#F0F1F4 !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -337,7 +420,7 @@ div.component {
 .flipcard .flipcard__item-back-body ul,
 .flipcard .flipcard__item-back-body li
 {
-    font-size: 1rem !important;
+    font-size: 1.25rem !important;
     font-style: normal !important;
     font-weight: 400 !important;
     line-height: 1.25rem !important;
@@ -1121,37 +1204,37 @@ background: linear-gradient(-45deg, #214C99, #011E41, #004AA3, #214C99);
 @font-face {
   font-family: FSDillonProBold;
   font-style: normal;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProBold.woff');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProBold.woff ');
 }
 
 @font-face {
   font-family: FSDillonProBoldIt;
   font-style: italic;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProBoldIt.woff');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProBoldIt.woff ');
 }
 
 @font-face {
   font-family: FSDillonProMedium;
   font-style: normal;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProMedium.woff');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProMedium.woff ');
 }
 
 @font-face {
   font-family: FSDillonProMediumIt;
   font-style: italic;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProMediumIt.woff');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProMediumIt.woff ');
 }
 
 @font-face {
   font-family: FSDillonProRegular;
   font-style: normal;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProRegular.woff');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProRegular.woff ');
 }
 
 @font-face {
   font-family: FSDillonProItalic;
   font-style: italic;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProItalic.woff');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProItalic.woff ');
 }
 
 // ---------------------------------------------------------
@@ -3259,12 +3342,13 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
 
 .background-colour1 .branching__item-inner{
     background-color: #FFFFFF;
+    border: 1px solid #CED1DA;
     border-radius: 4px;
 }
 
 .background-colour2 .branching__item-inner{
-    //background-color: #323231;
     background-color: #404040;
+    border: 1px solid #5F5F5F;
     border-radius: 4px;
 }
 
@@ -3406,6 +3490,11 @@ color: #FFFFFF !important;
     line-height:1.5rem !important;
 }
 
+.background-colour1 .branching__item-feedback-body p,
+.background-colour1 .branching__item-feedback-body div,
+.background-colour1 .branching__item-feedback-body span,
+.background-colour1 .branching__item-feedback-body ul,
+.background-colour1 .branching__item-feedback-body li,
 .background-colour1 .branching__item-feedback-breakdown-item,
 .background-colour1 .branching__item-feedback-breakdown-item p,
 .background-colour1 .branching__item-feedback-breakdown-item div,
@@ -3419,6 +3508,12 @@ color: #FFFFFF !important;
     line-height:1.5rem !important;
 }
 
+
+.background-colour2 .branching__item-feedback-body p,
+.background-colour2 .branching__item-feedback-body div,
+.background-colour2 .branching__item-feedback-body span,
+.background-colour2 .branching__item-feedback-body ul,
+.background-colour2 .branching__item-feedback-body li,
 .background-colour2 .branching__item-feedback-breakdown-item,
 .background-colour2 .branching__item-feedback-breakdown-item p,
 .background-colour2 .branching__item-feedback-breakdown-item div,
@@ -4121,29 +4216,29 @@ html.no-touch .imagegallery__buttons, html.no-touch .imagegallery__controls{
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-toggle-thumbs {
-    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a580915048803f065b.svg');
+    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a580915048803f065b.svg__;!!KyHJrpw!oIhN5D0T3crEZ4QmXu5DnaweaU5NANXYMd-z0-aKEJuvq7-Y5tam1KXxxTuJOzaMWQnMCvIksp9gocASisCVBYaL1dvQ$ ');
 }
 
 //.imagegallery__image-container .imagegallery__buttons .imagegallery__button-toggle-thumbs[title="Hide thumbnails"],
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-toggle-thumbs:hover
 {
-    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a43a93e4e66054a1c8.svg');
+    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a43a93e4e66054a1c8.svg__;!!KyHJrpw!oIhN5D0T3crEZ4QmXu5DnaweaU5NANXYMd-z0-aKEJuvq7-Y5tam1KXxxTuJOzaMWQnMCvIksp9gocASisCVBegJaBrQ$ ');
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-popout {
-    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a549d86edec37fb5e5.svg');
+    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a549d86edec37fb5e5.svg__;!!KyHJrpw!oIhN5D0T3crEZ4QmXu5DnaweaU5NANXYMd-z0-aKEJuvq7-Y5tam1KXxxTuJOzaMWQnMCvIksp9gocASisCVBc0EAXgI$ ');
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-popout:hover {
-    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/da/67da9a1557e6bd90bab57ce9.svg');
+    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/da/67da9a1557e6bd90bab57ce9.svg__;!!KyHJrpw!oIhN5D0T3crEZ4QmXu5DnaweaU5NANXYMd-z0-aKEJuvq7-Y5tam1KXxxTuJOzaMWQnMCvIksp9gocASisCVBeQOhYxI$ ');
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-show-thumbs {
-    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/dc/67dc2c8900a2aeec666a149e.svg');
+    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/dc/67dc2c8900a2aeec666a149e.svg__;!!KyHJrpw!oIhN5D0T3crEZ4QmXu5DnaweaU5NANXYMd-z0-aKEJuvq7-Y5tam1KXxxTuJOzaMWQnMCvIksp9gocASisCVBf9EMhU_$ ');
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-show-thumbs:hover {
-    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/dc/67dc2c888ddbf39c9cf0f51d.svg');
+    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/dc/67dc2c888ddbf39c9cf0f51d.svg__;!!KyHJrpw!oIhN5D0T3crEZ4QmXu5DnaweaU5NANXYMd-z0-aKEJuvq7-Y5tam1KXxxTuJOzaMWQnMCvIksp9gocASisCVBQ3Zhizl$ ');
 }
 
 .imagegallery__thumbs-container .imagegallery__thumbs .imagegallery__thumb{
@@ -5361,34 +5456,4 @@ font-size:3.95rem;
 .mcqContainer .mcq .mcq__inner .mcq__widget .mcq-item__text {
         padding: 1.25rem 3.75rem 1.25rem;
     }
-
-//Graphic padding    
-.graphic-padding-right-left-60 {
-    padding-left: 60px;
-    padding-right: 60px;
-}
- 
-.graphic-padding-right-left-80 {
-    padding-left: 80px;
-    padding-right: 80px;
-}
- 
-.graphic-padding-right-left-100 {
-    padding-left: 100px;
-    padding-right: 100px;
-}
- 
-.graphic-padding-right-left-120 {
-    padding-left: 120px;
-    padding-right: 120px;
-}
- 
-.graphic-padding-right-left-140 {
-    padding-left: 140px;
-    padding-right: 140px;
-}
- 
-.graphic-padding-top-20 {
-    padding-top: 20px;
-}
 ```
