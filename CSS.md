@@ -17,16 +17,16 @@ border-radius: 0px;
  {
     border-radius: 50%;
     background-color: transparent;
-    height: 70px;
-    width: 70px;
+    height: 80px;
+    width: 80px;
 }
 
 @media (max-width:1023px){
      #wrapper .page .hotgraphic .hotgraphic__inner .hotgraphic__widget.is-pin .hotgraphic__pin-item .hotgraphic__pin, #wrapper .page .hotgraphic .hotgraphic__inner .hotgraphic__widget.is-pin .hotgraphic__pin-item .hotgraphic__pin .icon {
     border-radius: 50%;
     background-color: transparent;
-    height: 55px;
-    width: 55px;
+    height: 65px;
+    width: 65px;
 }
 }
 
