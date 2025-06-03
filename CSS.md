@@ -94,6 +94,8 @@ border-radius: 0px;
     padding-bottom: 80px;
 }
 
+//sagnik code
+
 #adapt #app #wrapper .component__inner .assetlink:hover, 
 #adapt #app #wrapper .component__inner .customlink:hover{
     color: unset !important;
@@ -828,11 +830,20 @@ div.component {
 .truefalse__item-radio.is-incorrect .truefalse__item-marking-icon .icon:before,
 .truefalse__item-radio.is-correct .truefalse__item-marking-icon .icon:before
 {
-    content: "\e96e" !important;
+    //content: "\e96e" !important;
     padding: 0 !important;
     margin: 0 !important;
     box-shadow: none !important;
-    background-color: transparent !important;
+    background-color: #fff !important;
+    border: 2px solid;
+    height: 1.5rem;
+    width: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: bold;
+    outline: 3px solid #fff;
 }
 
 .truefalse__item-radio.is-incorrect .truefalse__item-marking-icon .icon{
@@ -1206,37 +1217,37 @@ background: linear-gradient(-45deg, #214C99, #011E41, #004AA3, #214C99);
 @font-face {
   font-family: FSDillonProBold;
   font-style: normal;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProBold.woff ');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProBold.woff');
 }
 
 @font-face {
   font-family: FSDillonProBoldIt;
   font-style: italic;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProBoldIt.woff ');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProBoldIt.woff');
 }
 
 @font-face {
   font-family: FSDillonProMedium;
   font-style: normal;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProMedium.woff ');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProMedium.woff');
 }
 
 @font-face {
   font-family: FSDillonProMediumIt;
   font-style: italic;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProMediumIt.woff ');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProMediumIt.woff');
 }
 
 @font-face {
   font-family: FSDillonProRegular;
   font-style: normal;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProRegular.woff ');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProRegular.woff');
 }
 
 @font-face {
   font-family: FSDillonProItalic;
   font-style: italic;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProItalic.woff ');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProItalic.woff');
 }
 
 // ---------------------------------------------------------
@@ -1451,10 +1462,15 @@ background: linear-gradient(-45deg, #214C99, #011E41, #004AA3, #214C99);
 .background-colour1 .Body-Link-Regular,
 .background-colour1 .Body-Link-Regular:hover,
 .background-colour1 .Body-Link-Regular:focus,
-.background-colour1 .Body-Link-Regular:visited
+.background-colour1 .Body-Link-Regular:visited,
+#adapt #app #wrapper .background-colour1 .component__inner .customlink,
+#adapt #app #wrapper .background-colour1 .component__inner .customlink:hover,
+#adapt #app #wrapper .background-colour1 .component__inner .customlink:focus,
+#adapt #app #wrapper .background-colour1 .component__inner .customlink:visited
 {
     color:#024597 !important;
 }
+
 
 .background-colour2 .Body-Link,
 .background-colour2 .Body-Link:hover,
@@ -1463,9 +1479,14 @@ background: linear-gradient(-45deg, #214C99, #011E41, #004AA3, #214C99);
 .background-colour2 .Body-Link-Regular,
 .background-colour2 .Body-Link-Regular:hover,
 .background-colour2 .Body-Link-Regular:focus,
-.background-colour2 .Body-Link-Regular:visited
+.background-colour2 .Body-Link-Regular:visited,
+#adapt #app #wrapper .background-colour2 .component__inner .customlink,
+#adapt #app #wrapper .background-colour2 .component__inner .customlink:hover,
+#adapt #app #wrapper .background-colour2 .component__inner .customlink:focus,
+#adapt #app #wrapper .background-colour2 .component__inner .customlink:visited
 {
-    color:#F0F1F4 !important;
+    //color:#F0F1F4 !important;
+    color:#AEBDE6 !important;
 }
 
 //remove later
@@ -1713,7 +1734,7 @@ body .block__inner {
 .confidenceslider .btn__marking,
 .truefalse .btn__marking
 {
-    display:none;
+   // display:none;
 }
 
 .background-colour1 .hiddenHotspots .block__inner,
@@ -2137,23 +2158,27 @@ body .block__inner {
     font-weight:bold;
 }
 
+.btn__marking,
 .mcq .btn__marking,
 .gmcq .btn__marking{
     top: 0;
 }
 
+.btn__marking.is-incorrect .icon,
 .mcq .btn__marking.is-incorrect .icon,
 .gmcq .btn__marking.is-incorrect .icon
 {
     background-color:#DD221A;
 }
 
+.btn__marking.is-correct .icon,
 .mcq .btn__marking.is-correct .icon,
 .gmcq .btn__marking.is-correct .icon
 {
     background-color:#039855;
 }
 
+.btn__marking .icon:before,
 .mcq .btn__marking .icon:before,
 .gmcq .btn__marking .icon:before
 {
@@ -2615,10 +2640,6 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
 //----------------------------------------------------------
 
 
-//.background-colour1 .slider .slider__inner .slider__widget .slider__item-input-track{
-//    background-color: #FFFFFF !important;
-//}
-
 .background-colour1 .slider .slider__inner .slider__widget .slider__item-input-track,
 .background-colour2 .slider .slider__inner .slider__widget .slider__item-input-track{
     //background-color: #E9EBF1 !important;
@@ -2630,25 +2651,49 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
     //background-color: #E9EBF1 !important;
 }
 
-//.background-colour1 .slider .slider__inner .slider__widget .slider__item-input-fill{
-//    background-color: #1E438E !important;
-//}
-
+.slider .slider__inner .slider__widget.is-submitted.is-incorrect .slider__item-input-fill,
+.slider .slider__inner .slider__widget.is-submitted.is-correct .slider__item-input-fill,
 .background-colour1 .slider .slider__inner .slider__widget .slider__item-input-fill,
 .background-colour2 .slider .slider__inner .slider__widget .slider__item-input-fill{
     background-color: #AEBDE6 !important;
 }
 
+.confidenceslider .slider__inner .slider__widget.is-submitted.is-incorrect .slider__item-input-fill,
+.confidenceslider .slider__inner .slider__widget.is-submitted.is-correct .slider__item-input-fill,
 .background-colour1 .confidenceslider .slider__inner .slider__widget .slider__item-input-fill,
 .background-colour2 .confidenceslider .slider__inner .slider__widget .slider__item-input-fill{
     background-color: #AEBDE6 !important;
 }
 
+//.confidenceslider .slider__inner .slider__widget.is-submitted.is-correct .slider__number-selection, 
 .confidenceslider .slider__inner .slider__widget.is-submitted.is-correct .slider__item-input-fill, 
-.confidenceslider .slider__inner .slider__widget.is-submitted.is-correct .slider__number-selection, 
 .confidenceslider .slider__inner .slider__widget.is-submitted.is-correct .slider__handle
 {
-    background-color: #039855 !important;
+   // background-color: #039855 !important;
+}
+
+.background-colour1 .slider .slider__inner .slider__widget.is-submitted.is-correct .slider__number-selection,
+.background-colour1 .confidenceslider .slider__inner .slider__widget.is-submitted.is-correct .slider__number-selection{
+    color: #fff !important;
+   // background-color: #039855 !important;
+}
+
+.background-colour2 .slider .slider__inner .slider__widget.is-submitted.is-correct .slider__number-selection,
+.background-colour2 .confidenceslider .slider__inner .slider__widget.is-submitted.is-correct .slider__number-selection{
+    //color: #039855 !important;
+    //background-color: #ECFDF3 !important;
+}
+
+.background-colour1 .slider .slider__inner .slider__widget.is-submitted.is-incorrect .slider__number-selection,
+.background-colour1 .confidenceslider .slider__inner .slider__widget.is-submitted.is-incorrect .slider__number-selection{
+    //color: #fff !important;
+    //background-color: #DD221A !important;
+}
+
+.background-colour2 .slider .slider__inner .slider__widget.is-submitted.is-incorrect .slider__number-selection,
+.background-colour2 .confidenceslider .slider__inner .slider__widget.is-submitted.is-incorrect .slider__number-selection{
+    //color: #DD221A !important;
+    //background-color: #FCE9E8 !important;
 }
 
 .background-colour1 .slider .slider__scale-notch-container,
@@ -2711,17 +2756,33 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
     color:#FFF !important;
 }
 
-//.confidenceslider .slider__inner .slider__widget.is-submitted.is-correct .slider__number-selection{
+//.confidenceslider .slider__inner .slider__widget.is-submitted.is-correct .slider__number-selection{,
+.slider .slider__inner .slider__widget .slider__number-selection,
 .confidenceslider .slider__inner .slider__widget .slider__number-selection{
     font-family: 'FSDillonProBold' !important;
     font-size:1rem !important;
-    color:#FFF !important;
     box-shadow:none !important;
     border-radius: 4px !important;
     height: 1.5rem !important;
     padding: 0 4px !important;
     //background-color: #323231 !important;
     background-color: #404040 !important;
+}
+
+.background-colour1 .slider .slider__inner .slider__widget.is-submitted.is-correct .slider__number-selection,
+.background-colour1 .slider .slider__inner .slider__widget.is-submitted.is-incorrect .slider__number-selection,
+.background-colour1 .slider .slider__inner .slider__widget .slider__number-selection,
+.background-colour1 .confidenceslider .slider__inner .slider__widget .slider__number-selection{
+    color:#FFF !important;
+    background-color: #404040 !important;
+}
+
+.background-colour2 .slider .slider__inner .slider__widget.is-submitted.is-correct .slider__number-selection,
+.background-colour2 .slider .slider__inner .slider__widget.is-submitted.is-incorrect .slider__number-selection,
+.background-colour2 .slider .slider__inner .slider__widget .slider__number-selection,
+.background-colour2 .confidenceslider .slider__inner .slider__widget .slider__number-selection{
+    color:#011228 !important;
+    background-color: #FFF !important;
 }
 
 .confidenceslider .slider__number{
@@ -2739,22 +2800,10 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
     line-height:clamp(1.25rem, 1.25rem + 0vw, 1.25rem) !important;
 }
 
-.slider .slider__inner .slider__widget .slider__label-container{
-    //margin: 0 !important;
-    //width: 100% !important;
+.confidenceslider .slider__inner .slider__widget .slider__item-input-fill-linked{
+    background-color: #ffffff !important;
 }
 
-.slider .slider__inner .slider__widget .slider__number-container{
-   //width: 100% !important;
-}
-
-.slider .slider__inner .slider__widget .slider__scale-container{
-   //width: 100% !important;
-}
-
-.slider .slider__inner .slider__widget .slider__item-input-track{
-   //width: 100% !important;
-}
 
 .slider .slider__inner .slider__widget{
    //padding: 1.25rem 1.5rem !important;
@@ -3007,6 +3056,15 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
     display:none;
 }
 
+.stacker__inner .stacker__widget .stacker__item-marking {
+    margin: 0 !important;
+}
+
+.stacker__inner .stacker__widget.show-user-answer .stacker__item-marking-is-correct,
+.stacker__inner .stacker__widget.show-user-answer .stacker__item-marking-is-incorrect{
+    transform: translate(0, -50%) !important;
+}
+
 .stacker__inner .stacker__widget.show-user-answer .stacker__item-marking-is-correct:before,
 .stacker__inner .stacker__widget.show-user-answer .stacker__item-marking-is-incorrect:before{
     box-shadow:none !important;
@@ -3015,18 +3073,22 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
     display: flex;
     align-items: center;
     justify-content: center;
+    height:1.5rem;
+    width:1.5rem;
 }
 
 .stacker__inner .stacker__widget.show-user-answer .stacker__item-marking-is-incorrect:before{
     color: #DD221A !important;
     background: #fff !important;
-    border: 3px solid #DD221A !important;
+    border: 2px solid #DD221A !important;
+    outline: 3px solid #fff;
 }
 
 .stacker__inner .stacker__widget.show-user-answer .stacker__item-marking-is-correct:before{
     color: #039855 !important;
     background: #fff !important;
     border: 3px solid #039855 !important;
+    outline: 3px solid #fff;
 }
 
 //----------------------------------------------------------
@@ -3037,6 +3099,11 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
     box-shadow: none !important;
     border: 2px solid #AEBDE6 !important;
     border-radius:4px !important;
+    top:0 !important;
+}
+
+.fillintheblanks .select2.select2-container--disabled{
+    margin-right: 2.5rem !important;
 }
 
 .fillintheblanks .select2-container--focus,.fillintheblanks .select2-container--open {
@@ -3181,16 +3248,55 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
     padding-bottom: 8px !important;
 }
 
-.fillintheblanks__item-control.is-incorrect~span.for-marking{
+.background-colour1 .fillintheblanks__item-control.is-incorrect~span.for-marking{
     background-color:#DD221A !important;
     color:#FFFFFF !important;
-    box-shadow:none !important;
+    border: 2px solid #FFFFFF;
+    outline: 3px solid #DD221A;
 }
 
-.fillintheblanks__item-control.is-correct~span.for-marking{
+.background-colour1 .fillintheblanks__item-control.is-correct~span.for-marking{
     background-color:#039855 !important;
     color:#FFFFFF !important;
-    box-shadow:none !important;
+    border: 2px solid #FFFFFF;
+    outline: 3px solid #039855;
+}
+
+.background-colour2 .fillintheblanks__item-control.is-incorrect~span.for-marking{
+    color:#DD221A !important;
+    background-color:#FFFFFF !important;
+    border: 2px solid #DD221A;
+    outline: 3px solid #FFFFFF;
+}
+
+.background-colour2 .fillintheblanks__item-control.is-correct~span.for-marking{
+    color:#039855 !important;
+    background-color:#FFFFFF !important;
+    border: 2px solid #039855;
+    outline: 3px solid #FFFFFF;
+}
+
+.fillintheblanks__item-control.is-correct~span.for-marking,
+.fillintheblanks__item-control.is-incorrect~span.for-marking
+{
+   display: flex !important;
+   align-items: center;
+   justify-content: center;
+   font-weight: bold !important;
+   box-shadow:none !important;
+   width: 1.25rem !important;
+   height: 1.25rem !important;
+}
+
+.fillintheblanks span.for-marking{
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+}
+
+.fillintheblanks__item-control.is-correct~span.for-marking.icon:before,
+.fillintheblanks__item-control.is-incorrect~span.for-marking.icon:before{
+    font-size:0.75rem !important;
+    font-weight:bold !important;
 }
 
 #wrapper .fillintheblanks .use-validation-colors .fillintheblanks__item-control.is-incorrect~.select2 .select2-selection__rendered {
@@ -3206,9 +3312,18 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
     color: #039855 !important;
 }
 
-#wrapper .fillintheblanks .use-validation-col:not(:first-child)ors .fillintheblanks__item-control.is-correct~.select2 {
+//#wrapper .fillintheblanks .use-validation-colors:not(:first-child) .fillintheblanks__item-control.is-correct~.select2 {
+#wrapper .fillintheblanks .use-validation-colors .fillintheblanks__item-control.is-correct~.select2 {
     border-color: #D1FADF !important;
     background-color: #ECFDF3 !important;
+}
+
+#wrapper .background-colour1 .fillintheblanks .use-validation-colors .fillintheblanks__item-control.is-correct~.select2 .select2-selection__arrow,
+#wrapper .background-colour1 .fillintheblanks .use-validation-colors .fillintheblanks__item-control.is-incorrect~.select2 .select2-selection__arrow,
+#wrapper .background-colour2 .fillintheblanks .use-validation-colors .fillintheblanks__item-control.is-correct~.select2 .select2-selection__arrow,
+#wrapper .background-colour2 .fillintheblanks .use-validation-colors .fillintheblanks__item-control.is-incorrect~.select2 .select2-selection__arrow
+{
+    color: #0068B2 !important;
 }
 //----------------------------------------------------------
 // Assesment------------------------------------------------
@@ -3989,7 +4104,8 @@ color: #FFFFFF !important;
 .background-colour2 .referencelist__body .referencelist__body-inner p a:hover,
 .background-colour2 .referencelist__body .referencelist__body-inner p a:focus,
 .background-colour2 .referencelist__body .referencelist__body-inner p a:visited{
-    color: #F0F1F4 important;
+   // color: #F0F1F4 important;
+   color: #AEBDE6 !important;
 }
 
 .referencelist__header-inner{
@@ -4121,6 +4237,18 @@ margin:0!important;
     border: 1px solid #00539f !important;
 }
 
+#adapt #app #wrapper .background-colour1 .ediComponent .component__inner .customlink,
+#adapt #app #wrapper .background-colour1 .ediComponent .component__inner .customlink:hover,
+#adapt #app #wrapper .background-colour1 .ediComponent .component__inner .customlink:focus,
+#adapt #app #wrapper .background-colour1 .ediComponent .component__inner .customlink:visited,
+#adapt #app #wrapper .background-colour2 .ediComponent .component__inner .customlink,
+#adapt #app #wrapper .background-colour2 .ediComponent .component__inner .customlink:hover,
+#adapt #app #wrapper .background-colour2 .ediComponent .component__inner .customlink:focus,
+#adapt #app #wrapper .background-colour2 .ediComponent .component__inner .customlink:visited
+{
+    color: #fff !important;
+}
+
 
 
 #adapt #app #wrapper .ediComponent .component__inner .customlink:hover{
@@ -4218,29 +4346,29 @@ html.no-touch .imagegallery__buttons, html.no-touch .imagegallery__controls{
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-toggle-thumbs {
-    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a580915048803f065b.svg__;!!KyHJrpw!oIhN5D0T3crEZ4QmXu5DnaweaU5NANXYMd-z0-aKEJuvq7-Y5tam1KXxxTuJOzaMWQnMCvIksp9gocASisCVBYaL1dvQ$ ');
+    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a580915048803f065b.svg');
 }
 
 //.imagegallery__image-container .imagegallery__buttons .imagegallery__button-toggle-thumbs[title="Hide thumbnails"],
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-toggle-thumbs:hover
 {
-    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a43a93e4e66054a1c8.svg__;!!KyHJrpw!oIhN5D0T3crEZ4QmXu5DnaweaU5NANXYMd-z0-aKEJuvq7-Y5tam1KXxxTuJOzaMWQnMCvIksp9gocASisCVBegJaBrQ$ ');
+    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a43a93e4e66054a1c8.svg');
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-popout {
-    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a549d86edec37fb5e5.svg__;!!KyHJrpw!oIhN5D0T3crEZ4QmXu5DnaweaU5NANXYMd-z0-aKEJuvq7-Y5tam1KXxxTuJOzaMWQnMCvIksp9gocASisCVBc0EAXgI$ ');
+    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a549d86edec37fb5e5.svg');
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-popout:hover {
-    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/da/67da9a1557e6bd90bab57ce9.svg__;!!KyHJrpw!oIhN5D0T3crEZ4QmXu5DnaweaU5NANXYMd-z0-aKEJuvq7-Y5tam1KXxxTuJOzaMWQnMCvIksp9gocASisCVBeQOhYxI$ ');
+    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/da/67da9a1557e6bd90bab57ce9.svg');
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-show-thumbs {
-    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/dc/67dc2c8900a2aeec666a149e.svg__;!!KyHJrpw!oIhN5D0T3crEZ4QmXu5DnaweaU5NANXYMd-z0-aKEJuvq7-Y5tam1KXxxTuJOzaMWQnMCvIksp9gocASisCVBf9EMhU_$ ');
+    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/dc/67dc2c8900a2aeec666a149e.svg');
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-show-thumbs:hover {
-    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/dc/67dc2c888ddbf39c9cf0f51d.svg__;!!KyHJrpw!oIhN5D0T3crEZ4QmXu5DnaweaU5NANXYMd-z0-aKEJuvq7-Y5tam1KXxxTuJOzaMWQnMCvIksp9gocASisCVBQ3Zhizl$ ');
+    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/dc/67dc2c888ddbf39c9cf0f51d.svg');
 }
 
 .imagegallery__thumbs-container .imagegallery__thumbs .imagegallery__thumb{
