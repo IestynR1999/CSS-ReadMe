@@ -1,7 +1,7 @@
 <h3>CSS</h3>
 
 ```CSS
-//Version 1.2
+//Version 1.3
 
 .pagelevelprogress__indicator-inner {
 border-radius: 0px; 
@@ -1217,37 +1217,37 @@ background: linear-gradient(-45deg, #214C99, #011E41, #004AA3, #214C99);
 @font-face {
   font-family: FSDillonProBold;
   font-style: normal;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProBold.woff');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProBold.woff ');
 }
 
 @font-face {
   font-family: FSDillonProBoldIt;
   font-style: italic;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProBoldIt.woff');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProBoldIt.woff ');
 }
 
 @font-face {
   font-family: FSDillonProMedium;
   font-style: normal;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProMedium.woff');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProMedium.woff ');
 }
 
 @font-face {
   font-family: FSDillonProMediumIt;
   font-style: italic;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProMediumIt.woff');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProMediumIt.woff ');
 }
 
 @font-face {
   font-family: FSDillonProRegular;
   font-style: normal;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProRegular.woff');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProRegular.woff ');
 }
 
 @font-face {
   font-family: FSDillonProItalic;
   font-style: italic;
-  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProItalic.woff');
+  src: url('https://cdn.thefa.com/thefawebsite/dist/FSDillonProItalic.woff ');
 }
 
 // ---------------------------------------------------------
@@ -1463,31 +1463,32 @@ background: linear-gradient(-45deg, #214C99, #011E41, #004AA3, #214C99);
 .background-colour1 .Body-Link-Regular:hover,
 .background-colour1 .Body-Link-Regular:focus,
 .background-colour1 .Body-Link-Regular:visited,
-#adapt #app #wrapper .background-colour1 .component__inner .customlink,
-#adapt #app #wrapper .background-colour1 .component__inner .customlink:hover,
-#adapt #app #wrapper .background-colour1 .component__inner .customlink:focus,
-#adapt #app #wrapper .background-colour1 .component__inner .customlink:visited
+#adapt #app #wrapper .background-colour1 .component .component__inner .customlink,
+#adapt #app #wrapper .background-colour1 .component .component__inner .customlink:hover,
+#adapt #app #wrapper .background-colour1 .component .component__inner .customlink:focus,
+#adapt #app #wrapper .background-colour1 .component .component__inner .customlink:visited
 {
     color:#024597 !important;
 }
 
 
-.background-colour2 .Body-Link,
-.background-colour2 .Body-Link:hover,
-.background-colour2 .Body-Link:focus,
-.background-colour2 .Body-Link:visited,
-.background-colour2 .Body-Link-Regular,
-.background-colour2 .Body-Link-Regular:hover,
-.background-colour2 .Body-Link-Regular:focus,
-.background-colour2 .Body-Link-Regular:visited,
-#adapt #app #wrapper .background-colour2 .component__inner .customlink,
-#adapt #app #wrapper .background-colour2 .component__inner .customlink:hover,
-#adapt #app #wrapper .background-colour2 .component__inner .customlink:focus,
-#adapt #app #wrapper .background-colour2 .component__inner .customlink:visited
+.background-colour2 .component:not(.accordion) .Body-Link,
+.background-colour2 .component:not(.accordion) .Body-Link:hover,
+.background-colour2 .component:not(.accordion) .Body-Link:focus,
+.background-colour2 .component:not(.accordion) .Body-Link:visited,
+.background-colour2 .component:not(.accordion) .Body-Link-Regular,
+.background-colour2 .component:not(.accordion) .Body-Link-Regular:hover,
+.background-colour2 .component:not(.accordion) .Body-Link-Regular:focus,
+.background-colour2 .component:not(.accordion) .Body-Link-Regular:visited,
+#adapt #app #wrapper .background-colour2 .component:not(.accordion) .component__inner .customlink,
+#adapt #app #wrapper .background-colour2 .component:not(.accordion) .component__inner .customlink:hover,
+#adapt #app #wrapper .background-colour2 .component:not(.accordion) .component__inner .customlink:focus,
+#adapt #app #wrapper .background-colour2 .component:not(.accordion) .component__inner .customlink:visited
 {
     //color:#F0F1F4 !important;
     color:#AEBDE6 !important;
 }
+
 
 //remove later
 .background-colour1 .element-color-static .subText{
@@ -4346,29 +4347,29 @@ html.no-touch .imagegallery__buttons, html.no-touch .imagegallery__controls{
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-toggle-thumbs {
-    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a580915048803f065b.svg');
+    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a580915048803f065b.svg__;!!KyHJrpw!tnePWl4g8ejYuv8leS4Mwblo7JSmJk8Sb60Dl_eiMO3YD4euQz6nRXtoqtmkNp53L2csFz8v68G5gT-t6Rj9LPqFjmE8$ ');
 }
 
 //.imagegallery__image-container .imagegallery__buttons .imagegallery__button-toggle-thumbs[title="Hide thumbnails"],
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-toggle-thumbs:hover
 {
-    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a43a93e4e66054a1c8.svg');
+    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a43a93e4e66054a1c8.svg__;!!KyHJrpw!tnePWl4g8ejYuv8leS4Mwblo7JSmJk8Sb60Dl_eiMO3YD4euQz6nRXtoqtmkNp53L2csFz8v68G5gT-t6Rj9LIyqamTL$ ');
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-popout {
-    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a549d86edec37fb5e5.svg');
+    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/da/67da93a549d86edec37fb5e5.svg__;!!KyHJrpw!tnePWl4g8ejYuv8leS4Mwblo7JSmJk8Sb60Dl_eiMO3YD4euQz6nRXtoqtmkNp53L2csFz8v68G5gT-t6Rj9LCjU_IXR$ ');
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-popout:hover {
-    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/da/67da9a1557e6bd90bab57ce9.svg');
+    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/da/67da9a1557e6bd90bab57ce9.svg__;!!KyHJrpw!tnePWl4g8ejYuv8leS4Mwblo7JSmJk8Sb60Dl_eiMO3YD4euQz6nRXtoqtmkNp53L2csFz8v68G5gT-t6Rj9LIxBEUp1$ ');
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-show-thumbs {
-    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/dc/67dc2c8900a2aeec666a149e.svg');
+    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/dc/67dc2c8900a2aeec666a149e.svg__;!!KyHJrpw!tnePWl4g8ejYuv8leS4Mwblo7JSmJk8Sb60Dl_eiMO3YD4euQz6nRXtoqtmkNp53L2csFz8v68G5gT-t6Rj9LM_t8y2K$ ');
 }
 
 .imagegallery__image-container .imagegallery__buttons .imagegallery__button-show-thumbs:hover {
-    background-image: url('https://adaptassets.learningpool.com/football_association/assets/67/dc/67dc2c888ddbf39c9cf0f51d.svg');
+    background-image: url('https://urldefense.com/v3/__https://adaptassets.learningpool.com/football_association/assets/67/dc/67dc2c888ddbf39c9cf0f51d.svg__;!!KyHJrpw!tnePWl4g8ejYuv8leS4Mwblo7JSmJk8Sb60Dl_eiMO3YD4euQz6nRXtoqtmkNp53L2csFz8v68G5gT-t6Rj9LC4KjdPP$ ');
 }
 
 .imagegallery__thumbs-container .imagegallery__thumbs .imagegallery__thumb{
@@ -5016,7 +5017,19 @@ letter-spacing: 0.003rem !important;
     margin-top: 0;
 }
 
-.accordion-item__body a{
+.accordion-item__body a,
+.accordion-item__body a:hover,
+.accordion-item__body a:focus,
+.accordion-item__body a:visited,
+.accordion-item__body .Body-Link,
+.accordion-item__body .Body-Link:hover,
+.accordion-item__body .Body-Link:focus,
+.accordion-item__body .Body-Link:visited,
+#adapt #app #wrapper .accordion .component__inner .customlink,
+#adapt #app #wrapper .accordion .component__inner .customlink:hover,
+#adapt #app #wrapper .accordion .component__inner .customlink:focus,
+#adapt #app #wrapper .accordion .component__inner .customlink:visited,
+{
  color:#024597 !important;
 }
 
