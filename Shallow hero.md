@@ -15,6 +15,7 @@ HeaderText no-element-backgrounds
     <span class="chapter">ESTIMATED DURATION - X MINS</span>
 
 </p>
+
 <h6 style="text-align:center;">
 
     <span class="Hero-text">Title</span>
@@ -22,5 +23,4 @@ HeaderText no-element-backgrounds
 </h6>
 
 <p class="Body-Regular" style="text-align:center;">Sub-text</p>
-```
 ```
