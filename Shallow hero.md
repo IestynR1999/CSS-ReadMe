@@ -2,7 +2,7 @@
 
 Article:
 ```html
-background-image6 Topic-Hero
+background-image1 Module-Hero
 ```
 
 Component
@@ -10,19 +10,17 @@ Component
 HeaderText no-element-backgrounds
 ```
 ```html
-<p style="text-align:center;"> 
+<p style="text-align:center;">
 
-    <span class="chapter">ESTIMATED DURATION - X MINS</span> 
+    <span class="chapter">ESTIMATED DURATION - X MINS</span>
 
-</p> 
+</p>
+<h6 style="text-align:center;">
 
-<h6 style="text-align:center;"> 
-
-    <span class="Hero-text">Title</span> 
+    <span class="Hero-text">Title</span>
 
 </h6>
 
-<p class="Body-Regular" style="text-align:center;">
-    Subtext
-</p>
+<p class="Body-Regular" style="text-align:center;">Sub-text</p>
+```
 ```
