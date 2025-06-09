@@ -1,5 +1,7 @@
 <h3>Accordion</h3>
 
+
+Article:
 ```html
 background-colour1
 ```
@@ -8,6 +10,24 @@ background-colour1
 background-colour2
 ```
 
+Block:
+
+```html
+accordionContainer
+```
+
 Component:
 
-Title goes in “Display Title”
+Title goes in “Display Title”.
+
+```html
+<div class="Body-Regular">
+Text
+</div>
+
+<ul>
+    <li class="Body-Regular">
+       List item
+    </li>
+</ul>
+```
