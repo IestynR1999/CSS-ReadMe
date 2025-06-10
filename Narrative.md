@@ -1,15 +1,13 @@
 <h3>Narrative</h3>
 
+Article:
+
 ```html
-background-colour1
+background-colour1 narrativeOuterContainer
 ```
 
 ```html
-background-colour2
-```
-Article:
-```html
-narrativeOuterContainer
+background-colour2 narrativeOuterContainer
 ```
 
 Block:
