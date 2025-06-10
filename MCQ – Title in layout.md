@@ -22,7 +22,7 @@ Component:
 <div style="margin-bottom:8px;margin-top:8px;">
     <span class="Sub-Headline">Title</span>
 </div>
-<p class="Question" style="margin-bottom:12px;margin-top:12px;">
+<p class="Body-Regular" style="margin-bottom:12px;margin-top:12px;">
     Question
 </p>
 ```
