@@ -24,7 +24,9 @@ Component:
 
 ```html
 <p class="Body-Regular">
-    Text
+   Text
+<br><br>
+Text… <a class="Body-Link-Regular customlink" href="link" target="_blank">Link text</a>
 </p>
 ```
 
