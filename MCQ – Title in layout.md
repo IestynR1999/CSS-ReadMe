@@ -34,4 +34,9 @@ Component:
 <p class="Body-Regular">
 Text 
 </p>
+<ul>
+    <li class="Body-Regular">
+       List item
+    </li>
+</ul>
 ```
