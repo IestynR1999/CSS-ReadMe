@@ -1,4 +1,4 @@
-<h3>MCQ - no title</h3>
+<h3>Graphical MCQ</h3>
 
 ```html
 background-colour1
