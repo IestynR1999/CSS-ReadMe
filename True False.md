@@ -27,7 +27,7 @@ Component:
 If the question contains a header and further text:
 
 ```html
-<p class="Question" style="margin-bottom:12px;margin-top:12px;"> 
+<p class="Body-Regular" style="margin-bottom:12px;margin-top:12px;"> 
    Question 
 </p> 
 ```
