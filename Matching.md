@@ -10,7 +10,7 @@ background-colour2
 
 Block:
 ```html
-graphicalMCQ
+matchingQuestion
 ```
 
 Component:
