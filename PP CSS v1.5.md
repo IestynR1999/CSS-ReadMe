@@ -12,6 +12,17 @@ border-radius: 0px;
     pointer-events: none;
 }
 
+// play phase header
+
+@font-face {
+  font-family: NewYorkies;
+  src: url('assets/68b0583459e9b51d33fae27c.woff');
+}
+
+.playPhaseHeader {
+    font-family: NewYorkies !important;
+}
+
 //Hotgraphic Pins
 
 #wrapper .page .hotgraphic .hotgraphic__inner .hotgraphic__widget.is-pin .hotgraphic__pin-item .hotgraphic__pin, #wrapper .page .hotgraphic .hotgraphic__inner .hotgraphic__widget.is-pin .hotgraphic__pin-item .hotgraphic__pin .icon
