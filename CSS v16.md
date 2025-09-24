@@ -1422,6 +1422,13 @@ background: linear-gradient(-45deg, #214C99, #011E41, #004AA3, #214C99);
     color:#011E41 !important;
 }
 
+.notify__body-inner .Body-Link-Regular {
+    color:#024597 !important;
+}
+
+.notify__body-inner .Body-Link-Regular:hover {
+    color:#011E41 !important;
+}
 
 .background-colour2 .component:not(.accordion) .Body-Link,
 .background-colour2 .component:not(.accordion) .Body-Link:hover,
