@@ -1,7 +1,7 @@
 <h3>CSS</h3>
 
 ```CSS
-//Version 1.6
+//Version 1.6.1
 
 .pagelevelprogress__indicator-inner {
 border-radius: 0px; 
@@ -522,6 +522,7 @@ div.component {
 .flipcard .component__body,
 .hotgraphic .component__body,
 .hotGraphicContainer .component__body,
+.openTextInput .component__body
 {
     padding:0 !important;
     margin:0 !important;
