@@ -529,6 +529,12 @@ div.component {
     background: transparent !important;
 }
 
+//unordered list in openTextInput
+
+.openTextInput .component__body ul {
+    margin-bottom:15px;
+}
+
 .stackerContainer .component__body .component__body-inner,
 .hiddenHotspots .component__body .component__body-inner,
 .accordion .component__body .component__body-inner,
