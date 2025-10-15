@@ -1,7 +1,7 @@
 <h3>Disney CSS</h3>
 
 ```CSS
-//Disney version 1.6.1
+//Disney version 1.6.2
 
 .pagelevelprogress__indicator-inner {
 border-radius: 0px; 
@@ -1242,9 +1242,8 @@ background: linear-gradient(-45deg, #214C99, #011E41, #004AA3, #214C99);
 
 .Hero-text{
     font-family: 'FSDillonProBold';
-    letter-spacing: 0.156rem;
     font-style: normal;
-    color: #005ABC;
+    color: #FFFFFF;
     float: center;
     clear: both;
     display: inline-block;
@@ -1605,7 +1604,7 @@ body .block__inner {
 
 
 .chapter {
-  color: #005ABC; /* Play Phase Blue text */
+  color: #FFFFFF; /* Play Phase Blue text */
   padding: 5px 20px; /* Vertical and horizontal padding */
   border-radius: 25px; /* Rounded corners */
   font-family: FSDillonProRegular; /* Sans-serif font */
@@ -1615,7 +1614,7 @@ body .block__inner {
   text-transform: uppercase; /* All caps */
   letter-spacing: 1.2px;
   display: inline-block; /* To make the background fit the content */
-  border: 2px solid #005ABC; /* Play Phase Blue border */
+  border: 2px solid #FFFFFF; /* Play Phase Blue border */
 }
 
 // ---------------------------------------------------------
