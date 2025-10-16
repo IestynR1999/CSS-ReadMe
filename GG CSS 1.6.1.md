@@ -41,6 +41,12 @@ border-radius: 0px;
 }
 }
 
+//transcript text colour bg7
+
+.background-colour7 span.vimeo__transcript-btn-text {
+    color: #011e41 !important;
+}
+
 //Graphic padding  
  
 .graphic-padding-right-left-20 {
