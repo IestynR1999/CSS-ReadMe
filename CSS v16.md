@@ -1,7 +1,7 @@
 <h3>CSS</h3>
 
 ```CSS
-//Version 1.6.1
+//Version 1.6.2
 
 .pagelevelprogress__indicator-inner {
 border-radius: 0px; 
@@ -1434,6 +1434,16 @@ background: linear-gradient(-45deg, #214C99, #011E41, #004AA3, #214C99);
 }
 
 .notify__body-inner .Body-Link-Regular:hover {
+    color:#011E41 !important;
+}
+
+//hot graphic link colour adjustments
+
+.notify__container .hotgraphic-popup__item-body-inner a.Body-Link-Regular {
+    color:#024597;
+}
+
+.notify__container .hotgraphic-popup__item-body-inner a.Body-Link-Regular:hover {
     color:#011E41 !important;
 }
 
@@ -4985,6 +4995,16 @@ letter-spacing: 0.003rem !important;
 .accordion-item__body .Body-Link-Regular:visited,
 {
  color:#024597 !important;
+}
+
+//reveal list item adjustment
+.reveal__widget-item-text-body ul li {
+    font-family: 'FSDillonProRegular' !important;
+    font-size: clamp(1.25rem, 1.25rem, 1.25rem) !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: clamp(1.5rem, 1.5rem, 1.5rem);
+    letter-spacing: 0.02rem;
 }
 
 //IR accordion bg2
