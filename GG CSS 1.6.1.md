@@ -1,7 +1,7 @@
 <h3>Greater Game CSS</h3>
 
 ```CSS
-//Greater Game 1.6.1
+//Greater Game 1.6.2
 
 .pagelevelprogress__indicator-inner {
 border-radius: 0px; 
@@ -4994,6 +4994,28 @@ letter-spacing: 0.003rem !important;
 .accordion-item__body .Body-Link-Regular:visited,
 {
  color:#024597 !important;
+}
+
+//reveal ul li adjustment to match correct text sizing
+
+//reveal list item adjustment
+.reveal__widget-item-text-body ul li {
+    font-family: 'FSDillonProRegular' !important;
+    font-size: clamp(1.25rem, 1.25rem, 1.25rem) !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: clamp(1.5rem, 1.5rem, 1.5rem);
+    letter-spacing: 0.02rem;
+}
+
+//hot graphic link colour .matching-item__select-correct-icon
+
+.notify__container .hotgraphic-popup__item-body-inner a.Body-Link-Regular {
+    color:#024597;
+}
+
+.notify__container .hotgraphic-popup__item-body-inner a.Body-Link-Regular:hover {
+    color:#011E41 !important;
 }
 
 //IR accordion bg2
