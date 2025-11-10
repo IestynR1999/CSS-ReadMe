@@ -866,30 +866,33 @@ div.component {
 .background-colour1 .sliderContainer .component__instruction-inner:after,
 .background-colour1 .truefalseContainer .component__instruction-inner:after,
 .background-colour1 .flipCardContainer .component__instruction-inner:after,
-.background-colour1 .hotGraphicContainer .component__instruction-inner:after{
+.background-colour1 .hotGraphicContainer .component__instruction-inner:after,
+.background-colour2 .mcqContainer .component__instruction-inner:after,
+.background-colour2 .sliderContainer .component__instruction-inner:after,
+.background-colour2 .truefalseContainer .component__instruction-inner:after,
+.background-colour2 .hotGraphicContainer .component__instruction-inner:after,
+.background-colour2 .matching .component__instruction-inner:after,
+.background-colour2 .branching .component__instruction-inner:after,
+.background-colour2 .filInBlanksContainer .component__instruction-inner:after,
+.background-colour2 .stackerContainer .component__instruction-inner:after,
+.background-colour2 .branchingContainer .component__instruction-inner:after
+{
      background:linear-gradient(180deg, #CED1DA 0%, #D7DCEA 100%);
 }
 
 .background-colour2 .text .component__instruction-inner:after,
-.background-colour2 .stackerContainer .component__instruction-inner:after,
 .background-colour2 .hiddenHotspots .component__instruction-inner:after,
 .background-colour2 .textinput .component__instruction-inner:after,
 .background-colour2 .accordion .component__instruction-inner:after,
 .background-colour2 .imagegallery .component__instruction-inner:after,
 .background-colour2 .referencelist .component__instruction-inner:after,
 .background-colour2 .reveal .component__instruction-inner:after,
-.background-colour2 .matching .component__instruction-inner:after,
-.background-colour2 .branching .component__instruction-inner:after,
-.background-colour2 .mcqContainer .component__instruction-inner:after,
-.background-colour2 .filInBlanksContainer .component__instruction-inner:after,
 .background-colour2 .narrativeContainer .component__instruction-inner:after,
 .background-colour2 .graphicContainer .component__instruction-inner:after,
 .background-colour2 .mediaContainer .component__instruction-inner:after,
-.background-colour2 .sliderContainer .component__instruction-inner:after,
-.background-colour2 .truefalseContainer .component__instruction-inner:after,
-.background-colour2 .flipCardContainer .component__instruction-inner:after,
-.background-colour2 .hotGraphicContainer .component__instruction-inner:after{
-    background:linear-gradient(180deg, #5F5F5F 0%, #403F3F 98.77%);
+.background-colour2 .flipCardContainer .component__instruction-inner:after
+{
+    background: #E9EBF1;
 }
 
 //.text .component__instruction,
@@ -1896,28 +1899,26 @@ body .block__inner {
 .background-colour1 .flipCardContainer .block__inner,
 .background-colour1 .mcqContainer .block__inner,
 .background-colour1 .openTextInput .block__inner,
-.background-colour1 .graphicalMCQ .block__inner
+.background-colour1 .graphicalMCQ .block__inner,
+.background-colour2 .mcqContainer .block__inner,
+.background-colour2 .sliderContainer .block__inner,
+.background-colour2 .truefalseContainer .block__inner,
+.background-colour2 .openTextInput .block__inner,
+.background-colour2 .graphicalMCQ .block__inner,
+.background-colour2 .filInBlanksContainer .block__inner,
+.background-colour2 .matchingQuestion .block__inner,
+.background-colour2 .stackerContainer .block__inner,
+.background-colour2 .assesmentResults .block__inner,
+.background-colour2 .branchingContainer .block__inner
 {
     background-color: #ffffff;
     border: 1px solid #CED1DA;
 }
 
-.background-colour2 .hiddenHotspots .block__inner,
-.background-colour2 .textinputContainer .block__inner,
-.background-colour2 .matchingQuestion .block__inner,
-.background-colour2 .assesmentResults .block__inner,
-.background-colour2 .filInBlanksContainer .block__inner,
-.background-colour2 .stackerContainer .block__inner,
-.background-colour2 .sliderContainer .block__inner,
-.background-colour2 .truefalseContainer .block__inner,
 .background-colour2 .flipCardContainer .block__inner,
-.background-colour2 .mcqContainer .block__inner,
-.background-colour2 .openTextInput .block__inner,
-.background-colour2 .graphicalMCQ .block__inner
-{
-   //background-color: #323231;
-   background-color: #404040;
-   border: 1px solid #5F5F5F;
+.background-colour2 .hiddenHotspots .block__inner {
+    background-color: #8e140e;
+    border: 1px solid #b93029;
 }
 
 .textinput .btn__response-container,
