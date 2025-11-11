@@ -1,7 +1,7 @@
 <h3>CSS</h3>
 
 ```CSS
-//Version 1.6.2
+//Version 1.6.4
 
 .pagelevelprogress__indicator-inner {
 border-radius: 0px; 
@@ -3054,6 +3054,37 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
 }
 
 .stacker__inner .stacker__widget.show-user-answer .stacker__item-marking-is-correct:before{
+    color: #039855 !important;
+    background: #fff !important;
+    border: 3px solid #039855 !important;
+    outline: 3px solid #fff;
+}
+
+.stacker__inner .stacker__widget.show-correct-answer .stacker__item-marking-is-correct,
+.stacker__inner .stacker__widget.show-correct-answer .stacker__item-marking-is-incorrect{
+    transform: translate(0, -50%) !important;
+}
+
+.stacker__inner .stacker__widget.show-correct-answer .stacker__item-marking-is-correct:before,
+.stacker__inner .stacker__widget.show-correct-answer .stacker__item-marking-is-incorrect:before{
+    box-shadow:none !important;
+    font-size: 1rem !important;
+    font-weight: bold !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:1.5rem;
+    width:1.5rem;
+}
+
+.stacker__inner .stacker__widget.show-correct-answer .stacker__item-marking-is-incorrect:before{
+    color: #DD221A !important;
+    background: #fff !important;
+    border: 2px solid #DD221A !important;
+    outline: 3px solid #fff;
+}
+
+.stacker__inner .stacker__widget.show-correct-answer .stacker__item-marking-is-correct:before{
     color: #039855 !important;
     background: #fff !important;
     border: 3px solid #039855 !important;
