@@ -1,7 +1,7 @@
 <h3>CSS</h3>
 
 ```CSS
-//EFF version 1.6.3
+//EFF version 1.6.4
 
 .pagelevelprogress__indicator-inner {
 border-radius: 0px; 
@@ -201,6 +201,34 @@ border-radius: 0px;
 .background-colour2 .matchingQuestion .btn__action.is-disabled:focus {
     color: #515D7A !important;
     background-color: #E9EBF1 !important;
+}
+
+.background-colour2 .mcqContainer button.btn-text.btn__feedback.js-btn-feedback.element-color-control, 
+.background-colour2 .openTextInput button.btn-text.btn__feedback.js-btn-feedback.element-color-control,
+.background-colour2 .graphicalMCQ button.btn-text.btn__feedback.js-btn-feedback.element-color-control,
+.background-colour2 .truefalseContainer button.btn-text.btn__feedback.js-btn-feedback.element-color-control,
+.background-colour2 .sliderContainer button.btn-text.btn__feedback.js-btn-feedback.element-color-control,
+.background-colour2 .stackerContainer button.btn-text.btn__feedback.js-btn-feedback.element-color-control,
+.background-colour2 .filInBlanksContainer button.btn-text.btn__feedback.js-btn-feedback.element-color-control,
+.background-colour2 .branchingContainer button.btn-text.btn__feedback.js-btn-feedback.element-color-control,
+.background-colour2 .matchingQuestion button.btn-text.btn__feedback.js-btn-feedback.element-color-control {
+    color: #041c39 !important;
+}
+
+.background-colour2 .mcqContainer .btn-text.btn__feedback.js-btn-feedback.is-disabled.element-color-control, 
+.background-colour2 .openTextInput .btn-text.btn__feedback.js-btn-feedback.is-disabled.element-color-control,
+.background-colour2 .graphicalMCQ .btn-text.btn__feedback.js-btn-feedback.is-disabled.element-color-control,
+.background-colour2 .truefalseContainer .btn-text.btn__feedback.js-btn-feedback.is-disabled.element-color-control,
+.background-colour2 .sliderContainer .btn-text.btn__feedback.js-btn-feedback.is-disabled.element-color-control,
+.background-colour2 .stackerContainer .btn-text.btn__feedback.js-btn-feedback.is-disabled.element-color-control,
+.background-colour2 .filInBlanksContainer .btn-text.btn__feedback.js-btn-feedback.is-disabled.element-color-control,
+.background-colour2 .branchingContainer .btn-text.btn__feedback.js-btn-feedback.is-disabled.element-color-control,
+.background-colour2 .matchingQuestion .btn-text.btn__feedback.js-btn-feedback.is-disabled.element-color-control {
+    color:#AAB0C0 !important;
+}
+
+.background-colour1 .narrative .narrative__inner .narrative__strapline-title:hover {
+    color:#041c39 !important;
 }
 
 // narrative ul if at the top of the page, to be added to the top list item
@@ -600,6 +628,12 @@ div.component {
 
 .flipcard .flipcard__item-back-body > p{
    margin:0.25rem 0 !important; 
+}
+
+/* flip card overflow for mobile */
+
+.flipCardContainer .flipcard__item-back-body {
+    overflow: scroll;
 }
 
 .hiddenHotspots .component__title,
@@ -1944,7 +1978,7 @@ body .block__inner {
 .mcqContainer .btn__response-container .btn-text,
 .graphicalMCQ .btn__response-container .btn-text,
 .matchingQuestion .btn__response-container .btn-text,
-.fillInBlanksContainer .btn__response-container .btn-text,
+.filInBlanksContainer .btn__response-container .btn-text,
 .branchingContainer .btn__response-container .btn-text,
 .openTextInput .btn__response-container .btn-text,
 .trueFalseContainer .btn__response-container .btn-text,
@@ -2023,6 +2057,11 @@ body .block__inner {
 .background-colour2 .graphicalMCQ .gmcq-item__label.is-selected .gmcq-item__text-inner,
 .background-colour1 .graphicalMCQ .gmcq-item__text-inner{
     color:#041C39;
+}
+
+.gmcq__inner .gmcq__widget .gmcq-item__text-inner {
+    margin-right: 55px;
+    line-height: 1.4rem;
 }
 
 //MCQ
@@ -3327,7 +3366,7 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
 }
 
 #wrapper .background-colour2 .fillintheblanks .select2-selection__arrow{
-    color:#FFFFFF !important;
+    color:#0068B2 !important;
 }
 
 .select2-dropdown{
@@ -3854,7 +3893,7 @@ color: #FFFFFF !important;
 
 .background-colour2 .matching-item__title_inner
 {
-    color:#E9EBF1;
+    color:#041C39;
 }
 
 .matching-item__select-container .dropdown__btn{
