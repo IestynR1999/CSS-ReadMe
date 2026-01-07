@@ -1,7 +1,7 @@
 <h3>CSS</h3>
 
 ```CSS
-//Version 1.6.4
+//Version 1.6.5
 
 .pagelevelprogress__indicator-inner {
 border-radius: 0px; 
@@ -9,6 +9,10 @@ border-radius: 0px;
 
 .pagelevelprogress__nav-btn {
     pointer-events: none;
+}
+
+#wrapper {
+    padding-top: 0 !important;
 }
 
 // hot graphic fix
