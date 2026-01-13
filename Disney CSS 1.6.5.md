@@ -1,7 +1,7 @@
 <h3>Disney CSS</h3>
 
 ```CSS
-//Disney version 1.6.5
+//Disney version 1.6.2
 
 .pagelevelprogress__indicator-inner {
 border-radius: 0px; 
@@ -9,10 +9,6 @@ border-radius: 0px;
 
 .pagelevelprogress__nav-btn {
     pointer-events: none;
-}
-
-#wrapper {
-    padding-top: 0 !important;
 }
 
 // hot graphic fix
@@ -531,12 +527,12 @@ div.component {
     padding:0 !important;
     margin:0 !important;
     background: transparent !important;
+
 }
 
 //unordered list in openTextInput
-
 .openTextInput .component__body ul {
-    margin-bottom:15px;
+  margin-bottom:15px;
 }
 
 .stackerContainer .component__body .component__body-inner,
@@ -1434,14 +1430,10 @@ background: linear-gradient(-45deg, #214C99, #011E41, #004AA3, #214C99);
     color:#011E41 !important;
 }
 
-//hot graphic link colour adjustments
-
-.notify__container .hotgraphic-popup__item-body-inner a.Body-Link-Regular {
-    color:#024597;
-}
-
-.notify__container .hotgraphic-popup__item-body-inner a.Body-Link-Regular:hover {
-   color:#011E41 !important;
+#adapt #app #wrapper .background-colour1 .component .component__inner .customlink:hover,
+#adapt #app #wrapper .background-colour1 .component .component__inner .customlink:focus
+{
+    color:#011E41 !important;
 }
 
 
@@ -3052,37 +3044,6 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
 }
 
 .stacker__inner .stacker__widget.show-user-answer .stacker__item-marking-is-correct:before{
-    color: #039855 !important;
-    background: #fff !important;
-    border: 3px solid #039855 !important;
-    outline: 3px solid #fff;
-}
-
-.stacker__inner .stacker__widget.show-correct-answer .stacker__item-marking-is-correct,
-.stacker__inner .stacker__widget.show-correct-answer .stacker__item-marking-is-incorrect{
-    transform: translate(0, -50%) !important;
-}
-
-.stacker__inner .stacker__widget.show-correct-answer .stacker__item-marking-is-correct:before,
-.stacker__inner .stacker__widget.show-correct-answer .stacker__item-marking-is-incorrect:before{
-    box-shadow:none !important;
-    font-size: 1rem !important;
-    font-weight: bold !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height:1.5rem;
-    width:1.5rem;
-}
-
-.stacker__inner .stacker__widget.show-correct-answer .stacker__item-marking-is-incorrect:before{
-    color: #DD221A !important;
-    background: #fff !important;
-    border: 2px solid #DD221A !important;
-    outline: 3px solid #fff;
-}
-
-.stacker__inner .stacker__widget.show-correct-answer .stacker__item-marking-is-correct:before{
     color: #039855 !important;
     background: #fff !important;
     border: 3px solid #039855 !important;
@@ -5024,16 +4985,6 @@ letter-spacing: 0.003rem !important;
 .accordion-item__body .Body-Link-Regular:visited,
 {
  color:#024597 !important;
-}
-
-//reveal list item adjustment
-.reveal__widget-item-text-body ul li {
-    font-family: 'FSDillonProRegular' !important;
-    font-size: clamp(1.25rem, 1.25rem, 1.25rem) !important;
-    font-style: normal;
-    font-weight: 400;
-    line-height: clamp(1.5rem, 1.5rem, 1.5rem);
-    letter-spacing: 0.02rem;
 }
 
 //IR accordion bg2
