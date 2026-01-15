@@ -108,10 +108,10 @@ border-radius: 0px;
 
 @media only screen and (max-width: 1023px) {
     .svgLogo {
-    transform: translateY(-30px);
+    transform: translateY(-50px);
     }
     .effLogo {
-    margin-bottom:20px !important;
+    margin-bottom:10px !important;
     }
     .downArrow {
     display:none !important;
