@@ -1,7 +1,42 @@
 <h3>CSS</h3>
 
 ```CSS
-//EFF version 1.6.4
+//EFF version 1.6.5
+
+//EFF hero-text sizing fix
+
+.Topic-Hero .Hero-text {
+  font-size: clamp(
+    1.944rem,
+    6vw,
+    2.96rem
+  );
+  line-height: clamp(2.5rem, 6.09vw, 4rem);
+}
+
+.Module-Hero .Hero-text {
+  font-size: clamp(
+    2.3313rem,
+    8.02vw,
+    3.95rem
+  );
+  line-height: clamp(2.5rem, 8.09vw, 4rem);
+}
+
+/* Hiding nav bar to enable badges */
+html.is-nav-top #wrapper {
+    padding-top: 0 !important;
+}
+
+.nav__inner {
+    background: none;
+}
+
+button.nav__exit-btn.btn-icon.nav__btn.icon.fa.fa-sign-out.element-color-control {
+    display: none;
+}
+
+/*_______________GITHUB EFF CODE BELOW HERE_______________*/
 
 .pagelevelprogress__indicator-inner {
 border-radius: 0px; 
@@ -9,6 +44,10 @@ border-radius: 0px;
 
 .pagelevelprogress__nav-btn {
     pointer-events: none;
+}
+
+#wrapper {
+    padding-top: 0 !important;
 }
 
 // hot graphic fix
@@ -37,12 +76,13 @@ border-radius: 0px;
 }
 
 @media only screen and (min-width:1024px) and (max-width: 1440px) {
-  .Hero-text {
+  .Topic-Hero .Hero-text {
     display: inline-block;
-    max-width: 300px; /* adjust this until it breaks nicely */
+    max-width:800px; /* adjust this until it breaks nicely */
     white-space: normal;
     text-align: center;
   }
+
 }
 
 @media only screen and (max-width: 1600px) {
@@ -73,6 +113,15 @@ border-radius: 0px;
     .effLogo {
     margin-bottom:20px !important;
     }
+    .downArrow {
+    display:none !important;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .Hero-text {
+        max-width:700px;
+    }
 }
 
 @media only screen and (max-width: 690px) {
@@ -83,12 +132,12 @@ border-radius: 0px;
     margin-bottom:20px !important;
     }
     .effLogo svg {
-        width:40% !important;
-        height:40% !important;
+    width:40% !important;
+    height:40% !important;
     }
 }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 539px) {
     .svgLogo {
     transform: translateY(-10px);
     }
@@ -96,8 +145,11 @@ border-radius: 0px;
     margin-bottom:20px !important;
     }
     .effLogo svg {
-    width:50% !important;
+    width:40% !important;
     }
+    .Topic-Hero .Hero-text {
+    max-width:300px; /* adjust this until it breaks nicely */
+  }
 }
 
 /*eff containers */
@@ -1471,7 +1523,7 @@ background: linear-gradient(-45deg, #214C99, #011E41, #004AA3, #214C99);
     clear: both;
     display: inline-block;
     //line-height:4rem;
-    line-height:clamp(4rem, 4rem + 0vw, 4rem);
+    // line-height:clamp(4rem, 4rem + 0vw, 4rem);
 }
 // ---------------------------------------------------------
 // Type styles
@@ -1847,7 +1899,7 @@ body .block__inner {
   text-transform: uppercase; /* All caps */
   letter-spacing: 1.2px;
   display: inline-block; /* To make the background fit the content */
-  border: 2px solid #AEBDE6; /* Light grey border */
+  border: 2px solid #fff; /* Light grey border */
 }
 
 // ---------------------------------------------------------
@@ -5427,16 +5479,16 @@ padding: 0 0 0 1rem;
     padding: 0.78rem 1.8rem 0.78rem 2rem !important;
 }
 
-.Module-Hero .Hero-text{
-   //font-size:2.331rem !important;
-   font-size: clamp(2.3313rem, 2.3313rem + 0vw, 2.3313rem) !important;
-   line-height: clamp(2.5rem, 2.5rem + 0vw, 2.5rem) !important;
-}
+// .Module-Hero .Hero-text{
+//   //font-size:2.331rem !important;
+//   font-size:clamp(1.944rem, 1.944rem + 0vw, 1.944rem) !important;
+//   line-height: clamp(2.5rem, 2.5rem + 0vw, 2.5rem) !important;
+// }
 
 
 .Topic-Hero .Hero-text{
-   font-size:clamp(1.944rem, 1.944rem + 0vw, 1.944rem) !important;
-   line-height: clamp(2.5rem, 2.5rem + 0vw, 2.5rem) !important;
+//   font-size:clamp(1.944rem, 1.944rem + 0vw, 1.944rem) !important;
+//   line-height: clamp(2.5rem, 2.5rem + 0vw, 2.5rem) !important;
 }
 
 .Headline,h3{
@@ -5596,14 +5648,14 @@ padding: 0 0 0 1rem;
 
 //other sreens
 
-.Module-Hero .Hero-text{
-   font-size:3.95rem; 
-   font-size: clamp(3.95rem, 3.95rem + 0vw, 3.95rem);
-}
+// .Module-Hero .Hero-text{
+// //   font-size:3.95rem; 
+//     font-size:clamp(2.96rem, 2.96rem + 0vw, 2.96rem);
+// }
 
 .Topic-Hero .Hero-text{
    //font-size: 2.96rem;
-   font-size:clamp(2.96rem, 2.96rem + 0vw, 2.96rem);
+//   font-size:clamp(2.96rem, 2.96rem + 0vw, 2.96rem);
 }
 
 .subHeadline{
