@@ -11,6 +11,30 @@ border-radius: 0px;
     pointer-events: none;
 }
 
+//capita code changes
+
+@media (min-width: 1024px) and (max-width:1540px){
+.Hero-text {
+   max-width: 650px;
+}
+}
+ 
+/*Fix the text only version of the hotspot screen on mobile. */
+@media only screen and (max-width: 32.4375rem), only screen and (min-width: 32.5rem) and (max-width: 47.4375rem) {
+  .hotGraphicContainer .narrative__inner .narrative__content-inner, .narrativeContainer .narrative__inner .narrative__content-inner {
+   padding: 0rem !important;
+   }
+   .narrative .narrative__inner .narrative__content-body-inner, .narrative .narrative__inner .narrative__content-title-inner {
+       padding: 0px; 
+   }
+}
+ 
+@media only screen and (max-width: 32.4375rem), only screen and (min-width: 32.5rem) and (max-width: 47.4375rem) {
+  .narrative__slider-image {
+       margin-bottom: 20px;
+   }
+}
+
 ///Star Background
 
 .starbackground{
@@ -5187,7 +5211,7 @@ padding: 0 0 0 1rem;
    line-height: clamp(2.5rem, 2.5rem + 0vw, 2.5rem) !important;
 }
 
-.Headline,h3{
+.Headline,h2{
    font-size:clamp(1.619rem, 1.619rem + 0vw, 1.619rem) !important; 
    line-height: clamp(2rem, 2rem + 0vw, 2rem) !important;
 }
