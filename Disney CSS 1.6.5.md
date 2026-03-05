@@ -1,7 +1,7 @@
 <h3>Disney CSS</h3>
 
 ```CSS
-//Version 1.6.5
+//Disney version 1.6.5
 
 .pagelevelprogress__indicator-inner {
 border-radius: 0px; 
@@ -5067,6 +5067,10 @@ letter-spacing: 0.003rem !important;
     font-weight: 400;
     line-height: clamp(1.5rem, 1.5rem, 1.5rem);
     letter-spacing: 0.02rem;
+}
+
+.accordion-item__btn.is-closed .accordion-item__icon .icon:before {
+        content: "\e95f" !important;
 }
 
 //IR accordion bg2
