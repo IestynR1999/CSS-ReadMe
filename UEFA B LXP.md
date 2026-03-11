@@ -5149,6 +5149,10 @@ letter-spacing: 0.003rem !important;
     letter-spacing: 0.02rem;
 }
 
+.accordion-item__btn.is-closed .accordion-item__icon .icon:before {
+        content: "\e95f" !important;
+}
+
 //IR accordion bg2
 
 .background-colour2 .accordion__body-inner a.Body-Link-Regular {
