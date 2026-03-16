@@ -1,7 +1,7 @@
 <h3>CSS</h3>
 
 ```CSS
-//UEFA B LXP 1.6.5
+//UEFA B LXP 1.6.6
 
 .pagelevelprogress__indicator-inner {
 border-radius: 0px; 
@@ -60,6 +60,19 @@ border-radius: 0px;
     display: flex;
     margin-top: 0;
     width: 100px !important;
+}
+
+//attribute text
+.graphicContainer img.component__image.graphic__image, .hotGraphicContainer img.hotgraphic__image, .accordionContainer img.component__image.accordion-item_image-container, .hotGraphicContainer img.hotgraphic__image {
+    margin-bottom: 20px !important;
+}
+ 
+.accordionContainer .component__attribution-inner .accordion__attribution-inner, .graphicContainer .component__attribution-inner.graphic__attribution-inner, .hotGraphicContainer .component__attribution-inner.hotgraphic__attribution-inner {
+    font-size:16px !important;
+}
+ 
+.background-colour1 .component__attribution-inner.graphic__attribution-inner, .background-colour1 .accordionContainer .component__attribution-inner .accordion__attribution-inner, .background-colour1 .component__attribution-inner.hotgraphic__attribution-inner {
+    color: #424a5c !important;
 }
 
 //fillInBlanks update
