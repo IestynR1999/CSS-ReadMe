@@ -1,7 +1,7 @@
 <h3>CSS</h3>
 
 ```CSS
-//UEFA B LXP 1.6.6
+//UEFA B LXP 1.6.7
 
 .pagelevelprogress__indicator-inner {
 border-radius: 0px; 
@@ -73,6 +73,11 @@ border-radius: 0px;
  
 .background-colour1 .component__attribution-inner.graphic__attribution-inner, .background-colour1 .accordionContainer .component__attribution-inner .accordion__attribution-inner, .background-colour1 .component__attribution-inner.hotgraphic__attribution-inner {
     color: #424a5c !important;
+}
+
+span.component__attribution-inner.graphic__attribution-inner {
+    line-height: 22px !important;
+    display: inline-block;
 }
 
 //fillInBlanks update
@@ -3412,9 +3417,9 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
    height: 1.25rem !important;
 }
 
-.fillintheblanks span.for-marking{
+.fillintheblanks span.for-marking {
     top: 50% !important;
-    transform: translate(-50%, -50%) !important;
+    transform: translate(-20%, -90%) !important;
 }
 
 .fillintheblanks__item-control.is-correct~span.for-marking.icon:before,
@@ -3449,6 +3454,13 @@ border-radius: var(--spacing-spacing-scale-1, 4px);
 {
     color: #0068B2 !important;
 }
+
+span.select2.select2-container {
+    margin: 0 0 15px 0;
+}
+
+
+
 //----------------------------------------------------------
 // Assesment------------------------------------------------
 //----------------------------------------------------------
@@ -3862,16 +3874,29 @@ color: #FFFFFF !important;
 //    border-color: #355699 !important;
 //}
 
-.background-colour1 .matching-item__select-container .dropdown__btn:hover .dropdown__inner,
+/* .background-colour1 .matching-item__select-container .dropdown__btn:hover .dropdown__inner,
 .background-colour2 .matching-item__select-container .dropdown__btn:hover .dropdown__inner
 {
     color:#041C39 !important;
     background-color: #F3F3F3 !important;
+} */
+
+.matchingQuestion .is-incorrect button.dropdown__btn.js-dropdown-btn.is-disabled.is-selected.element-color-control{
+    background-color: #FCE9E8 !important;
+}
+
+
+.matchingQuestion .is-correct button.dropdown__btn.js-dropdown-btn.is-disabled.is-selected.element-color-control {
+    background-color: #ECFDF3 !important;
+}
+
+.matchingQuestion span.dropdown__inner.js-dropdown-inner {
+    max-width: 90% !important;
 }
 
 .background-colour2 .matching-item__select-container .dropdown__btn .dropdown__inner{
     color:#E9EBF1 !important;
-    background-color: rgba(255, 255, 255, 0.10) !important;
+    /* background-color: rgba(255, 255, 255, 0.10) !important; */
 }
 
 .background-colour2 .matching .matching__inner .matching__widget .matching-item__select-container .dropdown__btn:hover .dropdown__icon .icon,
@@ -3964,6 +3989,11 @@ color: #FFFFFF !important;
 .matching__widget{
     margin-top: 1.5rem !important;
 }
+
+.matching .matching__inner .matching__widget .matching-item__select-container .dropdown button.dropdown__btn {
+    background-color: rgba(255,255,255,0.1) !important;
+}
+
 //----------------------------------------------------------
 // Reveal---------------------------------------------------
 //----------------------------------------------------------
