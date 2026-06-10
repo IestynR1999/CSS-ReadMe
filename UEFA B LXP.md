@@ -77,7 +77,7 @@ border-radius: 0px;
 
 span.component__attribution-inner.graphic__attribution-inner {
     line-height: 18px !important;
-    margin-top: 10px;
+    margin-top: 5px;
     display: inline-block;
 }
 
